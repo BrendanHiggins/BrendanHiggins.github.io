@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: BrendanHiggins.dev
+title: brendanhiggins.dev
 email: me@brendanhiggins.dev
 description: >- # this means to ignore newlines until "baseurl:"
     Brendan Higgins - Cybersecurity, technology, video games, and books
@@ -29,6 +29,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+repository: BrendanHiggins/BrendanHiggins.github.io
 
 include:
   - _pages
@@ -56,9 +57,9 @@ plugins:
   - jekyll-seo-tag
 
 author:
-  name   : "Brendan Higgins"
-  avatar : "/assets/images/bio-photo.png"
-  bio    : "TBD"
+  name   : ">_Higgins"
+  avatar : "/assets/images/bio.jpg"
+  bio    : "It is not the critic who counts."
   links:
     - label: "Contact"
       icon: "fas fa-fw fa-envelope-square"
@@ -72,6 +73,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/BrendanHiggins"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/higgins/"
 
 
 defaults:
