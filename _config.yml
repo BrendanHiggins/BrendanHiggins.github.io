@@ -23,9 +23,9 @@ repository: BrendanHiggins/BrendanHiggins.github.io
 github_username: BrendanHiggins
 minimal_mistakes_skin: dark
 search: true
-breadcrumbs: true
-teaser: /assets/images/teaser.jpg
-logo: "/assets/images/88x88.png"
+breadcrumbs: false
+#teaser: /assets/images/teaser.jpg
+logo: "/assets/images/logo3.png" #https://gauger.io/fonticon/ #https://realfavicongenerator.net/
 
 # Build settings
 markdown: kramdown
