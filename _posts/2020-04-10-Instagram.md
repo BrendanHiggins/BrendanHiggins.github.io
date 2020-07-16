@@ -7,10 +7,6 @@ categories:
   - Technology
   - Cyber Security
   - Privacy
-tags:
-  - Technology
-  - Cyber Security
-  - Privacy
 ---
 
 A personal experience with poor/dark UX on Instgram and its potentially damaging effects.
