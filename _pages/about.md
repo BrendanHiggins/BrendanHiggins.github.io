@@ -10,13 +10,14 @@ This site is just a place to record interesting things in cyber security, techno
 **Education:**<br>
 <span style="font-size:0.75em;">
 Western Governors University - Master of Science, Cyber Security and Information Assurance<br>
-California State University San Bernardino - Bacehlor's Degree, Buisness Administration, Cyber Secuirty<br>
+California State University San Bernardino - Bachelor's Degree, Business Administration, Cyber Security<br>
 </span>
 
 **Certifications:**<br>
 <span style="font-size:0.75em;">
 Amazon Web Services (AWS) - Cloud Certified Practitioner<br>
 (ISC)² - Associate CISSP<br>
+GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)<br>
 GIAC Certified Windows Security Administrator (GCWN)<br>
 GIAC Certified Forensic Analyst (GCFA)<br>
 GIAC Certified Intrusion Analyst (GCIA)<br>
