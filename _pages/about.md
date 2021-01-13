@@ -16,7 +16,7 @@ California State University San Bernardino - Bachelor's Degree, Business Adminis
 **Certifications:**<br>
 <span style="font-size:0.75em;">
 Amazon Web Services (AWS) - Cloud Certified Practitioner<br>
-(ISC)² - Associate CISSP<br>
+(ISC)² - CISSP<br>
 GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)<br>
 GIAC Certified Windows Security Administrator (GCWN)<br>
 GIAC Certified Forensic Analyst (GCFA)<br>
