@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 ---
-Brendan Higgins is a Cybersecurity Engineer/Analyst.
+Brendan Higgins is a Cybersecurity Engineer.
 
 This site is just a place to record interesting things in cyber security, technology, programming, literature, video games, and just about anything else that he finds interesting.
 
@@ -12,17 +12,24 @@ This site is just a place to record interesting things in cyber security, techno
 
 # Certifications:
 * (ISC)² - CISSP
+* Amazon Web Services (AWS) - Cloud Certified Practitioner
+<hr>
+
 * GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)
 * GIAC Certified Windows Security Administrator (GCWN)
 * GIAC Certified Forensic Analyst (GCFA)
 * GIAC Certified Intrusion Analyst (GCIA)
 * GIAC Continuous Monitoring Certification (GMON)
+<hr>
+
 * CompTIA - Advanced Security Practitioner (CASP)
 * CompTIA - Security+
 * CompTIA - Cloud+
 * CompTIA - Network+
-* Amazon Web Services (AWS) - Cloud Certified Practitioner
-* EC-Council - Computer Hacking Forensic Investigator (CHFI)
+<hr>
 
-# Misc:
+* EC-Council - Computer Hacking Forensic Investigator (CHFI)
+* EC-Council - Certified Ethical Hacker (CEH)
+<hr>
+
 * Federal Communications Commission - General Class HAM Radio License
