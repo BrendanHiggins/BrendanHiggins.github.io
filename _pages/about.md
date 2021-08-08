@@ -15,6 +15,7 @@ This site is just a place to record interesting things in cyber security, techno
 * Amazon Web Services (AWS) - Cloud Certified Practitioner
 <hr>
 
+* GIAC Cloud Security Automation (GCSA)
 * GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)
 * GIAC Certified Windows Security Administrator (GCWN)
 * GIAC Certified Forensic Analyst (GCFA)
