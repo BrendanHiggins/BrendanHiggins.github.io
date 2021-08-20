@@ -26,6 +26,7 @@ This got me thinking, why did they make the card so simple? Why did they make it
   <br>
   <em>No way to know without trying it.</em>
 </div>
+<br>
 
 # Commiting A Felony?
 > If You Make or Buy a Fake COVID-19 Vaccination Record Card, You Endanger Yourself and Those Around You, and You Are Breaking the Law ...
@@ -83,7 +84,7 @@ Below is a picture of my real (and censored) vaccine card, and my blank, fake ca
 ![Cards Compared](/assets/images/covid-cards/vax_edited_real.png)
 This image was taken at an odd angle/blurred/censored for a reason. Taking a screenshot and reproducing this card should not be worth the effort as a result, especially when thousands of higher quality images exist online from major news articles, and from everyone who ever took a ["Vaccine Card Selfie"](https://www.nytimes.com/2021/02/06/health/covid-vaccination-card.html) in the last 8 months. The worst is when the card has the "Patient Number" field filled out (mine does not) with a valid Medical Record Number (MRN) - a perfect way to unintentionally leak your PII.
 
-Here's what the "final" product looked like in my browser, ready to print (The black background was ingnored unless I selected "Background graphics" on my print dialog). I
+Here's what the "final" product looked like in my browser, ready to print (The black background was ingnored unless I selected "Background graphics" on my print dialog).
 
 For this screenshot, I added a giant red "FAKE" watermark, and purposely left the card at its "native" size to prevent someone from trying to copy the card from this post.
 ![HTML Cards](/assets/images/covid-cards/html.png)
@@ -113,13 +114,13 @@ I'm fairly sure Machine Identification Codes are not being used. However, I don'
 
 There is some interesting text in the bottom right and left corners of the back of the card (which I didn't bother reproducing in my HTML forgery) that I'm not clear what the purpose is. However, given that the purpose is vague/unclear - any layman validating a card to be "real" or "fake" wouldn't know what to really look for in those fields other than data approximately similar to other cards seen.
 
-I even checked my card under a blacklight. I didn't see any secret illuminati codes or tracking numbers, so that was a real disappointment. (╯°□°)╯︵ ┻━┻
+I even checked my real card under a blacklight. I didn't see any secret fluorescent illuminati codes, so that was a real disappointment. (╯°□°)╯︵ ┻━┻
 
 ##### [Microprinting](https://en.wikipedia.org/wiki/Microprinting)
 
 Would it have been difficult for the CDC/HHS to have utilized microprinting in the production of the cards? No. Have you ever seen [a dollar bill](https://www.uscurrency.gov/sites/default/files/download-materials/en/CEP_Dollars_In_Detail_Brochure.pdf)? US currency is heavily microprinted. We have the technology at the federal level.
 
-One benefit of this approach is that virtually nobody except pre-existing illegal counterfeiting operations, and nation state actors, would be able to reproduce this level of detail. Even then, the counterfeit operations have easier ways to **make** money than to try and sell COVID cards to random people. <span style="color:green;"> \[̲̅\$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅\$̲̅] </span>
+One benefit of this approach is that virtually nobody except pre-existing illegal counterfeiting operations, and nation state actors, would be able to reproduce this level of detail. Even then, the counterfeit operations have easier ways to **make** money than to try and sell COVID cards to random people. <span style="color:green;">\[̲̅\$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅\$̲̅]</span>
 
 ##### [Paper Embossing](https://en.wikipedia.org/wiki/Paper_embossing)
 
