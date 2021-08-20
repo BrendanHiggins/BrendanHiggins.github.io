@@ -9,13 +9,15 @@ categories:
 
 If you're going to do something wrong, do it big.
 <!--more-->
-![Google News](/assets/images/covid-cards/news_story.PNG)
+**Note: Mermaid Graphics not working on page (yet)**
 
 <div style="text-align:justify;color:#DC143C;">
   <small>The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
 </div>
 
-**Note: Mermaid Graphics not working on page (yet)**
+<hr>
+
+![Google News](/assets/images/covid-cards/news_story.PNG)
 
 # Fake Vaccine Cards
 With the rise of "Vaccine Passports" being required in various cities for basic services, so too comes the all too predictable rise of the fraudulent COVID-19 Vaccine Record Cards found in the wild. 
