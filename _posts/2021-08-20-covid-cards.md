@@ -15,13 +15,7 @@ If you're going to do something wrong, do it big.
   <small>The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
 </div>
 
-{% mermaid %}
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-{% endmermaid %}
+**Note: Mermaid Graphics not working on page (yet)**
 
 # Fake Vaccine Cards
 With the rise of "Vaccine Passports" being required in various cities for basic services, so too comes the all too predictable rise of the fraudulent COVID-19 Vaccine Record Cards found in the wild. 

@@ -61,7 +61,6 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-seo-tag
-  - jekyll-mermaid
 
 author:
   name   : "Brendan Higgins"
@@ -110,9 +109,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# Mermaid
-mermaid:
-  src: 'js/mermaid.core.js'
 
 # Analytics
 analytics:
