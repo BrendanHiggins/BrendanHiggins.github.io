@@ -9,12 +9,20 @@ categories:
 
 If you're going to do something wrong, do it big.
 <!--more-->
-**Note: Mermaid Graphics not working on page (yet)**
+
+<div class="mermaid">
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</div>
 
 <div style="text-align:justify;color:#DC143C;">
   <small>The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
 </div>
-
+<br>
+<b>Note: Mermaid Graphics not working on page</b>
 <hr>
 
 ![Google News](/assets/images/covid-cards/news_story.PNG)
@@ -296,6 +304,7 @@ shc:/567629095243206034602924374044603122295953265460346029254077280433602870286
 ```
 
 And a QR code for your smart phone:
+
 ![Demo QR](/assets/images/covid-cards/demo_qr.png)
 
 All of this can be reversed and validated with provided online resources: 
