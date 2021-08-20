@@ -14,7 +14,7 @@ If you're going to do something wrong, do it big.
 </div>
 <hr>
 
-![Google News](/assets/images/covid-cards/news_story.PNG)
+![Google News](/assets/images/covid-cards/news_story.png)
 
 # Fake Vaccine Cards
 With the rise of "Vaccine Passports" being required in various cities for basic services, so too comes the all too predictable rise of the fraudulent COVID-19 Vaccine Record Cards found in the wild. 
@@ -58,7 +58,7 @@ I thought this would be a cool opportunity to finally teach myself [LaTeX](https
 
 I was right! It was a perfect time for me to learn how complex LaTeX can be, and that I had absolutely no desire to recreate the fake card in this language. 
 
-![LaTeX](/assets/images/covid-cards/latex.PNG)
+![LaTeX](/assets/images/covid-cards/latex.png)
 I'm comfortable sharing this image because...
 1. It looks terrible
 2. It's at least 50% incomplete, and the lower half of the table is certainly the most complex part to reproduce
@@ -92,7 +92,7 @@ But then again, I'm not sure why I'm bothering with so much opsec around the car
 ![Google Cards](/assets/images/covid-cards/google_images.png)
 
 # Papers, Please
-![Papers Please](/assets/images/covid-cards/papers_please.PNG)
+![Papers Please](/assets/images/covid-cards/papers_please.png)
 
 I guess I'm not the only one disappointed in the paper cards ease of duplication. Some states are working on a digital solution to combat this, for better, and worse. We'll talk about that later on.
 
@@ -130,7 +130,7 @@ Plain white paper is without question the most common paper owned by people. I c
 
 Even making the card a randomly chosen color, like a nice light pink...maybe with some fancy curly blue borders. Ooo! Or maybe blue and green! Where have I seen that before? 
 
-![CDC Font](/assets/images/covid-cards/car-titles.PNG)
+![CDC Font](/assets/images/covid-cards/car-titles.png)
 
 Breaking Development: it's called _stationery_, it comes from tree pulp, and people buy it for wedding invitations. ಠ_ಠ
 
@@ -139,7 +139,7 @@ Breaking Development: it's called _stationery_, it comes from tree pulp, and peo
 I'm not 100% sure, but the font used on the cards is...[Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=COVID-19&preview.text_type=custom). 
 Underwhelming, all I did was inspect the font used on the title of the [CDC's Social Media Toolkit](https://www.cdc.gov/coronavirus/2019-ncov/communication/vaccination-toolkit.html). From what I can tell, the same font used on the card is also used on their Digital Resources.
 
-![CDC Font](/assets/images/covid-cards/siteFont.PNG)
+![CDC Font](/assets/images/covid-cards/siteFont.png)
 
 ### Why?
 Perhaps the powers to be wanted to make the cards easy to produce so they could get millions of them out to the thousands of CVS/Wallgreens/Hospitals/Ad-hoc vax sites across the country?
@@ -332,12 +332,12 @@ Google Dork:
 "COVID 19 Vaccination Record Card" filetype:pdf
 ```
 
-![Demo QR](/assets/images/covid-cards/its_literally_on_the_internet.PNG)
+![Demo QR](/assets/images/covid-cards/its_literally_on_the_internet.png)
 
 
 # Real Cards: Insider Threat
 Despite all this, the easiest way to fake a vax is to be somebody, or know somebody in healthcare.
-![insider](/assets/images/covid-cards/nurses_insider_threat.PNG)
+![insider](/assets/images/covid-cards/nurses_insider_threat.png)
 
 Just like in cybersecurity, sometimes your biggest threat comes from within. Some Nurses are anti-vax mandate, and probably could gain access to the stack of blank, authentic COVID-19 cards. Obviously, this would depend greatly on the operational/physical security procedures and operations at each individual healthcare location. Some may have better procedures than others.
 
