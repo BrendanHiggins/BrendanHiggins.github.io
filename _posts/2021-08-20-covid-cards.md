@@ -202,12 +202,18 @@ B[Healthcare provider reports the shot to the state public health officials]-->C
 B-- You request a digital vaccination status -->D[State health officials digitally sign a SMART Card Vax Verification for you]
 C[Reports to CDC/HHS]
 D-->E[You use it to get into concerts or something.]
+style A fill:#FFE46B,stroke:#333,stroke-width:4px
+style B fill:#FFE46B,stroke:#333,stroke-width:4px
+style C fill:#FFE46B,stroke:#333,stroke-width:4px
+style D fill:#FFE46B,stroke:#333,stroke-width:4px
+style E fill:#FFE46B,stroke:#333,stroke-width:4px
 </div>
 
 Okay but the interesting bit here is this box, so lets dig in a little bit.
 <div class="mermaid"> 
 graph TD; 
 A[State health officials digitally sign a SMART Card Vax Verification for yo]
+style A fill:#FFE46B,stroke:#333,stroke-width:4px
 </div>
 
 The state generates a vaccine [HL7 FHIR SMART Health Card](https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/index.html) "FHIR validation profile"...basically a [json blob]() of information that looks like this:
