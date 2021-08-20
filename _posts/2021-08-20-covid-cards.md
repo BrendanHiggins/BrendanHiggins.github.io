@@ -11,12 +11,10 @@ If you're going to do something wrong, do it big.
 <!--more-->
 
 <div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+graph LR;
+  A-->B;
 </div>
+<script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
 
 <div style="text-align:justify;color:#DC143C;">
   <small>The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
