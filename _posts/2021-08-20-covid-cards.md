@@ -200,17 +200,20 @@ You can dig through the SmartHealth [FAQ](https://smarthealth.cards/faq.html) an
 <script async src="https://unpkg.com/mermaid@8.11.5/dist/mermaid.min.js"></script>
 <div class="mermaid"> 
 graph TD; 
+subgraph one
 A[You go get your shot]-->B; 
 B[Healthcare provider reports the shot to the state public health officials]-->C;
 B-- You request a digital vaccination status -->D[State health officials digitally sign a SMART Card Vax Verification for you]
 C[Reports to CDC/HHS]
 D-->E[You use it to get into concerts or something.]
+end
 style A fill:#FFE46B,stroke:#333,stroke-width:4px
 style B fill:#FFE46B,stroke:#333,stroke-width:4px
 style C fill:#FFE46B,stroke:#333,stroke-width:4px
 style D fill:#FFE46B,stroke:#333,stroke-width:4px
 style E fill:#FFE46B,stroke:#333,stroke-width:4px
-linkStyle 0,1,2,3 stroke-width:2px,stroke:#FFE46B
+linkStyle 0,1,2,3 stroke-width:2px,stroke:#000
+style one fill:#fff,opacity:0.25,stroke:#000,stroke-width:1px
 </div>
 
 Okay but the interesting bit here is this box, so lets dig in a little bit.
