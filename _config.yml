@@ -110,6 +110,9 @@ tag_archive:
   type: liquid
   path: /tags/
 
+# Mermaid
+mermaid:
+  src: 'js/mermaid.core.js'
 
 # Analytics
 analytics:
