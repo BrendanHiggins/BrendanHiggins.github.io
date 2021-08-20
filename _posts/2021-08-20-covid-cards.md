@@ -140,6 +140,8 @@ Breaking Development: it's called _stationery_, it comes from tree pulp, and peo
 I'm not 100% sure, but the font used on the cards is...[Open Sans](https://fonts.google.com/specimen/Open+Sans?preview.text=COVID-19&preview.text_type=custom). 
 Underwhelming, all I did was inspect the font used on the title of the [CDC's Social Media Toolkit](https://www.cdc.gov/coronavirus/2019-ncov/communication/vaccination-toolkit.html). From what I can tell, the same font used on the card is also used on their Digital Resources.
 
+Also, throwing in a few [homograph](https://en.wikipedia.org/wiki/IDN_homograph_attack) characters would have been pretty cool for forensics.
+
 ![CDC Font](/assets/images/covid-cards/siteFont.png)
 
 ### Why?
@@ -208,6 +210,7 @@ style B fill:#FFE46B,stroke:#333,stroke-width:4px
 style C fill:#FFE46B,stroke:#333,stroke-width:4px
 style D fill:#FFE46B,stroke:#333,stroke-width:4px
 style E fill:#FFE46B,stroke:#333,stroke-width:4px
+linkStyle 0,1,2,3 stroke-width:2px,stroke:#FFE46B
 </div>
 
 Okay but the interesting bit here is this box, so lets dig in a little bit.
