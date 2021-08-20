@@ -61,6 +61,7 @@ plugins:
   - jemoji
   - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-mermaid
 
 author:
   name   : "Brendan Higgins"
