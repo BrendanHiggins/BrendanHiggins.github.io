@@ -177,6 +177,7 @@ A few states are pursuing vaccination cards as a "passport" to engage with socie
 
 #### Trying It Myself
 I had to download this to try it myself.
+
 <img src="/assets/images/covid-cards/NYC_lol2.png" style="width:40%">
 
 Okay, clearly the app takes _literally_ any picture you give it and puts a check mark on it.
