@@ -10,7 +10,7 @@ categories:
 If you're going to do something wrong, do it big.
 <!--more-->
 <div>
-  <small style="text-align:justify;font-weight:bold;color:#FFE46B">The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
+  <small style="text-align:justify;font-weight:bold;color:#FFE46B">The material and information contained on this page is for general information and educational purposes only. The author of this page does not support or promote the illegal production, distribution, or use of any fraudulent documents.</small>
 </div>
 <hr>
 
