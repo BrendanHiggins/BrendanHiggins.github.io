@@ -9,18 +9,9 @@ categories:
 
 If you're going to do something wrong, do it big.
 <!--more-->
-
-<div class="mermaid">
-graph LR;
-  A-->B;
-</div>
-<script async src="https://unpkg.com/mermaid@8.2.3/dist/mermaid.min.js"></script>
-
 <div style="text-align:justify;color:#DC143C;">
   <small>The material and information contained on this page is for general information and educational purposes only. The author of this page does not condone the illegal production, distribution, or use of any fraudulent documents.</small>
 </div>
-<br>
-<b>Note: Mermaid Graphics not working on page</b>
 <hr>
 
 ![Google News](/assets/images/covid-cards/news_story.PNG)
@@ -203,21 +194,20 @@ Both California with their ["Digital COVID-19 Vaccine Record"](https://myvaccine
 
 You can dig through the SmartHealth [FAQ](https://smarthealth.cards/faq.html) and won't find a single piece of interesting information about the actual technology, but there is a link to their [Technical Specifications](https://spec.smarthealth.cards/).
 
+<script async src="https://unpkg.com/mermaid@8.11.5/dist/mermaid.min.js"></script>
 <div class="mermaid"> 
-%%{init: {'theme':'base'}}%%
 graph TD; 
 A[You go get your shot]-->B; 
 B[Healthcare provider reports the shot to the state public health officials]-->C;
-B-- You request a digital vaccination status -->D{{State health officials digitally sign a SMART Card Vax Verification for you}}
+B-- You request a digital vaccination status -->D[State health officials digitally sign a SMART Card Vax Verification for you]
 C[Reports to CDC/HHS]
 D-->E[You use it to get into concerts or something.]
 </div>
 
 Okay but the interesting bit here is this box, so lets dig in a little bit.
 <div class="mermaid"> 
-%%{init: {'theme':'base'}}%%
 graph TD; 
-A{{State health officials digitally sign a SMART Card Vax Verification for you}}
+A[State health officials digitally sign a SMART Card Vax Verification for yo]
 </div>
 
 The state generates a vaccine [HL7 FHIR SMART Health Card](https://build.fhir.org/ig/HL7/fhir-shc-vaccination-ig/index.html) "FHIR validation profile"...basically a [json blob]() of information that looks like this:
