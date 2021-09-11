@@ -2,7 +2,7 @@
 title: "The 82 Year Old CTF: D'Agapeyeff Cipher"
 excerpt_separator: "<!--more-->"
 categories:
-  - Cyber Security
+  - Cybersecurity
   - Technology
 ---
 I've been reading the dictionary in my free time.
@@ -10,7 +10,7 @@ I've been reading the dictionary in my free time.
 <!--more-->
 
 # Cipher Discovery
-One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wikipedia.org/wiki/Lists_of_unsolved_problems) I stumbled across an intresting page -  [List of ciphertexts](https://en.wikipedia.org/wiki/List_of_ciphertexts).  A lot of the information on the page wasn't particularly new to me: Beale, Enigma, Kryptos, etc.
+One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wikipedia.org/wiki/Lists_of_unsolved_problems) I stumbled across an interesting page -  [List of ciphertexts](https://en.wikipedia.org/wiki/List_of_ciphertexts).  A lot of the information on the page wasn't particularly new to me: Beale, Enigma, Kryptos, etc.
 
 But one did catch my eye that I had not heard of - 
 
@@ -327,7 +327,7 @@ In this case, our cipher has the number 44243, and the cipher text solved in the
 
 That gives us...
 ```
-0 reval(ed)
+0 reveal(ed)
 1 reveille
 2 revel
 3 revelation
@@ -336,7 +336,7 @@ That gives us...
 6 revendication
 7 revenge
 8 revenue
-9 reverbreate
+9 reverberate
 10 revere
 11 reverence
 ```
@@ -384,7 +384,7 @@ In D'A's C&&C he spends the pages preceidng his "challenge" cipher discussing Di
 Also, D'A is almost more known as a catrographer and the author of "Maps" more than he is known as a cryptologist. So isn't it interestingly coinsidental that in this book published 17 years prior says in reference to book ciphers
 > the first thing to do - and it is not easy - is to determine the exact meaning of the two numbers ... as when preapring a survey map of a country it is first necessary to calculate with the utmost accuracy the height and distance of two given points, to form a base on which the triangulation of the whole region may be effected...
 
-## Transpostion of Dictionary Posistions
+## Transposition of Dictionary Positions
 This book got me thinking though, removing the 6,7,8,9,(0) _was_ a bit arbitrary in the sense that we were just guessing, and as D'A himself notes using nulls to throw people off really only works if youre "in the secret" which we are firmly not. He does spend some time discussing transpostion ciphers prior to his dictionary...what if we treat each 5 digit number as a full sequence, but in the wrong order? How many permuations of each letter pair are there, and what happens to the full sequence if the same transpositional rules are applied to each sequence? Which number has the least permuations?
 
 I _think_ the answer to that final question is 92000, the last number in the sequence. Using some quick scripting I found that there's 20 unique permutations of the number 92000: 

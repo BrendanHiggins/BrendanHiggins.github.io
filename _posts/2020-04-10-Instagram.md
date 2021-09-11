@@ -4,7 +4,7 @@ header:
   image: /assets/images/instagram/insta-header.png
 excerpt_separator: "<!--more-->"
 categories:
-  - Cyber Security
+  - Cybersecurity
   - Privacy
 ---
 
