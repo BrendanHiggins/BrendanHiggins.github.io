@@ -255,7 +255,7 @@ To this...
 25452 13242 23514 54512 2
 ```
 
-The 5x5 column was picked to sort of arbitrarily fit into a polybius square. Well, although it does seem sort of arbitrary to remove so many numbers from the grid it also fits the pattern thath we explored with regular expressions earlier.
+The 5x5 column was picked to sort of arbitrarily fit into a polybius square. Well, although it does seem sort of arbitrary to remove so many numbers from the grid it also fits the pattern that we explored with regular expressions earlier.
 
 The neat thing about this arbitrary solution is that you can technically keep the 0's if you want...
 ```
