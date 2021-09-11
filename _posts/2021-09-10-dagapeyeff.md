@@ -14,8 +14,8 @@ One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wiki
 
 But one did catch my eye that I had not heard of - 
 | Year of origin | Ciphertext | Decipherment status |
-| --- | --- | --- |
-| 1939 |	[D'Agapeyeff Cipher](https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher) |	Unsolved |
+| ---- | ---- | ---- |
+| 1939 | [D'Agapeyeff Cipher](https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher) |	Unsolved |
 
 An unsolved 20th century cipher? For the last 82 years? That's interesting...
 
@@ -76,6 +76,7 @@ There is the oustanding question as to why the ciper was removed in copies of th
 The cipher is delimited into numeric groups of 5 digits. All said, there's 79 groups in an 8x10 grid with the final 5 digit grouping missing. That makes 395 individual digits.
 
 Here's a frequency analysis of the 5 digit groupings where count > 1
+
 |5 Digit Sequence:| 81638 | 75748 | 28462 | * | 
 | ---| --- | --- | ---| --- |
 | **Frequency:** | 2 | 2 | 2 | 1 | 
@@ -90,12 +91,10 @@ Here's a frequency analysis of the 5 digit groupings where count > 1
 | **Frequency:** | 20 | 17 | 16 | 15 | 14 | 12 | 11 | 9 | 3 | 2 | 1
 
 Breaking the pairs down further for frequency of each digit pair:
-| First Digit| 6 | 7 | 8 | 9 | 0 |  Second Digit | 1 | 2 | 3 | 4 | 5 | 0 | 
-| --- | --- | --- | --- |--- | --- |  --- | --- | --- | --- |--- | --- | --- | 
+
+| First Digit| 6 | 7 | 8 | 9 | 0 | Second Digit | 1 | 2 | 3 | 4 | 5 | 0 |
+| --- | --- | --- | --- |--- | --- | --- | --- | --- | --- |--- | --- | --- | 
 | **Frequency:** | 56 | 41 | 80 | 18 | 3 | **Frequency:** | 33 | 46 | 29 | 43 | 5 | 1 |
-
-
-
 
 With the exception of 0, there is no overlap between first and second digits. Here's what that looks like with a regex applied. Certainly weird, with the only outliers being: 04, 00, 0
 
@@ -396,13 +395,14 @@ In this case, we can probably ignore anything above 90000 so really the squence 
 For example, word 00029 is almost certainly in the "AB" range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming D'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to "00092" (shift all numbers over 2 posistions) to _every_ digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either "the" or "of" or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already "known" plaintext examples from the example in C&C?
 
 Checking all numbers, we find a fairly unsurprising pattern:
-|Count|Name | Group|
-|-----|---- | -----|
-|   26|120  | 75628, 28591, ... |
-|   37|60   | 62916, 48164, ... |
-|    9|30   | 74748, 37575, ... |
-|    6|20   | 83828, 81848, ... |
-|    1|10   | 48484 |
+
+| Count | Name | Group |
+| ---- | ---- | ---- |
+| 26 | 120 | 75628, 28591, ... |
+| 37 | 60  | 62916, 48164, ... |
+| 09 | 30  | 74748, 37575, ... |
+| 06 | 20  | 83828, 81848, ... |
+| 01 | 10  | 48484 |
 
 Any 5 digit number with 5 unique characters can form a high number of permuatations, 120. As the unique number of letters decrease, the fewer permutations we get. Is this useful? I'm not sure, probaly not. Other than we can narrow down to only 10 dictionary words what word 48484 could be, rather than 120 words for the most "noisy" of the bunch.
 
@@ -512,10 +512,10 @@ We'd never figure it out, and without a clue to that it would be pretty well imp
 # Page, Line, Letter: The Book Itself 
 Maybe we don't use a dictionary, but rather the book itself? 
 | Page Number | Line Number | Letter Number| 
-|---|---|---|
-|75|6|28|
-|28|5|91|
-|92|0|00|
+| ---- | ---- | ---- |
+| 75 | 6 | 28 |
+| 28 | 5 | 91 |
+| 92 | 0 | 00 |
 
 Page 75 is not entirely text. It has "Boy Scout Signs" injected halfway through the page, with a sub-title  and diagrams. Do you count sub titles as a line? How about diagrams that unevenly adjust page spacing? Maybe its 
 
