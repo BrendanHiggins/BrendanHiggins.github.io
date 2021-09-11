@@ -13,9 +13,10 @@ I've been reading the dictionary in my free time.
 One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wikipedia.org/wiki/Lists_of_unsolved_problems) I stumbled across an intresting page -  [List of ciphertexts](https://en.wikipedia.org/wiki/List_of_ciphertexts).  A lot of the information on the page wasn't particularly new to me: Beale, Enigma, Kryptos, etc.
 
 But one did catch my eye that I had not heard of - 
+
 | Year of origin | Ciphertext | Decipherment status |
 | --- | --- | --- |
-| 1939 |	<a href="https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher" target="_blank">D'Agapeyeff Cipher</a> |	Unsolved |
+| 1939 |	D'Agapeyeff Cipher |	Unsolved |
 
 An unsolved 20th century cipher? For the last 82 years? That's interesting...
 
