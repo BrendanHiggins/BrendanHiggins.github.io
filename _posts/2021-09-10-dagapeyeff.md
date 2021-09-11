@@ -15,7 +15,7 @@ One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wiki
 But one did catch my eye that I had not heard of - 
 | Year of origin | Ciphertext | Decipherment status |
 | --- | --- | --- |
-| 1939 |	[D'Agapeyeff Cipher](https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher) |	Unsolved |
+| 1939 |	<a href="https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher" target="_blank">D'Agapeyeff Cipher</a> |	Unsolved |
 
 An unsolved 20th century cipher? For the last 82 years? That's interesting...
 
