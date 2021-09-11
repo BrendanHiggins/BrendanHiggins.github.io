@@ -932,3 +932,7 @@ I used the idea on page 113 to break up the text on possible repeating delimiter
 
 ## Life Notes on Alexander d'Agapeyeff
 * [Born 1902, St. Petersburg - Died 1955, Maugersbury](https://www.findagrave.com/memorial/32596707/alexander-e-d'agapeyeff)
+
+<hr>
+
+![bookStack](/assets/images/dagapeyeff/bookStack.jpg)
