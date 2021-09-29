@@ -4,6 +4,7 @@ excerpt_separator: "<!--more-->"
 categories:
   - Cybersecurity
   - Technology
+classes: wide
 ---
 I've been reading the dictionary in my free time.
 

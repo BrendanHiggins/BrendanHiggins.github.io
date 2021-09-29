@@ -4,7 +4,7 @@ title: "About"
 ---
 Brendan Higgins is a Cybersecurity Engineer.
 
-This site is just a place to record interesting things in cyber security, technology, programming, literature, video games, and just about anything else that he finds interesting.
+This site is just a place to record interesting things in cybersecurity, technology, programming, literature, video games, and just about anything else that he finds interesting.
 
 # Education:
 * Western Governors University: Master of Science, Cyber Security and Information Assurance

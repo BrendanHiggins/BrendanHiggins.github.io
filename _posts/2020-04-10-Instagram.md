@@ -8,7 +8,7 @@ categories:
   - Privacy
 ---
 
-A personal experience with poor/dark UX on Instgram and its potentially damaging effects.
+A personal experience with poor/dark UX on Instagram and its potentially damaging effects.
 <!--more-->
 
 I use Instagram more than any other social media app.
