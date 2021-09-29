@@ -5,6 +5,7 @@ categories:
   - Technology
   - Privacy
   - Miscellaneous
+classes: wide
 ---
 
 If you're going to do something wrong, do it big.

@@ -6,6 +6,7 @@ excerpt_separator: "<!--more-->"
 categories:
   - Cybersecurity
   - Privacy
+classes: wide
 ---
 
 A personal experience with poor/dark UX on Instagram and its potentially damaging effects.

@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
 ---
 Brendan Higgins is a Cybersecurity Engineer.
 
