@@ -44,7 +44,7 @@ This will be a category for books that were required reading I did for high scho
   </tr>
   <tr>
     <td colspan="5">
-I don't remember enjoying this much. Yet, I also have fond memories of it. Maybe one day I'll revisit it. 
+It's interesting because in the moment while I read this in school I don't remember enjoying very much. Yet, I also have fond memories of it looking back. Maybe one day I'll revisit it - it's certainly not a long novel.
     </td>
   </tr>
 </tbody>
@@ -79,7 +79,7 @@ I don't remember enjoying this much. Yet, I also have fond memories of it. Maybe
   </tr>
   <tr>
     <td colspan="5">
-I mean, it's Frakenstein. Not the Hollywood version, but the much more interesting literary version. Can't go wrong.
+I mean, it's Frakenstein. Not the Hollywood version, but the much more interesting literary version that has so much more depth, especially around the themes of loss, death, grief, loneliness, and general human capacity for cruelty. Can't go wrong.
     </td>
   </tr>
 </tbody>
@@ -114,7 +114,7 @@ I mean, it's Frakenstein. Not the Hollywood version, but the much more interesti
   </tr>
   <tr>
     <td colspan="5">
-Technically a play, but also a very thin book. Interesting tones about the American Dream, consumerism, and family. I recommend it simply because you can read this in an afternoon. (Or watch it, I assume there's some good versions of the Play around). I still think back on the themes of this book from time to time, I feel like they become more relevant into adulthood.
+Technically a play, but also a very thin book. Interesting tones about the "American Dream", consumerism, and family. I recommend it simply because you can read this in an afternoon. (Or watch it, I assume there's some good versions of the play around). I still think back on the themes of this book from time to time, I feel like they become more relevant into adulthood.
     </td>
   </tr>
 </tbody>
@@ -149,7 +149,7 @@ Technically a play, but also a very thin book. Interesting tones about the Ameri
   </tr>
   <tr>
     <td colspan="5">
-Eh. It's certainly entertaining. It's undeniably a classic. I'm not sure if I had any major lessons learned from it. Not super high on my list of 'must read' titles, but certainly a fun adventure.
+Eh... It's certainly entertaining and it's undeniably a classic. I'm not sure if I had any major lessons learned from it. Not super high on my list of 'must read' titles, but certainly a fun adventure and a more approachable classic especially for a younger reader.
     </td>
   </tr>
 </tbody>
@@ -184,7 +184,7 @@ Eh. It's certainly entertaining. It's undeniably a classic. I'm not sure if I ha
   </tr>
   <tr>
     <td colspan="5">
-I recall really not enjoying this book. I actually think I listened to a bootlegged audiobook version while I played Minecraft to distract myself from the plot. Wait...what was the plot? I can't really remember, but I do remember it dealt with immigration and swapped between an immigrant and a suburban dad who may or may not have had a dog.
+I distinctly recall really not enjoying this book. I actually think I listened to a bootlegged audiobook version while I played Minecraft to distract myself from the plot. Wait...what was the plot? I can't really remember, but I do remember it dealt with immigration and the narrative swapped between an immigrant and a suburban dad who may or may not have had a dog.
     </td>
   </tr>
 </tbody>
@@ -219,7 +219,7 @@ I recall really not enjoying this book. I actually think I listened to a bootleg
   </tr>
   <tr>
     <td colspan="5">
-I have nightmares about this book. It was nearly impossible to read. I think I finished it? But I also think I may have skipped large sections of it because it's really bad. A for adultery. Something about a meteor? Truly the worst book I was ever assigned in HS.
+I have nightmares about this book. It was nearly impossible to read. I think I finished it? But I also think I may have skipped large sections of it because it's really bad. A for adultery and F for "Rating." Something about a meteor and some hypocritical puritans? Truly the worst book I was ever assigned in HS.
     </td>
   </tr>
 </tbody>
@@ -254,7 +254,7 @@ I have nightmares about this book. It was nearly impossible to read. I think I f
   </tr>
   <tr>
     <td colspan="5">
-Eh, it was alright. I enjoyed it for what it was, but not super high on my list of 'classics.'
+Pretty good - I enjoyed it for what it was, but not necessarily in my top 5 for "classics." I certainly would reccommend it to someone interested, plus for whatever reason you see this mentioned in popular culture more often than some novels.
     </td>
   </tr>
 </tbody>
@@ -289,7 +289,7 @@ Eh, it was alright. I enjoyed it for what it was, but not super high on my list 
   </tr>
   <tr>
     <td colspan="5">
-If you haven't read it, you should. It's hard to read. Not because the writing is obtuse, but because processing what Elie and his family went through during the Holocaust is hard to imagine. If you haven't read it, you absolutely should. It's mandatory for a reason.
+If you haven't read it, you should. It's hard to read. Not because the writing is obtuse, but because processing what Elie, his family, and everyone around him went through during the Holocaust is impossible to accurately to imagine. If you haven't read it, you absolutely should. It's mandatory reading in school for a reason.
     </td>
   </tr>
 </tbody>
@@ -324,7 +324,7 @@ If you haven't read it, you should. It's hard to read. Not because the writing i
   </tr>
   <tr>
     <td colspan="5">
-I didn't enjoy reading this. Maybe I was just distracted with other classes when I got around to read this. Hard to say, one day I will revisit it. The themes are interesting, the plot is good, and the general premise is realistic enough to make you give a second thought about human nature.
+Maybe I was just distracted with other classes when I got around to reading this, but I struggled through the book. That's not to say I didn't like it, just that I had a hard time finding time to read it at that time in my life. The themes are interesting, the plot is good, and the general premise is realistic enough to make you give a second thought about human nature. The whole "nature" vs "nuture" arguement certainly comes into play.
     </td>
   </tr>
 </tbody>
@@ -1381,6 +1381,8 @@ Books:
 * Treasure Island
 * The Astonishing Life of Octavian Nothing, Traitor to the Nation, Volume I: The Pox Party
 * From the Mixed-Up Files of Mrs. Basil E. Frankweiler
+* Holes
+* Lord of the Rings Trilogy + The Hobbit
 
 Picture Books:
 * Dr. Seuss Books
@@ -1392,3 +1394,4 @@ Picture Books:
 * The Stinky Cheese Man and Other Fairly Stupid Tales
 * The Paperbag Princess
 * Love You Forever
+* Frog and Toad

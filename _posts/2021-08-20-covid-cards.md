@@ -351,6 +351,7 @@ Google Dork:
 
 # Real Cards: Insider Threat
 Despite all this, the easiest way to fake a vax is to be somebody, or know somebody in healthcare.
+
 ![insider](/assets/images/covid-cards/nurses_insider_threat.png)
 
 Just like in cybersecurity, sometimes your biggest threat comes from within. Some Nurses are anti-vax mandate, and probably could gain access to the stack of blank, authentic COVID-19 cards. Obviously, this would depend greatly on the operational/physical security procedures and operations at each individual healthcare location. Some may have better procedures than others.
