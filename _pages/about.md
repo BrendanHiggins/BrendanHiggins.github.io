@@ -14,6 +14,7 @@ This site is just a place to record interesting things in cybersecurity, technol
 # Certifications:
 * (ISC)² - CISSP
 * Amazon Web Services (AWS) - Cloud Certified Practitioner
+* GitLab DevOps Professional
 <hr>
 
 * GIAC Cloud Security Automation (GCSA)
