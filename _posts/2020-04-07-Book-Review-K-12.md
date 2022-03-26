@@ -1383,15 +1383,3 @@ Books:
 * From the Mixed-Up Files of Mrs. Basil E. Frankweiler
 * Holes
 * Lord of the Rings Trilogy + The Hobbit
-
-Picture Books:
-* Dr. Seuss Books
-* I SPY Books
-* Eyewitness Books
-* Stellaluna 
-* If You Give A Mouse A Cookie
-* If You Give A Moose A Muffin
-* The Stinky Cheese Man and Other Fairly Stupid Tales
-* The Paperbag Princess
-* Love You Forever
-* Frog and Toad
