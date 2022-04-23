@@ -6,6 +6,8 @@ categories:
 classes: wide
 ---
 
+CKD Diet
+
 <!--more-->
 
 Recently my 4-year-old dog, Oliver, was diagnosed with what the vet assumes is Chronic Kidney (Renal) Disease (CKD).  K/d tends to be something an older dog develops much later in its life. For that reason, my vet thinks it could simply be a congenital issue.
