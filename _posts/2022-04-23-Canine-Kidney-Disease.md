@@ -158,32 +158,32 @@ That's it. All that reading, all that research, and we have an incredibly specif
 <img src="/assets/images/oliver-kidney/oliver_blog.PNG" alt="oliver_blog">
 
 # References
-https://pubmed.ncbi.nlm.nih.gov/10711867/
-https://fcoates.civicweb.net/document/15784/
-https://nlm.nih.gov/pmc/articles/PMC3348639/
-https://www.petmd.com/dog/best-foods-dogs-kidney-disease
-https://animalwellnessmagazine.com/kidney-health-dog-cat
-https://www.allaboutdogfood.co.uk/articles/feeding-dogs-with-kidney-disease
-https://bigcountryraw.ca/wp-content/uploads/2018/03/3Kidney-Disease-final.pdf
-https://www.livestrong.com/article/501579-percentage-of-omega-6-in-coconut-oil
-https://www.darwinspet.com/resources/types-of-dog-food/dog-food-kidney-disease.html
-https://www.plantpoweredkidneys.com/phosphorus-binders/#Types_of_Phosphorus_Binders
-https://www.vin.com/apputil/content/defaultadv1.aspx?pId=8768&catId=18832&id=3850248
-https://vcahospitals.com/know-your-pet/nutrition-for-dogs-with-chronic-kidney-disease
-https://www.cocotherapy.com/blogs/blog/how-to-manage-chronic-kidney-disease-in-cats-and-dogs
-https://www.tony-booth.com/gallery/How%20Diet%20Affects%20Dogs%20with%20Chronic%20Kidney%20Disease.pdf
-https://www.petmd.com/blogs/thedailyvet/ken-tudor/2015/january/kidney-disease-pets-better-method-quicker-diagnosis-32385
-https://thrive.kaiserpermanente.org/care-near-you/northern-california/gsaa/wp-content/uploads/sites/18/2015/11/Phosphorous-Foods_tcm28-602162.pdfhttps://www.ncbi.
-https://eatswritesshoots.com/2014/06/16/recipe-for-low-phosphorus-dog-food-caring-for-a-dog-with-chronic-renal-failure/
-https://ipupster.com/best-non-prescription-low-phosphorus-dog-food/
-https://wagwalking.com/treatment/natural-remedies-for-kidney-failure
-https://todaysveterinarypractice.com/nutrition/diet-dogs-ckd-chronic-kidney-disease/
-https://vetnutrition.tufts.edu/2018/05/what-treats-can-i-give-my-dog-with-kidney-disease/
-https://vetnutrition.tufts.edu/2016/05/my-pet-has-kidney-disease-what-kind-of-diet-should-i-feed
-https://petcomments.com/dog-kidney-disease-food/
-https://www.lakecross.com/site/blog-huntersville-vet/2021/07/30/dog-kidney-failure-diet
-https://vcahospitals.com/know-your-pet/azodyl
-https://dogsfirst.ie/top-5-herbs-for-kidney-kidney-disease-in-dogs/
-https://bikehike.org/are-peas-good-for-dogs-with-kidney-disease/#What_can_I_feed_my_picky_dog_with_kidney_disease
-http://www.b-naturals.com/newsletter/kidney-diet/
-http://dogaware.com/health/kidneysamplediet.html
+* https://pubmed.ncbi.nlm.nih.gov/10711867/
+* https://fcoates.civicweb.net/document/15784/
+* https://nlm.nih.gov/pmc/articles/PMC3348639/
+* https://www.petmd.com/dog/best-foods-dogs-kidney-disease
+* https://animalwellnessmagazine.com/kidney-health-dog-cat
+* https://www.allaboutdogfood.co.uk/articles/feeding-dogs-with-kidney-disease
+* https://bigcountryraw.ca/wp-content/uploads/2018/03/3Kidney-Disease-final.pdf
+* https://www.livestrong.com/article/501579-percentage-of-omega-6-in-coconut-oil
+* https://www.darwinspet.com/resources/types-of-dog-food/dog-food-kidney-disease.html
+* https://www.plantpoweredkidneys.com/phosphorus-binders/#Types_of_Phosphorus_Binders
+* https://www.vin.com/apputil/content/defaultadv1.aspx?pId=8768&catId=18832&id=3850248
+* https://vcahospitals.com/know-your-pet/nutrition-for-dogs-with-chronic-kidney-disease
+* https://www.cocotherapy.com/blogs/blog/how-to-manage-chronic-kidney-disease-in-cats-and-dogs
+* https://www.tony-booth.com/gallery/How%20Diet%20Affects%20Dogs%20with%20Chronic%20Kidney%20Disease.pdf
+* https://www.petmd.com/blogs/thedailyvet/ken-tudor/2015/january/kidney-disease-pets-better-method-quicker-diagnosis-32385
+* https://thrive.kaiserpermanente.org/care-near-you/northern-california/gsaa/wp-content/uploads/sites/18/2015/11/Phosphorous-Foods_tcm28-602162.pdfhttps://www.ncbi.
+* https://eatswritesshoots.com/2014/06/16/recipe-for-low-phosphorus-dog-food-caring-for-a-dog-with-chronic-renal-failure/
+* https://ipupster.com/best-non-prescription-low-phosphorus-dog-food/
+* https://wagwalking.com/treatment/natural-remedies-for-kidney-failure
+* https://todaysveterinarypractice.com/nutrition/diet-dogs-ckd-chronic-kidney-disease/
+* https://vetnutrition.tufts.edu/2018/05/what-treats-can-i-give-my-dog-with-kidney-disease/
+* https://vetnutrition.tufts.edu/2016/05/my-pet-has-kidney-disease-what-kind-of-diet-should-i-feed
+* https://petcomments.com/dog-kidney-disease-food/
+* https://www.lakecross.com/site/blog-huntersville-vet/2021/07/30/dog-kidney-failure-diet
+* https://vcahospitals.com/know-your-pet/azodyl
+* https://dogsfirst.ie/top-5-herbs-for-kidney-kidney-disease-in-dogs/
+* https://bikehike.org/are-peas-good-for-dogs-with-kidney-disease/#What_can_I_feed_my_picky_dog_with_kidney_disease
+* http://www.b-naturals.com/newsletter/kidney-diet/
+* http://dogaware.com/health/kidneysamplediet.html
