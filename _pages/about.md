@@ -30,6 +30,7 @@ This site is just a place to record interesting things in cybersecurity, technol
 * CompTIA - Security+
 * CompTIA - Cloud+
 * CompTIA - Network+
+* CompTIA - PenTest+
 
 <i>These also combine into all sorts of neat <a href="https://www.comptia.org/certifications/which-certification/stackable-certifications" target="_blank">stackable</a> certification titles.</i>
 
