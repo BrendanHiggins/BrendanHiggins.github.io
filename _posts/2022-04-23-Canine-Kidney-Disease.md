@@ -173,7 +173,7 @@ That's it. All that reading, all that research, and we have an incredibly specif
 * https://www.cocotherapy.com/blogs/blog/how-to-manage-chronic-kidney-disease-in-cats-and-dogs
 * https://www.tony-booth.com/gallery/How%20Diet%20Affects%20Dogs%20with%20Chronic%20Kidney%20Disease.pdf
 * https://www.petmd.com/blogs/thedailyvet/ken-tudor/2015/january/kidney-disease-pets-better-method-quicker-diagnosis-32385
-* https://thrive.kaiserpermanente.org/care-near-you/northern-california/gsaa/wp-content/uploads/sites/18/2015/11/Phosphorous-Foods_tcm28-602162.pdfhttps://www.ncbi.
+* https://thrive.kaiserpermanente.org/care-near-you/northern-california/gsaa/wp-content/uploads/sites/18/2015/11/Phosphorous-Foods_tcm28-602162.pdf
 * https://eatswritesshoots.com/2014/06/16/recipe-for-low-phosphorus-dog-food-caring-for-a-dog-with-chronic-renal-failure/
 * https://ipupster.com/best-non-prescription-low-phosphorus-dog-food/
 * https://wagwalking.com/treatment/natural-remedies-for-kidney-failure
