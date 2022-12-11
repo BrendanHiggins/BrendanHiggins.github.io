@@ -74,7 +74,7 @@ At this point, it just seems like hearsay passed down through the ages, but mayb
 
 A letter from September 18th, 1952 with a second hand quote from the books publisher confirming this quote from DA basically admitting that he has indeed forgotten and lost his solution while traveling. This letter was found in a copy of Mansfield's "The Solution of Codes and Ciphers" and thankfully the seller was kind enough to include the [forgotten bookmark](https://www.reddit.com/r/ForgottenBookmarks/) with the sale of the book!
  
-![Original-Wiki](/assets/images/dagapeyeff/old-letter-edit.PNG)
+![Oxford Letter](/assets/images/dagapeyeff/old-letter-edit.png)
  
 I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from d'A is not printed anywhere else on the internet. Alas, after 17 years I could provide an actual (second hand) an actual citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.
 
