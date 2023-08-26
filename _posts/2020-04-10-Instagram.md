@@ -29,7 +29,7 @@ As I lay down in bed around 12:30 AM, my fiancé said,
 \> "No.."
 I checked the app.
 
-My brother, Redacted in <span style="color:Chartreuse;">Lime Green</span> in the screenshot below had randomly added 17 people to our private, family DM. I jokingly respond with a hilarious gif. My inital reaction was that his 2 year old daughter had gotten a hold of his phone and managed to mass-add a bunch of people. I've seen stranger things happen to phones that children fiddle with.
+My brother, Redacted in <span style="color:Chartreuse;">Lime Green</span> in the screenshot below had randomly added 17 people to our private, family DM. I jokingly respond with a hilarious gif. My initial reaction was that his 2 year old daughter had gotten a hold of his phone and managed to mass-add a bunch of people. I've seen stranger things happen to phones that children fiddle with.
 
 Regardless, this needed to be fixed. So I sent my brother some fairly detailed text messages, and went to sleep.
 
@@ -98,7 +98,7 @@ So we're lucky. We noticed fairly quickly. We blocked the users. We had nothing 
 But some people do.
 Some people use Instagram to share intimate photos.
 
->On a final 'cyber' note - It could be a coincidence, but literally today Instagram added DM to the web browserref. As far as automated attacks go, browser access certainly helps over mobile automation. Again, maybe a coincidence, or maybe not. There's unfortunately no way to tell. My brother has informed me his app no longer shows him the suspicious logon when he checks the Security settings on the app and he didn't think to screenshot it.
+>On a final 'cyber' note - It could be a coincidence, but literally today Instagram added DM to the web browser ref. As far as automated attacks go, browser access certainly helps over mobile automation. Again, maybe a coincidence, or maybe not. There's unfortunately no way to tell. My brother has informed me his app no longer shows him the suspicious logon when he checks the Security settings on the app and he didn't think to screenshot it.
 
 >Instagram also kindly offers three options for logon, including public usernames:
 >![3-choices.JPG](/assets/images/instagram/3-choices.JPG "3-choices")
@@ -125,7 +125,7 @@ She wasn't even aware of the DM setting for 'Approval Required to Join.'
 Mary, in a panic, opens the DM settings and see's the option to 'End The Chat'
 ![leave_end.JPG](/assets/images/instagram/leave_end.JPG "leave-end")
 
-Embarassed and upset, she selects the option. Barely noticing the fine print.
+Embarrassed and upset, she selects the option. Barely noticing the fine print.
 
 ![leave_end_warn.JPG](/assets/images/instagram/leave_end_warn.JPG "leave-warning")
 
@@ -141,7 +141,7 @@ Two hours later Mary gets a text from Richard.
 
 # Exploring Your Options
 These options Instagram gives you are bad. Like, really bad.
-I put together a handy chart of what these options actually do for you + documented the current UI options/warnings Instagram provides in these critical slections.
+I put together a handy chart of what these options actually do for you + documented the current UI options/warnings Instagram provides in these critical selections.
 
 **Objective:**
 Remove someone from a DM group chat.
@@ -154,7 +154,7 @@ Here is a nice overview of the options Instagram provides you:
 ![insta.png](/assets/images/instagram/insta.png "insta-flowchart")
 
 Gee, Thanks...? 4/6 of these options are terrible.
-After blocking at least 1 user from a group chat, the app will essentailly force you to delete the chat, otherwise the block does absolutely nothing:
+After blocking at least 1 user from a group chat, the app will essentially force you to delete the chat, otherwise the block does absolutely nothing:
 ![MUST_DELETE.png](/assets/images/instagram/MUST_DELETE.png "must-delete")
 
 Instagram's Official Help Page for Removal & Deletion for DMs as of 04/10/2020:
@@ -194,7 +194,7 @@ Here's How Instagram Can Fix This
 
 2.) Allow administrators to permanently delete a group chat for ALL members. Including History!
 
-3.) Allow individuals to open 'ended' and 'deleted' group chats from a Trash/Recylce Bin for which they are administrators of to facilitate retrieval of potential blocks via a 'participant list'. "Ended" may preserve history, while "deleted" removes history (See point #2).
+3.) Allow individuals to open 'ended' and 'deleted' group chats from a Trash/Recycle Bin for which they are administrators of to facilitate retrieval of potential blocks via a 'participant list'. "Ended" may preserve history, while "deleted" removes history (See point #2).
 
 4.) When a user is removed from a DM by an administrator, also revoke access to the groups history, and delete the DM from their DM listing.
 

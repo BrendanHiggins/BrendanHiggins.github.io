@@ -48,7 +48,7 @@ We'll dive into each of these major categories.
 
 ## Hydration
 
-Since a diseased/damaged kidney is not as effective at filtering waste products from the body via urination you must consider your dog's hydration. Afterall, apparently the first "sign" of kidney issues is an increase in a dog's thirst...I never thought Oliver was an unusually thirsty dog, but then again who pays that close attention to their dogs drinking habits?
+Since a diseased/damaged kidney is not as effective at filtering waste products from the body via urination you must consider your dog's hydration. After-all, apparently the first "sign" of kidney issues is an increase in a dog's thirst...I never thought Oliver was an unusually thirsty dog, but then again who pays that close attention to their dogs drinking habits?
 
 With this in mind, you should give your dog a good supply of clean, filtered, fresh water. This was the easiest adjustment for me. Prior to diagnosis, Oliver drank out of a bowl in the kitchen which I'd fill with sink water when it was empty or low - pretty standard. Instead, he now has a 1 gallon "Replendish" [gravity waterer](https://smile.amazon.com/dp/B0057LAH6E) that I bought for $12 on Amazon. The "Petmate" brand I bought also comes with a little slot for a small charcoal filter to help further filter the water. You can buy replacement [packs of 12 filters](https://smile.amazon.com/Filters-Petmate-Replendish-Mason-Fountains/dp/B01N7N0UCU) for around $11. So...this was as cheap and easy adjustment  to make - plus I don't have to check the water nearly as often (the 1 gallon lasts at least 3-4 days between Oliver and my other small dog, Bailey).
 
@@ -78,7 +78,7 @@ The expensive powder my vet suggested, Epakatin, is basically an equal mixture o
 
 Both calcium carbonate  and Chitosan you can buy in bulk online very easily for much cheaper than the unique "formula" provided by the Epaktain. 
 
-For a cost comparison, the Epaktain was $27 and came in a container of 2.16oz. That's $12.50 per oz of powder.
+For a cost comparison, the Epaktain was $27 and came in a container of 2.16oz. That's $12.50 per oz. of powder.
 
 Buying in bulk, you can get 2.2lbs of [Calcium Carbonate](https://www.bulksupplements.com/products/calcium-carbonate-powder) for $19, and 2.2lbs of [Chitosan](https://www.bulksupplements.com/products/chitosan-extract-powder) for $69. Up front that's obviously more money. However, spending $88 for 4.4lbs (70.4 oz) of powder gives you a cost of $1.25 per oz of your home-made "Epakatin."
 
@@ -131,7 +131,7 @@ You'll read about a lot of "things" that may also help.
 
 A short list includes: CoQ10 supplements, L-carnitine, Astragalus Extract, and Rehmannia Root. From what I can tell, these things are not going to hurt in moderation (Even Hill's Prescription lists L-carnitine as an ingredient). If you give your dog an entirely raw diet, you may consider these things.
 
-I also read a lot about beets. They may be helfpul, either as a powder or raw. Some fruits are fine too, like apples, blueberries, and raspberries. If you really want to include carbs for some reason, white rice (although there's some debate on white vs brown vs "wild" rices...), or a small amount of sweet potato seem to be acceptable.
+I also read a lot about beets. They may be helpful, either as a powder or raw. Some fruits are fine too, like apples, blueberries, and raspberries. If you really want to include carbs for some reason, white rice (although there's some debate on white vs brown vs "wild" rice...), or a small amount of sweet potato seem to be acceptable.
 
 A small, somewhat random note, there's something about k/d dogs and the acidity of their urine. So avoid cranberry or other "bladder" supplements traditionally designed to increase urine acidity to fight off bladder/UTI infections. The Hill's Science prescription is labeled with something fancy called "S+OXSHIELD" which is supposed to be non-acidifying, so just be careful with what you feed your dog and it's effect on diet acidity.
 
@@ -151,11 +151,15 @@ I will probably give him some egg whites with his breakfast, since hard-boiling 
 
 I will, in very small amounts, add in some 90% lean/10% fat, or 93% lean/7% fat ground beef to his food once and a while to encourage him to eat and maintain muscle mass. 
 
-I might give him the occasional [dog multi-vitamin](https://www.chewy.com/zesty-paws-8-in-1-bites-chicken/dp/159496) as a treat since it has protiobitcs, CoQ10, and some other not-so-bad things in it, especially in moderation.
+I might give him the occasional [dog multi-vitamin](https://www.chewy.com/zesty-paws-8-in-1-bites-chicken/dp/159496) as a treat since it has probiotics, CoQ10, and some other not-so-bad things in it, especially in moderation.
 
-That's it. All that reading, all that research, and we have an incredibly specific diet. Whew, thanks...Internet? I hope I don't accidnetally make things worse?
+That's it. All that reading, all that research, and we have an incredibly specific diet. Whew, thanks...Internet? I hope I don't acidentally make things worse?
 
 <img src="/assets/images/oliver-kidney/oliver_blog.PNG" alt="oliver_blog">
+
+# Note
+
+If your dog is diagnosed with renal failure, please read up and ask your vet about Addison's Disease / Atypical Addison. It's a common misdiagnosis and is more treatable if you get ahead of it. 
 
 # References
 * https://pubmed.ncbi.nlm.nih.gov/10711867/

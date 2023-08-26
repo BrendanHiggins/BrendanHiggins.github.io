@@ -1,12 +1,12 @@
 ---
-title: "Book Review K-12"
+title: "Book Review Pre-2013"
 excerpt_separator: "<!--more-->"
 categories:
   - Literature
 classes: wide
 ---
 
-Childhood & Highschool Book Review
+Pre-2013 Book Review
 
 <!--more-->
 
@@ -1383,3 +1383,5 @@ Books:
 * From the Mixed-Up Files of Mrs. Basil E. Frankweiler
 * Holes
 * Lord of the Rings Trilogy + The Hobbit
+* Abarat Trilogy
+* Eye Spy & Where's Waldo (Clearly)

@@ -29,7 +29,7 @@ This got me thinking, why did they make the card so simple? Why did they make it
 </div>
 <br>
 
-# Commiting A Felony?
+# Committing A Felony?
 > If You Make or Buy a Fake COVID-19 Vaccination Record Card, You Endanger Yourself and Those Around You, and You Are Breaking the Law ...
 
 > Additionally, the unauthorized use of an official government agency's seal (such as HHS or the Centers for Disease Control and Prevention (CDC)) is a crime, and may be punishable under Title 18 United States Code, Section 1017, and other applicable laws ...
@@ -75,7 +75,7 @@ When I showed my HTML/CSS created fake to my wife she replied, "wow this is cree
 
 I even used stupid tools, like a Digital Caliper (anytime I find an excuse to use calipers I take it) to measure the real card. I did that because it was fun, and I don't own a flatbed scanner...but lots of people do. If I had owned a flat bed scanner, that would have been a much smarter option for identifying spacing sizes. 
 
-In order to calibrate my fake, I did have to print it 3 or 4 times to see how my cheap Brother Laser printer handled it in reality as opposed to my pixel based monitor. HTML and CSS calibration adjustments were made between each run. Each of these fradulent copies was subsequently blacked out with my handy Miseyo Identity Theft Protection Roller Stamp, and fed into my Amazon Basics Micro-Cut Paper Shredder (two other tools I always find excuses to use). This was probably unnecessary, but I didn't want my local garbage man to come across my handywork.
+In order to calibrate my fake, I did have to print it 3 or 4 times to see how my cheap Brother Laser printer handled it in reality as opposed to my pixel based monitor. HTML and CSS calibration adjustments were made between each run. Each of these fraudulent copies was subsequently blacked out with my handy Miseyo Identity Theft Protection Roller Stamp, and fed into my Amazon Basics Micro-Cut Paper Shredder (two other tools I always find excuses to use). This was probably unnecessary, but I didn't want my local garbage man to come across my handiwork.
 
 The result is, in my opinion, a surprisingly convincing card. I wasn't really going for perfect here since I have no intention of using the fake card (it's already been shredded). However, if you printed even this imperfect replica on some 80-110lbs card stock, and made sure to get your 90 degree angle cuts precisely lined up with something like a paper guillotine...
 
@@ -85,7 +85,7 @@ Below is a picture of my real (and censored) vaccine card, and my blank, fake ca
 ![Cards Compared](/assets/images/covid-cards/vax_edited_real.png)
 This image was taken at an odd angle/blurred/censored for a reason. Taking a screenshot and reproducing this card should not be worth the effort as a result, especially when thousands of higher quality images exist online from major news articles, and from everyone who ever took a ["Vaccine Card Selfie"](https://www.nytimes.com/2021/02/06/health/covid-vaccination-card.html) in the last 8 months. The worst is when the card has the "Patient Number" field filled out (mine does not) with a valid Medical Record Number (MRN) - a perfect way to unintentionally leak your PII.
 
-Here's what the "final" product looked like in my browser, ready to print (The black background was ingnored unless I selected "Background graphics" on my print dialog).
+Here's what the "final" product looked like in my browser, ready to print (The black background was ignored unless I selected "Background graphics" on my print dialog).
 
 For this screenshot, I added a giant red "FAKE" watermark, and purposely left the card at its "native" size to prevent someone from trying to copy the card from this post.
 ![HTML Cards](/assets/images/covid-cards/html.png)
@@ -156,9 +156,9 @@ To put this into comparison, this week the #1 book on Amazon is Stephen King's "
 528 pages * 146,000 units sold = 77,088,000
 ```
 
-One book, 2 weeks, 77 million full-size pages printed and bound. The excuse that the government couldn't produce 300 million cards index cards. If the govt. can comission the F-35, they can comission a few pieces of fancy paper.
+One book, 2 weeks, 77 million full-size pages printed and bound. The excuse that the government couldn't produce 300 million cards index cards. If the govt. can commission the F-35, they can commission a few pieces of fancy paper.
 
-Finally, none of the emergency use authorizations (EUA) for our USA Vax came as a surprise to the CDC/HHS, so they had plenty of lead time to think about the formatting, physicial characteristics, and logistic distribution of the cards. 
+Finally, none of the emergency use authorizations (EUA) for our USA Vax came as a surprise to the CDC/HHS, so they had plenty of lead time to think about the formatting, physical characteristics, and logistic distribution of the cards. 
 
 
 # Digital "Cards"
@@ -186,13 +186,13 @@ I had to download this to try it myself.
 <img src="/assets/images/covid-cards/NYC_lol2.png" style="width:40%">
 
 Okay, clearly the app takes _literally_ any picture you give it and puts a check mark on it.
-That's okay, because I think the theory is you show the picture on the app to a huamn with eyes who validates that it _looks_ like a vaccine card. Unfortunately, the picture is probably less reliable than the real thing since the app seemingly had nowhere to validate the back of the card - where lots of very specifically formatted information is.
+That's okay, because I think the theory is you show the picture on the app to a human with eyes who validates that it _looks_ like a vaccine card. Unfortunately, the picture is probably less reliable than the real thing since the app seemingly had nowhere to validate the back of the card - where lots of very specifically formatted information is.
 
 The app is no better than just having a picture of a card in your phone's default photo app.
 Silly app is silly. Let's move on to something more well-thought-out.
 
 ## New York (State) & California
-Both California with their ["Digital COVID-19 Vaccine Record"](https://myvaccinerecord.cdph.ca.gov/) and New York with their ["Excelsior Pass"](https://epass.ny.gov/home) are utilizing whats called ["SMART Health Cards"](https://smarthealth.cards/). NY clearly put a little more marketing into their naming concept than CA.
+Both California with their ["Digital COVID-19 Vaccine Record"](https://myvaccinerecord.cdph.ca.gov/) and New York with their ["Excelsior Pass"](https://epass.ny.gov/home) are utilizing what's called ["SMART Health Cards"](https://smarthealth.cards/). NY clearly put a little more marketing into their naming concept than CA.
 
 ### But How Does It Work?
 
@@ -334,11 +334,11 @@ First, this blog post is 100% open source information, and the "fake" vax cards 
 
 As proven in the article, the ease in which the current card is forged is an incredibly low bar. To prove it, I spent a few hours on 4chan /pol/ ಥ_ಥ. [/pol/](https://en.wikipedia.org/wiki//pol/) is an image board titled "Politically Incorrect", and is a true cesspool for quickly discovering the hottest trends and discussions on some of the most obscene, distasteful, racist, and generally fringe/conspiratorial ideas percolating across the surface web's underbelly at any given moment.
 
-With this fun description in mind, It didn not take long to come up with loads of fake covid card information, and high-resolution templates. I attached a collage of my findings, slightly blurred to meet my own rehosting ethics. 
+With this fun description in mind, It did not take long to come up with loads of fake COVID card information, and high-resolution templates. I attached a collage of my findings, slightly blurred to meet my own re-hosting ethics. 
 
 ![4chan](/assets/images/covid-cards/4chan-blurred.png)
 
-And finally, in a hilarious finale...the original PDF is pretty much just on the internet anyway. It doesn't take an OSINT genius to find it. There are plenty more examples than just poor Flordia.
+And finally, in a hilarious finale...the original PDF is pretty much just on the internet anyway. It doesn't take an OSINT genius to find it. There are plenty more examples than just poor Florida.
 
 
 Google Dork:
@@ -364,4 +364,4 @@ The problem isn't exclusively the fakes - it's the initial execution of the card
 
 Nobody should be expected to use an ill-conceived paper card to gain entry to a business or engage in society.
 
-All of this makes me wonder if we would have been better off never introducing the concept of "cards" at all, especially if we had foresight with just how poorly they would be executed to begin with. Sadly, at this point, the Pandoras Box of vax validation trinkets has already been opened.
+All of this makes me wonder if we would have been better off never introducing the concept of "cards" at all, especially if we had foresight with just how poorly they would be executed to begin with. Sadly, at this point, the Pandora's Box of vax validation trinkets has already been opened.
