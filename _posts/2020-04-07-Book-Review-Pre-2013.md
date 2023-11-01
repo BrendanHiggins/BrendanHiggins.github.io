@@ -30,7 +30,7 @@ This will be a category for books that were required reading I did for high scho
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780553208849.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/pre/9780553208849.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ It's interesting because in the moment while I read this in school I don't remem
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9798477889747.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9798477889747.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ I mean, it's Frakenstein. Not the Hollywood version, but the much more interesti
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780140481341.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780140481341.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ Technically a play, but also a very thin book. Interesting tones about the "Amer
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780486280615.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780486280615.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -170,7 +170,7 @@ Eh... It's certainly entertaining and it's undeniably a classic. I'm not sure if
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780140238280.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780140238280.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -205,7 +205,7 @@ I distinctly recall really not enjoying this book. I actually think I listened t
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781512090567.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781512090567.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ I have nightmares about this book. It was nearly impossible to read. I think I f
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780140177398.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780140177398.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -275,7 +275,7 @@ Pretty good - I enjoyed it for what it was, but not necessarily in my top 5 for 
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780374500016.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780374500016.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -310,7 +310,7 @@ If you haven't read it, you should. It's hard to read. Not because the writing i
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780399501487.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780399501487.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -345,7 +345,7 @@ Maybe I was just distracted with other classes when I got around to reading this
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781451673319.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781451673319.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -380,7 +380,7 @@ I need to revisit this novel. I read it, physically. I was a very distracted hig
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780060935467.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780060935467.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -415,7 +415,7 @@ One of those books that's easy to read and that you always hear about in one way
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780385474542.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780385474542.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -456,7 +456,7 @@ Even worse, this will be a category of books I remember reading somewhere betwee
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780307279460.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780307279460.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -491,7 +491,7 @@ Listen to the audiobook. It's so good. Or read it, I don't care. Regardless, thi
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780767903868.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780767903868.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -526,7 +526,7 @@ Unless you are Australian, you probably don't know anything about Australia. Thi
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780316067607.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780316067607.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -561,7 +561,7 @@ I believe I read this on vacation. It's a gripping read.
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780374531263.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780374531263.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -595,7 +595,7 @@ A book to remind you of how insane humans are, and how lucky you (likely) are to
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780375725609.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780375725609.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -630,7 +630,7 @@ I sort of skimmed over the World Fair bits, and only read about H.H Holmes. Grea
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780767908184.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780767908184.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -665,7 +665,7 @@ In my top 5 books of all time. This is purely a science book...except in a way i
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780307473332.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780307473332.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -700,7 +700,7 @@ I don't remember anything about this book other than I definitely read it.
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780316016414.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780316016414.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -736,7 +736,7 @@ I don't remember anything about this book other than I definitely read it on a c
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/worldwalk.png" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/worldwalk.png" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -771,7 +771,7 @@ A grea travel book, probably inspired my interest in the AT later in life. Inter
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781400097692.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781400097692.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -809,7 +809,7 @@ A simultaneously crushingly depressing and amazingly inspiring and hopeful book.
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781565125605.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781565125605.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -844,7 +844,7 @@ Unfortunately I think all my memories of this book were replaced by memories of 
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780142409022.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780142409022.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -879,7 +879,7 @@ A book about rum running or something. I believe I just grabbed this quickly to 
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780545227704.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780545227704.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -915,7 +915,7 @@ Wonderful book, although my memory about it is a little fuzzy.
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781582346755.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781582346755.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -952,7 +952,7 @@ I read "Powder Monkey" as well as <a target="_blank" href="https://www.amazon.co
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780142501184.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780142501184.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -993,7 +993,7 @@ If I recall, follows a mute boy who survives the sinking of the flying Dutchman 
     <td>Genre</td>
     <td>Reference</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/redwall.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/redwall.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1034,7 +1034,7 @@ And apparently, there are several more I never read! Maybe I should revist the s
     <td>Genre</td>
     <td>Reference</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/hatchet.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/hatchet.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1071,7 +1071,7 @@ Once again, a classic series for me as a child. I read Hatchet, Brian's Winter, 
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/dahl.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/dahl.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1110,7 +1110,7 @@ Of course, like everyone, my favorite was the BFG.
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781442489677.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781442489677.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1147,7 +1147,7 @@ This is a weird one, I'm very certain I read "Over Sea, Under Stone" at least th
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780439709101.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780439709101.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1183,7 +1183,7 @@ I know I read Inkheart, but I don't have any memory of finishing the trilogy. I 
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781481496896.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781481496896.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1224,7 +1224,7 @@ I still think about "The Lost City of Faar", and "The Reality Bug" sometimes. So
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9781484707234.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9781484707234.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1261,7 +1261,7 @@ I demolished this series. Don't ever watch the movie, it's terrible. The books a
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780545078818.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780545078818.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1298,7 +1298,7 @@ I remember loving "Tunnels", I remember enjoying "Deeper" as well, and then I re
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780449813225.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780449813225.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
@@ -1335,7 +1335,7 @@ I've read "Eragon" at least three times. I've read "Eldest" twice, "Brisingr" on
     <td>Genre</td>
     <td>ISBN</td>
     <td rowspan="3" stlye="min-width:25%; vertical-align: top !important;">
-      <img src="/assets/images/books/review_covers/9780545162074.jpg" style="width:100%;">
+      <img src="/assets/images/books/review_covers/pre/9780545162074.jpg" style="width:100%;">
     </td>
   </tr>
   <tr>
