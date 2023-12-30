@@ -76,7 +76,7 @@ A letter from September 18th, 1952 with a second hand quote from the books publi
  
 ![Oxford Letter](/assets/images/dagapeyeff/old-letter-edit.png)
  
-I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from d'A is not printed anywhere else on the internet. Alas, after 17 years I could provide an actual (second hand) an actual citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.
+I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from d'A is not printed anywhere else on the internet. Alas, after many years I could provide an actual (second hand) citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.
 
 Anyway...
 
