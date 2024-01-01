@@ -2,7 +2,6 @@
 title: "The 82 Year Old CTF: D'Agapeyeff Cipher"
 excerpt_separator: "<!--more-->"
 categories:
-  - Cybersecurity
   - Technology
 classes: wide
 ---

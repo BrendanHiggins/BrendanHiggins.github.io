@@ -3,8 +3,6 @@ title: "COVID-19 Vaccination Cards"
 excerpt_separator: "<!--more-->"
 categories:
   - Technology
-  - Privacy
-  - Miscellaneous
 classes: wide
 ---
 

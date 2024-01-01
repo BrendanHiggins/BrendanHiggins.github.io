@@ -5,7 +5,6 @@ header:
 excerpt_separator: "<!--more-->"
 categories:
   - Cybersecurity
-  - Privacy
 classes: wide
 ---
 
