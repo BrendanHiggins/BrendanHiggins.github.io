@@ -77,6 +77,9 @@ QnJlbmRhbk1hcA== --> b64 -> BrendanMap
 
 This base 64 also had robust regex for dropping curse words and XSS patterns for security.
 
+We left a few ideas on the Trello as well...
+![trello](/assets/images/staterank/trello.PNG "trello")
+
 So with that, I've at least documented the project. Success or failure aside, it was something fun to do with a friend. In total, it cost us several hours and earned us -$50.
 
 ``` ¯\_(ツ)_/¯ ```
