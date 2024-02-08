@@ -39,7 +39,13 @@ We used fairly standard tech to get it all up and running with the most notable 
 
 ![techstack](/assets/images/staterank/techstack.PNG "techstack")
 
-In this case, here is what someone's map could look like after adjusting the sliders:
+Of course, simple stack or not we still had our fair share of technical bugs and UI redesigns to address before we had something functional...
+
+![bug1](/assets/images/staterank/bug1.png "that looks right")
+![bug2](/assets/images/staterank/bug2.png "fun colors")
+![bug3](/assets/images/staterank/bug3.png "hello")
+
+With those small issues ironed out we had a pretty good proof of concept website. Here is what someone's map could look like after adjusting the sliders:
 ![map](/assets/images/staterank/map.PNG "map")
 
 We also allowed users to disable data all at once, or one-by-one if they totally wanted to disregard a particular category.
@@ -48,8 +54,8 @@ We also allowed users to disable data all at once, or one-by-one if they totally
 For example, here is a map with everything disabled except temperature data with a preference for colder states.
 ![temp_data_only](/assets/images/staterank/temp_data_only.PNG "temp_data_only")
 
-And here are two examples of the UI the user would interface with to generate their maps:
-![using_map](/assets/images/staterank/using_map.gif "using_map")
+And here are two examples of the UI the user would utilize to generate their maps:
+![using_map](/assets/images/staterank/using_map.gif "using_map1")
 
 ![using_map2](/assets/images/staterank/using_map2.gif "using_map2")
 
