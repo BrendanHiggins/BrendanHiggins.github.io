@@ -12,6 +12,8 @@ Pre-2013 Book Review
 
 This certainly will not be 100% accurate, but these are titles that stand out in my mind. I've certainly forgotten loads of books I read while very young, and numerous short-stories read for school and fun.
 
+<a href="https://brendanhiggins.dev/literature/Books/" target="_blank">Ratings Scale (S-F)</a>
+
 # Highschool
 This will be a category for books that were required reading I did for high school and my memories of them a decade later. Should be super reliable.
 
@@ -35,7 +37,7 @@ This will be a category for books that were required reading I did for high scho
   </tr>
   <tr>
     <td>
-      5/5
+      A
     </td>
     <td>2012</td>
     <td>Hermann Hesse</td>
@@ -70,7 +72,7 @@ It's interesting because in the moment while I read this in school I don't remem
   </tr>
   <tr>
     <td>
-      4.5/5
+      A
     </td>
     <td>2012</td>
     <td>Mary Shelley</td>
@@ -105,7 +107,7 @@ I mean, it's Frakenstein. Not the Hollywood version, but the much more interesti
   </tr>
   <tr>
     <td>
-4/5
+S
     </td>
     <td>2012</td>
     <td>Arthur Miller</td>
@@ -140,7 +142,7 @@ Technically a play, but also a very thin book. Interesting tones about the "Amer
   </tr>
   <tr>
     <td>
-3.5/5
+B
     </td>
     <td>2011</td>
     <td>Mark Twain</td>
@@ -175,7 +177,7 @@ Eh... It's certainly entertaining and it's undeniably a classic. I'm not sure if
   </tr>
   <tr>
     <td>
-2/5
+D
     </td>
     <td>2011</td>
     <td>T. Coraghessan Boyle</td>
@@ -210,7 +212,7 @@ I distinctly recall really not enjoying this book. I actually think I listened t
   </tr>
   <tr>
     <td>
-0.5/5
+F
     </td>
     <td>2011</td>
     <td>Nathaniel Hawthorne</td>
@@ -245,7 +247,7 @@ I have nightmares about this book. It was nearly impossible to read. I think I f
   </tr>
   <tr>
     <td>
-      4.5/5
+      A
     </td>
     <td>2010</td>
     <td>John Steinbeck</td>
@@ -280,7 +282,7 @@ Pretty good - I enjoyed it for what it was, but not necessarily in my top 5 for 
   </tr>
   <tr>
     <td>
-      5/5
+      S
     </td>
     <td>2010</td>
     <td>Elie Wiesel</td>
@@ -315,7 +317,7 @@ If you haven't read it, you should. It's hard to read. Not because the writing i
   </tr>
   <tr>
     <td>
-4/5
+S
     </td>
     <td>2010</td>
     <td>William Golding</td>
@@ -350,7 +352,7 @@ Maybe I was just distracted with other classes when I got around to reading this
   </tr>
   <tr>
     <td>
-4/5
+S
     </td>
     <td>2009</td>
     <td>Ray Bradbury</td>
@@ -385,7 +387,7 @@ I need to revisit this novel. I read it, physically. I was a very distracted hig
   </tr>
   <tr>
     <td>
-2.5/5
+C
     </td>
     <td>2009</td>
     <td>Harper Lee</td>
@@ -420,7 +422,7 @@ One of those books that's easy to read and that you always hear about in one way
   </tr>
   <tr>
     <td>
-2/5
+D
     </td>
     <td>2009</td>
     <td>Chinua Achebe</td>
@@ -461,7 +463,7 @@ Even worse, this will be a category of books I remember reading somewhere betwee
   </tr>
   <tr>
     <td>
-      5/5
+      S
     </td>
     <td>2012</td>
     <td>Bill Bryson</td>
@@ -496,7 +498,7 @@ Listen to the audiobook. It's so good. Or read it, I don't care. Regardless, thi
   </tr>
   <tr>
     <td>
-      5/5
+      S
     </td>
     <td>2012</td>
     <td>Bill Bryson</td>
@@ -531,7 +533,7 @@ Unless you are Australian, you probably don't know anything about Australia. Thi
   </tr>
   <tr>
     <td>
-4/5
+B
     </td>
     <td>2012</td>
     <td>Marcus Luttrell</td>
@@ -566,7 +568,7 @@ I believe I read this on vacation. It's a gripping read.
   </tr>
   <tr>
     <td>
-      5/5
+      S
     </td>
     <td>2011</td>
     <td>Ismael Beah</td>
@@ -600,7 +602,7 @@ A book to remind you of how insane humans are, and how lucky you (likely) are to
   </tr>
   <tr>
     <td>
-4/5
+B
     </td>
     <td>2011</td>
     <td>Erik Larson</td>
@@ -635,7 +637,7 @@ I sort of skimmed over the World Fair bits, and only read about H.H Holmes. Grea
   </tr>
   <tr>
     <td>
-      5/5
+      S
     </td>
     <td>2010</td>
     <td>Bill Bryson</td>
@@ -705,7 +707,7 @@ I don't remember anything about this book other than I definitely read it.
   </tr>
   <tr>
     <td>
-3.5/5
+C
     </td>
     <td>2010</td>
     <td>Leonard susskind</td>
@@ -741,7 +743,7 @@ I don't remember anything about this book other than I definitely read it on a c
   </tr>
   <tr>
     <td>
-3/5
+B
     </td>
     <td>2009</td>
     <td>Steven M. Newman</td>
@@ -776,7 +778,7 @@ A grea travel book, probably inspired my interest in the AT later in life. Inter
   </tr>
   <tr>
     <td>
-4/5
+A
     </td>
     <td>2009</td>
     <td>Nando Parrado</td>
@@ -814,7 +816,7 @@ A simultaneously crushingly depressing and amazingly inspiring and hopeful book.
   </tr>
   <tr>
     <td>
-4/5
+A
     </td>
     <td>2010</td>
     <td>Sara Gruen</td>
@@ -849,7 +851,7 @@ Unfortunately I think all my memories of this book were replaced by memories of 
   </tr>
   <tr>
     <td>
-      N/A
+      C
     </td>
     <td>2009</td>
     <td>Janet Taylor Lisle</td>
@@ -884,7 +886,7 @@ A book about rum running or something. I believe I just grabbed this quickly to 
   </tr>
   <tr>
     <td>
-      N/A
+      A
     </td>
     <td>Childhood</td>
     <td>Cornelia Funke</td>
@@ -920,7 +922,7 @@ Wonderful book, although my memory about it is a little fuzzy.
   </tr>
   <tr>
     <td>
-      N/A
+      B
     </td>
     <td>Childhood</td>
     <td>Paul Owswell</td>
@@ -957,7 +959,7 @@ I read "Powder Monkey" as well as <a target="_blank" href="https://www.amazon.co
   </tr>
   <tr>
     <td>
-      N/A
+      B
     </td>
     <td>Childhood</td>
     <td>Brian Jacques</td>
@@ -998,7 +1000,7 @@ If I recall, follows a mute boy who survives the sinking of the flying Dutchman 
   </tr>
   <tr>
     <td>
-      N/A
+      S
     </td>
     <td>Childhood</td>
     <td>Brian Jacques</td>
@@ -1039,7 +1041,7 @@ And apparently, there are several more I never read! Maybe I should revist the s
   </tr>
   <tr>
     <td>
-      N/A
+     S
     </td>
     <td>Childhood</td>
     <td>Gary Paulsen</td>
@@ -1076,7 +1078,7 @@ Once again, a classic series for me as a child. I read Hatchet, Brian's Winter, 
   </tr>
   <tr>
     <td>
-      N/A
+      S
     </td>
     <td>Childhood</td>
     <td>Roald Dahl</td>
@@ -1115,7 +1117,7 @@ Of course, like everyone, my favorite was the BFG.
   </tr>
   <tr>
     <td>
-      N/A
+      B
     </td>
     <td>Childhood</td>
     <td>Susan Cooper</td>
@@ -1152,7 +1154,7 @@ This is a weird one, I'm very certain I read "Over Sea, Under Stone" at least th
   </tr>
   <tr>
     <td>
-      N/A
+      C
     </td>
     <td>Childhood</td>
     <td>Cornelia Funke</td>
@@ -1188,7 +1190,7 @@ I know I read Inkheart, but I don't have any memory of finishing the trilogy. I 
   </tr>
   <tr>
     <td>
-      N/A
+      A
     </td>
     <td>Childhood</td>
     <td>D.J. MacHale</td>
@@ -1229,7 +1231,7 @@ I still think about "The Lost City of Faar", and "The Reality Bug" sometimes. So
   </tr>
   <tr>
     <td>
-      N/A
+      S
     </td>
     <td>Childhood</td>
     <td>Rick Riordan</td>
@@ -1266,7 +1268,7 @@ I demolished this series. Don't ever watch the movie, it's terrible. The books a
   </tr>
   <tr>
     <td>
-      N/A
+      B
     </td>
     <td>Childhood</td>
     <td>Roderick Gordon and Brian Williams</td>
@@ -1303,7 +1305,7 @@ I remember loving "Tunnels", I remember enjoying "Deeper" as well, and then I re
   </tr>
   <tr>
     <td>
-      N/A
+      S
     </td>
     <td>Childhood</td>
     <td>Christopher Paolini</td>
@@ -1340,7 +1342,7 @@ I've read "Eragon" at least three times. I've read "Eldest" twice, "Brisingr" on
   </tr>
   <tr>
     <td>
-      N/A
+      S
     </td>
     <td>Childhood</td>
     <td>J. K. Rowling</td>
