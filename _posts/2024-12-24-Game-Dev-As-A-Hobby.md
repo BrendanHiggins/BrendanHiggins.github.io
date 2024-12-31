@@ -33,8 +33,9 @@ We've used a myriad of tools but have mostly landed on:
 
 Not to mention lots of "little" things like itch.io, humble bundle, youtube, reddit, filter forge, texture websites, and our own microphones for recording foley sound effects.
 
-| <img src="/assets/images/godot_p1/aesprite_hours.png" style="width:100%;">    | <img src="/assets/images/godot_p1/godot_hours.png" style="width:100%;"> |
-| -------- | ------- |
+<img src="/assets/images/godot_p1/aesprite_hours.png" style="width:100%;">
+<br>
+<img src="/assets/images/godot_p1/godot_hours.png" style="width:100%;"> 
 
 These hours are not accurate of course, these programs were running minimized while I slept quite often... but you get the idea. 
 
@@ -92,6 +93,6 @@ Our big break into 3D...this game was meant to be a blend of an adventure horror
 
 # Conclusion
 
-Balancing game development as a side hobby is undoubtedly a demanding undertaking. It requires a diverse skillset encompassing art, programming, level design, sounds design, and more. It also demands continuous learning and significant dedication. Yet, despite these challenges, the experience can often feel very rewarding. Bringing interactive worlds and experiences to life within the unique medium of video games offers a uniquely creative satisfaction, making the effort worthwhile for those willing to persevere.
+Balancing game development as a side hobby is undoubtedly a demanding undertaking. It requires a diverse skill set encompassing art, programming, level design, sounds design, and more. It also demands continuous learning and significant dedication. Yet, despite these challenges, the experience can often feel very rewarding. Bringing interactive worlds and experiences to life within the unique medium of video games offers a uniquely creative satisfaction, making the effort worthwhile for those willing to persevere.
 
 One final thought: I have a whole new level of respect for every game out there. I used to be quicker to judge, but now I realize it's just like writing a book—easy to criticize, but super hard to actually do well. Game development has definitely taught me that.
