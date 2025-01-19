@@ -7,7 +7,7 @@ Brendan Higgins is a Cybersecurity Engineer.
 
 This site is just a place to record interesting things in cybersecurity, technology, programming, literature, video games, and just about anything else.
 
-Opinions and ideas expressed gere are solely my own and do not express the views or opinions of my employer or any professional affiliation that I may have.
+Opinions and ideas expressed here are solely my own and do not express the views or opinions of my employer or any professional affiliation that I may have.
 
 I'll list all my certs here, but I often let them expire.  <sup style="font-size:.75em;">Certifications expiring is sort of a racket anyway.<sup>
 
