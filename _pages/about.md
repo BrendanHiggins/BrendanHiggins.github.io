@@ -31,7 +31,7 @@ I'll list all my certs here, but I often let them expire.  <sup style="font-size
 
 <hr>
 
-* CompTIA - Advanced Security Practitioner (CASP)
+* CompTIA - Advanced Security Practitioner (CASP) (SecurityX)
 * CompTIA - Security+
 * CompTIA - Cloud+
 * CompTIA - Network+
