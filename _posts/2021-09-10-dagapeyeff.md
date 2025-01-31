@@ -1,15 +1,15 @@
 ---
-title: "The 82 Year Old CTF: D'Agapeyeff Cipher"
+title: "The 85+ Year Old CTF: D'Agapeyeff Cipher"
 excerpt_separator: "<!--more-->"
 categories:
   - Technology
 classes: wide
 ---
-I've been reading the dictionary in my free time...and other old books.
+I've been reading the dictionary in my free time...?
 
 <!--more-->
 
-<sub>Originally published 9/10/2021. Updated 12/2022. Still a WIP.</sub> 
+<sub>Published 9/10/2021. Updated 12/2022, edited slightly in 01/2025.</sub> 
 
 # Cipher Discovery
 One night while browsing Wikipedia's List of [Unsolved Problems](https://en.wikipedia.org/wiki/Lists_of_unsolved_problems) I stumbled across an interesting page -  [List of ciphertexts](https://en.wikipedia.org/wiki/List_of_ciphertexts).  A lot of the information on the page wasn't particularly new to me: Beale, Enigma, Kryptos, etc.
@@ -54,52 +54,55 @@ It even has that musky, mildly sweet-organic decomposition scent that books seem
 
 <small>I spent more time smelling it than I'd like to admit.</small>
 
-# Lets Assume It's Possible
+# "He Forgot"
 
-Some folks online seem think this cipher is impossible because it was created with underlying errors so severe that it cannot be solved.
+One of the first things you'll see on the wikipedia page is this interesting quote
+> It was not included in later editions, and D'Agapeyeff is said to have admitted later to having forgotten how he had encrypted it.
 
-> It was not included in later editions, and D'Agapeyeff is said to have admitted later to having forgotten how he had encrypted it. 
+Literally just about any blog online seems to mention this or other vague "quotes" online regarding D'Agapeyeff's son "remembering him being very embarrassed that he had forgotten how to solve it" or some other variation of this.
 
-There's some other vague "quotes" online regarding D'Agapeyeff's son "remembering him being very embarrassed that he had forgotten how to solve it" or some other variation of this.
-
-Many use this as proof that the cipher is unsolvable. However, in all my research I can't actually find a source for this quote. Not even Wikipedia has a reference (A classic Wikipedia problem!). 
+Many use this as proof that the cipher is unsolvable. However, in all my research I couldn not actually find a **source** for this quote. Not even Wikipedia has a reference (A classic Wikipedia problem!). 
 
 This reference also dates back all the way to the first Wikipedia entry for the cipher in 2005
 ![Original-Wiki](/assets/images/dagapeyeff/original_wiki.PNG)
 
-At this point, it just seems like hearsay passed down through the ages, but maybe the direct quote is buried in some older text that I can't locate on the internet. (I didn't try _that_ hard).
-
-2022 Update! I did try _that_ hard. Well, okay, I actually just got lucky.
+In 2021 when I first published this blog this bugged me. Thankfully, after 2 years of on/off searching and a bit of luck (maybe a lot of luck) I believe I am now the proud owner of a **source**
 
 A letter from September 18th, 1952 with a second hand quote from the books publisher confirming this quote from DA basically admitting that he has indeed forgotten and lost his solution while traveling. This letter was found in a copy of Mansfield's "The Solution of Codes and Ciphers" and thankfully the seller was kind enough to include the [forgotten bookmark](https://www.reddit.com/r/ForgottenBookmarks/) with the sale of the book!
  
 ![Oxford Letter](/assets/images/dagapeyeff/old-letter-edit.png)
  
-I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from d'A is not printed anywhere else on the internet. Alas, after many years I could provide an actual (second hand) citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.
+I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from D'A is not printed anywhere else on the internet. Alas, after many years I could provide an actual (second hand) citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.
 
-Anyway...
+# Okay, so...
 
-For the sake of this post, let's assume d'A was not a complete dummy - he actually did create valid plaintext, and encrypted it with one or more known encryption/encipherment methods for the era (1939). Furthermore, on page 145 of the 1939 edition he warns
+So he forgot...but does that mean it's _impossible_ ? Hard to say of course, but for the sake of this post and for FUN let's not [assume it's impossible](https://en.wikipedia.org/wiki/Kobayashi_Maru).
+
+For the sake of this post, let's assume D'A was not a complete dummy - he actually did create valid plaintext, and encrypted it with one or more known encryption/encipherment methods for the era (1939). Furthermore, on page 145 of the 1939 edition he warns
 > It is very common in deciphering to come across mistakes ... by the encipherer ... 
 
-Would he include a challenge cipher without solving it once himself to prove it was mistake free? I mean, maybe - I don't know? Was a mistake added on purpose to increase the challenge? Did he not even realize his mistake and somehow "solve" it in a proof-check while incorporating his same mistake twice? _Maybe_...
+Would he include a challenge cipher without solving it once himself to prove it was mistake free? I mean, maybe - I don't know? Was a mistake added on purpose to increase the challenge? Did he not even realize his mistake and somehow "solve" it in a proof-check while incorporating his same mistake twice? Again, _maybe_...
 
-Although, it seems reasonable to me that d'A devised a scheme for his challenge and subsequently lost the solution after publishing - Apparently will "abroad"! So you might stumble across an old piece of paper somewhere in Europe with the long sought solution this on it. More than likely that piece of paper is very much destroyed though, as it turns out scrap paper is a hard thing to preserve. This was 1939, there was no cloud storage provider to back up the solution to. Paper is lost, soiled, destroyed, etc. ~~It's also worth noting...WWII ran from 1939-1945. For all I know his house blew up in a [German air raid](https://en.wikipedia.org/wiki/The_Blitz)?~~ Okay, the letter at least confirms that the letter was probably now _blown up_, but still...
+Did he [superencipher](https://en.wikipedia.org/wiki/Multiple_encryption) this thing so hard that he immediately forgot how he even did it without his notes? Guess so...if anyone stumbles across an old piece of paper somewhere in Europe with the long sought solution this on it please let me know?
 
-Additionally, he was getting older and would eventually pass away in 1955. Older people...forget stuff? Especially after experiencing WWII. Hell, I forget stuff and I certainly haven't lived through a World War. 
+Unfortunately there were no cloud storage providers in 1939. Paper is lost, soiled, destroyed, etc.
 
-With all that said, let's assume it is **POSSIBLE**
-
-I would argue that d'A would not use something like a [one-time pad](https://en.wikipedia.org/wiki/One-time_pad). Why would D'Agapeyeff purposely include something he knew would be unsolvabe? This was an _elemetary_ book after-all...maybe everyone has just overthought the problem so far?
-
-Some people say it was added as a "Hoax" but somehow, on the eve of WWII, I don't think D'Agapaffeye was in a joking mood? Especially with the topic of ciphers being exponentially more relevant on the world stage.
-
-~~There is the outstanding question as to why the ciper was removed in copies of the book after the 1949 edition (1952+), though. I guess we may never know.~~ I think with a citation from the publisher it's safe to say it was removed because the publisher/d'A himself was tired of receiving letters about his unsolvable solution which he very embarrassingly forgot how to solve himself.
-
-So let's just assume it's possible? It's more fun that way anyway. 
+DA passed away at the surprisingly young age of 52 (1902 -> 1955) leaving behind no known additional hints. Worst case scenario he setup the whole thing as a [one-time pad](https://en.wikipedia.org/wiki/One-time_pad) for a laugh. I have read some sources online that claim it was possibly added as a "hoax" but somehow, on the eve of WWII, I don't think D'Agapaffeye was in a joking mood. Especially with the topic of ciphers being exponentially more relevant on the world stage.
 
 # General Cipher Analysis
-The cipher is delimited into numeric groups of 5 digits. All said, there's 79 groups in an 8x10 grid with the final 5 digit grouping missing. That makes 395 individual digits.
+The cipher is delimited into numeric groups of 5 digits (patristocrat form). 
+```
+75628 28591 62916 48164 91748 58464 74748 28483 81638 18174
+74826 26475 83828 49175 74658 37575 75936 36565 81638 17585
+75756 46282 92857 46382 75748 38165 81848 56485 64858 56382
+72628 36281 81728 16463 75828 16483 63828 58163 63630 47481
+91918 46385 84656 48565 62946 26285 91859 17491 72756 46575
+71658 36264 74818 28462 82649 18193 65626 48484 91838 57491
+81657 27483 83858 28364 62726 26562 83759 27263 82827 27283
+82858 47582 81837 28462 82837 58164 75748 58162 92000
+```
+
+All said, there's 79 groups in an 8x10 grid with the final 5 digit grouping missing. That makes 395 individual digits.
 
 Here's a frequency analysis of the 5 digit groupings where count > 1
 
@@ -107,7 +110,7 @@ Here's a frequency analysis of the 5 digit groupings where count > 1
 | ---| --- | --- | ---| --- |
 | **Frequency:** | 2 | 2 | 2 | 1 | 
 
- Lets break this thing up into pairs and do a frequency analysis.
+ But more realistically, this needs to be broken down into digraphs (pairs) and we can do a better frequency analysis.
 ```
 75 62 82 85 91 62 91 64 81 64 91 74 85 84 64 74 74 82 84 83 81 63 81 81 74 74 82 62 64 75 83 82 84 91 75 74 65 83 75 75 75 93 63 65 65 81 63 81 75 85 75 75 64 62 82 92 85 74 63 82 75 74 83 81 65 81 84 85 64 85 64 85 85 63 82 72 62 83 62 81 81 72 81 64 63 75 82 81 64 83 63 82 85 81 63 63 63 04 74 81 91 91 84 63 85 84 65 64 85 65 62 94 62 62 85 91 85 91 74 91 72 75 64 65 75 71 65 83 62 64 74 81 82 84 62 82 64 91 81 93 65 62 64 84 84 91 83 85 74 91 81 65 72 74 83 83 85 82 83 64 62 72 62 65 62 83 75 92 72 63 82 82 72 72 83 82 85 84 75 82 81 83 72 84 62 82 83 75 81 64 75 74 85 81 62 92 00 0
 ```
@@ -422,42 +425,43 @@ This method is also vaguely supported by this snippet  on page 127
 </table>
 </div>
 
-The triplet sets highlighted in red are interesting from a frequency standpoint...otherwise there are several pairs of pairs within the set and not worth highlighting. The "spare" row of 0's bugs me, null or not. 
+The triplet sets highlighted in red are interesting from a frequency standpoint...otherwise there are several pairs of pairs within the set and not worth highlighting. The "spare" row of 0's is probably safe to ignore but including it doesn't hurt for now.
 
-# Initial Possiblities
+# Initial Possibilities
 After some analysis and reading the book itself it seems to me the possible cipher may be:
 * [Book Cipher](https://en.wikipedia.org/wiki/Book_cipher)
     * Numeric codes align to page/line/word or letter within a given text
     * Discussed toward the end of the book, aligns nicely with the final unsolved challenge cipher and even looks a bit like the examples given
     * What book? The book itself or the dictionary mentioned in the text?
-    * On page 127 d'A calls these "highly specialized forms of substitution"
+    * On page 127 D'A calls these "highly specialized forms of substitution"
 * [Substituted](https://en.wikipedia.org/wiki/Substitution_cipher) [Transpostion](https://en.wikipedia.org/wiki/Transposition_cipher)
-    * So many permutations with this...really difficult, but often referenced with d'A analysis online
+    * So many permutations with this...really difficult, but often referenced with D'A analysis online
 * Other Ciphers
     * [Nihillist Cipher](https://en.wikipedia.org/wiki/Nihilist_cipher)
         * Is a numeric based symmetric key cipher
         * If you load the cipher into [CryptoCrack](https://sites.google.com/site/cryptocrackprogram) the initial analysis points to possible Nhillist
         * Background -
-            * d'A _was_ born in Russia...maybe this is a nationalistic callback for him?
+            * D'A _was_ born in Russia...maybe this is a nationalistic callback for him?
             * The dust jacket states "D'Agapeyeff was an intelligence officer in the First World War...in the Baltic until 1921 where he gained a knowledge of espionage and counter-espionage activities between Germany and Russia
     * Mirabeau Cipher
         * A strange lack of information regarding this cipher on the web. Supposedly, [this french guy](https://en.wikipedia.org/wiki/Honor%C3%A9_Gabriel_Riqueti,_comte_de_Mirabeau) used a simple numeric substitution system involving grouping seemingly arbitrary letters into groups of 5 and assigning a group # of a letter # within the group to create two digit pairs which were then sent out as the cipher.
     * [Vigenère](https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher)
-    * d'A was in WWI? Maybe [ADFGVX](https://en.wikipedia.org/wiki/ADFGVX_cipher)?
+    * D'A was in WWI? Maybe [ADFGVX](https://en.wikipedia.org/wiki/ADFGVX_cipher)?
     * [MONOME-DINOME](https://www.cryptogram.org/downloads/aca.info/ciphers/MonomeDinome.pdf) seems vaguely numeric looking...
-    * Polybius Squares, Bifid, Trifid, Tap Codes, Tridigital, Morbit, Rail fence, Porta, etc.
+    * Polybius Squares, Bifid, Trifid, Tap Codes, Tridigital, Morbit, Rail fence, Porta, Ubchi...etc.
     * <small>Honestly, it's anyone's guess.</small>
 
-A few disadvantages with these more obscure ciphers is that they are not mentioned in the book. So without the modern advantage of wikipedia and the internet it's difficult to know if d'A would even know of their existence?
+A few disadvantages with these more obscure ciphers is that they are not mentioned in the book. So without the modern advantage of wikipedia and the internet it's difficult to know if D'A would even know of their existence? Digging through the references in the book itself we can find _other_ books he probably read as research, so if a cipher is mentioned there it's possible.
 
 __Some outstanding questions:__
-* Why intervals of 5 digits?
-* What are the 0's purpose in the code? Do they have any significant at all, or are they null characters?
+* Should we "keep" the intervals of 5 digits or accept the 2-digit pairings and discard the 0's?
+    * What about 04? 04 is "distinct" from the 000 at the end in some ways.
 * What structure forms the interesting 6-9/1-5 pattern we see in the two digit pairs?
 
 # Dictionary (Book) Cipher
-One of the more obvious suggestions from the book is to use an actual dictionary to map the number of words to the sequence.
-In this case, the highest number in the sequence is 92857 and the lowest is 16463.
+One of the more obvious suggestions from the book is to use an actual dictionary to map the number of words to the sequence. However, to me, although I have looked into book ciphers more than I should probably admit the fundamental flaw with these approaches is this -- how on earth would D'A have FORGOTTEN this? I feel like the scenario of "I have forgotten my complicated substitution/transposition cipher" is fairly reasonable but forgetting "Oh right I was counting a bunch of words in THE DICTIONARY" is a lot more ... memorable? Now of course, D'A could have just been lying to everyone about having "Forgotten" and he knew all along it was THE DICTIONARY but...I'm just not sure (and neither are you, okay???)
+
+Anyways, we can look at it all the same. In this case, the highest number in the sequence is 92857 and the lowest is 16463.
 
 And on page #129
 > One of the ways in which ordinary dictionaries can be used is first to agree on a certain edition, say, for instance, the _Concise Oxford Dictionary_, current edition, by Fowler and Le Mesurier...
@@ -496,9 +500,9 @@ So hypothetically, even if I bought this $100 dictionary...what would I find? Wo
  
 I know the [frequency of characters](https://en.wikipedia.org/wiki/Letter_frequency) in [english words](https://en.m.wikipedia.org/wiki/Etaoin_shrdlu), but is there a different frequency for the letters that _start_ words? Eg. There's a lot of the letter "E" in the English language, but are there that many words that start with the letter "E"? First letter frequency?
 
-[Thank God For Wikipedia](https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_the_first_letters_of_a_word_in_the_English_language). Turns out, no. While "E" is the most common letter in a word (13%), "T" is the most common first letter in a word (17%). However, in dictionaries, the most common letter is "S" (11%). Weird facts.
+[Thank God For Wikipedia](https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_the_first_letters_of_a_word_in_the_English_language). Turns out, no. While "E" is the most common letter in a word (13%), "T" is the most common first letter in a word (17%). However, in dictionaries, the most common letter is "S" (11%). Weird facts but it makes sense that a dictionary would contain lots of words that are not really part of the "lexicon" most people use.
 
-So with this, can I perform a very rough mathmatical model for a dictionary of 100,000 words? Sure.
+So with this, can I perform a very rough mathematical model for a dictionary of 100,000 words? Sure.
 ```
 A would be 5700 / 100000 words
 B would be 6000 / 100000 words
@@ -541,12 +545,14 @@ recommended exercises photographed killer troupe nagging rows ego slightly clock
 
 There are no repeating letters, though. These frequencies may be off slightly, if the frequency of first letter words in dictionaries changed over time (1933-2021) which they almost certainly have as new words showed up in the global vocabulary...like _[yeet](https://www.dictionary.com/browse/yeet)_.
 
-Plus, who can be bothered to _accurately_ count to 92,000 words? Nobody. Perhaps this cipher has never been solved simply because the solution is too tedious and prone to human dicpherment (or encipherment...) error? Unfortunately, online I can't find anyone who was crazy enough to say "yes, I counted to 92,000 and here's what I found."
+Plus, who can be bothered to _accurately_ count to 92,000 words? Nobody. Perhaps this cipher has never been solved simply because the solution is too tedious and prone to human decipherment (or encipherment...) error? Unfortunately, online I can't find anyone who was crazy enough to say "yes, I counted to 92,000 and here's what I found."
+
+Realistically, even D'A didn't do this right? Maybe there's a copy of a dictionary somewhere with pencil'd in numbers that he used but it seems very far fetched, plus this copy of the dictionary isn't exactly clear on what you might consider a "word" since dictionaries contain "headwords" and "partial" words for things that end in -ful or -ing, etc...
 
 # Book Cipher Continued: Making The Cipher "Fit"
 Before we go too deep down the "longer versions of the 1933 dictionary" rabbit hole, can we make the current cipher "fit" into our Concise dictionary instead?
 
-As noted on the wikipedia page, on page 111 d'A says
+As noted on the wikipedia page, on page 111 D'A says
 > The cipher is of course easily made out, but if every third, fourth, or fifth letter, as may be previously arranged, is a dummy inserted after a message has been put into cipher, it is then extremely difficult to decipher unless you are in the secret
 
 Okay, so what if we treat some numbers in our cipher text as "Null"? If we assume our dictionary has about ~65k words, then we should look to trim numbers > 6 + maybe that pesky 0?
@@ -595,17 +601,17 @@ One unfortunate aspect of these two grids is that none of the 5 digit grouping r
 
 Regardless, it is possible to have sentences without using the same word twice. Perhaps d'A avoided repeating a simple word like "the" several times to make the cipher more difficult to solve on purpose?
 
-In the book, d'A gives a book cipher example using a dictionary (presumably the concise edition) where he starts by ordering his 5 digit pairs in ascending order, and maps words within the ranges provided (Eg. Word 55381 in the Dictionary) to their associated word pair, perhaps "T"...and then those word pairs, maybe the range associated with "TH" is mapped to the digits 55381, to help build a sentence.
+In the book, D'A gives a book cipher example using a dictionary (presumably the concise edition) where he starts by ordering his 5 digit pairs in ascending order, and maps words within the ranges provided (Eg. Word 55381 in the Dictionary) to their associated word pair, perhaps "T"...and then those word pairs, maybe the range associated with "TH" is mapped to the digits 55381, to help build a sentence.
 
 Fortunately...D'Agapeyeff throws us a bone...maybe. 
 > Now we can find in the dictionary the word 'the' (55381). This we can count back about twenty words for 55366 (th). 
 
-Assuming me and my boy d'A are looking at the same Dictionary, I can confirm that the word "the" shows up on page 1270. If I count back 15 words...I sort of have the same span of words that d'A notes 
+Assuming me and my boy D'A are looking at the same Dictionary, I can confirm that the word "the" shows up on page 1270. If I count back 15 words...I sort of have the same span of words that D'A notes 
 > 'thane', 'thank', 'that', 'thatch' ...
 
-But I think d'A was paraphrasing a bit here, if he was on "the" 55381 and goes back to word 55366 - that's a difference of 15 words not 4. So my "span" seems reasonable, I end up with words like: thaw, thatch, that, thanksgiving, thankless, thankful, thank, than, thallium, thalamus, etc...all leading up to "-th." ...literally just "th" like he says in the book...which is, depending how you count subdefinitions or variations of words (like thank/thankful) about 15 words away...so maybe this is literally the same version of the dictionary that he was using? That's a good sign at least?
+But I think D'A was paraphrasing a bit here, if he was on "the" 55381 and goes back to word 55366 - that's a difference of 15 words not 4. So my "span" seems reasonable, I end up with words like: thaw, thatch, that, thanksgiving, thankless, thankful, thank, than, thallium, thalamus, etc...all leading up to "-th." ...literally just "th" like he says in the book...which is, depending how you count subdefinitions or variations of words (like thank/thankful) about 15 words away...so maybe this is literally the same version of the dictionary that he was using? That's a good sign at least?
 
-d'A gives us the solution to the Dictionary Cipher presented
+D'A gives us the solution to the Dictionary Cipher presented
 > The reconnaissance of the route to the sea has revealed that the aeroplane(s) defensive was over the town.
 
 ![mistake](/assets/images/dagapeyeff/mistake_cipher.jpg)
@@ -667,7 +673,7 @@ So counting 9 is easy. However, we still have numbers too large to count accurat
 
 Thankfully, we can make some solid estimates, though. Dealing with a maximum of ~3200 words is a lot better than dealing with numbers > 10k. So we can _probably_ start guessing some diphthongs/"probable first two letters" to each of our tables. The farther away from a "known" word we get, the fuzzier our definition may be. 
 
-After-all, as d'A says himself on page 156
+After-all, as D'A says himself on page 156
 > ...application of the law of probability to dictionary codes is very interesting.
 
 I may keep exploring this in the future.
@@ -688,7 +694,7 @@ Apparently the book I bought was used by a "Lt. Kenneth Anderson Coler" who was 
 
 Outside of the interesting history, this book launches straight into discussion of dictionary (book) codes by page 35 (It's about 180 pages long). With an example of "a dictionary of 25,000 numbered words" 
 
-Considering we know for a fact that d'A _read_ this book as a reference before/during his own authorship of C&C there's some really uninspiring quotes in here about dictionary ciphers
+Considering we know for a fact that D'A _read_ this book as a reference before/during his own authorship of C&C there's some really uninspiring quotes in here about dictionary ciphers
 > Great patience will be required to ferret out the whole of the message...
 
 > ...in practice such documents are not often found with the numbers written in this straightforward way. Usually the figures are transposed and all sorts of complications interspered
@@ -704,13 +710,13 @@ Interestingly, Langie/Macbeth gives us a "Test Message In Cipher" on page 190 an
 One interesting parallel here is that:
 Langie/Macbeth spend the pages preceding the "test" cipher discussing Playfair, and then provide the reader with an unsolved playfair as a challenge.
 
-In D'A's C&C he spends the pages preceding his "challenge" cipher discussing Dictionary codes, and then provides the reader with an unsovled cipher as challenge.  If d'A was intentionally mirroring the previous work (including a challenge cipher), then he may have also intentionally preceded his cipher with a chapter on the type of cipher that he used (eg. Dictionary/Book Cipher)? Just a Thought.
+In D'A's C&C he spends the pages preceding his "challenge" cipher discussing Dictionary codes, and then provides the reader with an unsolved cipher as challenge.  If D'A was intentionally mirroring the previous work (including a challenge cipher), then he may have also intentionally preceded his cipher with a chapter on the type of cipher that he used (eg. Dictionary/Book Cipher)? Just a Thought.
 
-Also, d'A is almost more known as a cartographer and the author of "Maps" more than he is known as a cryptologist. So isn't it interestingly that in this book published 17 years prior says in reference to book ciphers
+Also, D'A is almost more known as a cartographer and the author of "Maps" more than he is known as a cryptologist. So isn't it interestingly that in this book published 17 years prior says in reference to book ciphers
 > the first thing to do - and it is not easy - is to determine the exact meaning of the two numbers ... as when preparing a survey map of a country it is first necessary to calculate with the utmost accuracy the height and distance of two given points, to form a base on which the triangulation of the whole region may be effected...
 
 ## Transposition of Dictionary Positions
-This book got me thinking though, removing the 6,7,8,9,(0) _was_ a bit arbitrary in the sense that we were just guessing, and as d'A himself notes using nulls to throw people off really only works if you're "in the secret" which we are firmly not. He does spend some time discussing transposition ciphers prior to his dictionary...what if we treat each 5 digit number as a full sequence, but in the wrong order? How many permutations of each letter pair are there, and what happens to the full sequence if the same transpositional rules are applied to each sequence? Which number has the least permutations?
+This book got me thinking though, removing the 6,7,8,9,(0) _was_ a bit arbitrary in the sense that we were just guessing, and as D'A himself notes using nulls to throw people off really only works if you're "in the secret" which we are firmly not. He does spend some time discussing transposition ciphers prior to his dictionary...what if we treat each 5 digit number as a full sequence, but in the wrong order? How many permutations of each letter pair are there, and what happens to the full sequence if the same transpositional rules are applied to each sequence? Which number has the least permutations?
 
 I _think_ the answer to that final question is 92000, the last number in the sequence. Using some quick scripting I found that there's 20 unique permutations of the number 92000: 
 ```
@@ -718,7 +724,7 @@ I _think_ the answer to that final question is 92000, the last number in the seq
 ```
 In this case, we can probably ignore anything above 90000 so really the sequence is only 16 unique characters long. We can also use the previous technique of finding the nearest "word" which we know the page/plaintext of. Also, this sequence ends up with some pretty small numbers. It's not totally unreasonable to figure out words <500.
 
-For example, word 00029 is almost certainly in the "AB" range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming d'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to "00092" (shift all numbers over 2 posistions) to _every_ digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either "the" or "of" or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already "known" plaintext examples from the example in C&C?
+For example, word 00029 is almost certainly in the "AB" range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming D'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to "00092" (shift all numbers over 2 posistions) to _every_ digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either "the" or "of" or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already "known" plaintext examples from the example in C&C?
 
 Checking all numbers, we find a fairly unsurprising pattern:
 
@@ -790,14 +796,14 @@ Permutation EDCBA (120)
 
 Unfortunately, I'm not entirely sure why I did this. Sure, this gives me 120 "versions" of the cipher, and maybe 1/120 is the "right" version but I still have to map these to words in the dictionary...and I still don't want to count. Additionally, this type of transform operation doesn't actually create new pairings of repeats. So we still don't have our silver bullet "the" that happens 5 times in the cipher.
 
-Plus, even if there was an "easy" match between the known words from the provided dictionary cipher (I calculated the word distances above)...the re-arranged words barely match up to any known words. I walked through some bad regex and the only "digit grouping" that matches from our "known" words at the top, to d'A cipher in the middle is 55366 which matches "36565" in spot 18. The rest of the "matches" as shown in the image below always have 1 digit too many or too few.
+Plus, even if there was an "easy" match between the known words from the provided dictionary cipher (I calculated the word distances above)...the re-arranged words barely match up to any known words. I walked through some bad regex and the only "digit grouping" that matches from our "known" words at the top, to D'A cipher in the middle is 55366 which matches "36565" in spot 18. The rest of the "matches" as shown in the image below always have 1 digit too many or too few.
 
 ![matching-perms](/assets/images/dagapeyeff/can_you_match_a_permuatation.PNG)
 
 Still a neat way to look at it, I suppose.
 
 # Dictionary Method: Page, Line, Letter?
-On the page #129 in which d'A mentions the "Dictionary Code Systems", which is what we'd call a "Book Cipher" he talks about a different way to utilize a book like the Dictionary to encipher text.
+On the page #129 in which D'A mentions the "Dictionary Code Systems", which is what we'd call a "Book Cipher" he talks about a different way to utilize a book like the Dictionary to encipher text.
 
 > One of the ways in which ordinary dictionaries can be used is first to agree on a certain edition...then to  only give the number of the page, and the number of the word down the page..
 > 100612 010417 129108
@@ -883,19 +889,17 @@ Example: 28591 page 2 isn't numbered, and if it were, it's an entirely blank pag
 So none of the alternative splits make much sense, either?
 
 ## The Book Itself - "Hidden Alphabet"
-When I was flipping through the book I noticed small upper case letters on certain pages. After some investigation, I discovered they were about every 8 pages. I did some research, and these are known as [Signature Marks](https://en.wikipedia.org/wiki/Signature_mark). These marks are related to a now outdated bookbinding technique that ensured the pages were bound in the right section/order when building (binding?) the book. This is also  known as "collating" or "designation marks" in bookmaking, apparently.
+When I was flipping through the book I noticed small upper case letters on certain pages. After some investigation, I discovered they were about every 8 pages. I did some research, and these are known as [Signature Marks](https://en.wikipedia.org/wiki/Signature_mark). These marks are related to a now outdated bookbinding technique that ensured the pages were bound in the right section/order when building ([binding](https://en.wikipedia.org/wiki/Octavo)?) the book. This is also  known as "collating" or "designation marks" in bookmaking, apparently.
 
 Sadly, I found [this person's](http://www.thekryptosproject.com/tjp/dagapeyeff.php) website later in my research. They have a whole word document from 2009 where they apparently got very excited over the discovery of the "little alphabet." As far as I can tell, they never figured out what the Signature Marks are. 
 
 ![kryptos_blog](/assets/images/dagapeyeff/kryptos_blog.png)
 
-Although I do find it interesting that the collation does not include "J" for seemingly no reason? And I give the guy in 2009 some credit, early substitution ciphers like playfair usually _did_ combine [I and J](https://en.wikipedia.org/wiki/Substitution_cipher#Polygraphic_substitution). "A" makes sense, since it's essentially page 0. "V-Z" also make sense, because the book isn't that long, no need to go past U for the bookbinder. It is also worth noting that these signature marks are entirely absent from the 1952 edition of the book.
-
-Maybe I can find another book published by Oxford in the 1930's and see if J is randomly ommited from the signature marks? 1922 Langie does not have any marks that I can see. 1942 Maps by d'A does include signature marks and starts with B, but hilariously the book ends on I, so no confirmation of J. 1936 Mansfield starts with A and skips J (I -> K). Honestly, it's strange but it must have been a common practice to sometimes skip A, and always skip J? Perhaps the same reason in playfair, 26 is a weird number to deal with...? Doubtful.
-
-I don't think this is the solution to the cipher, nor the key. I don't think d'A would have had control over the way Oxford published the book. I also don't think d'A would have even thought twice about the signature mark being in the book, as he wasn't in the printing industry by trade. 
+Although I do find it interesting that the collation does not include "J" ? And I give the guy in 2009 some credit, early substitution ciphers like playfair usually _did_ combine [I and J](https://en.wikipedia.org/wiki/Substitution_cipher#Polygraphic_substitution). 
 
 > Each section has a different signature, and when letters are used for identification, as is the usual practice, they progress in alphabetical order, with J, V, and W usually omitted to avoid confusion, although their exclusion does have an historical basis, in that manuscripts and early printed books were usually in Latin, in which I stands for both I and J, V for both U and V, and there is no W.
+
+I don't think this is the solution to the cipher, nor the key. I don't think D'A would have had control over the way Oxford published the book. I also don't think D'A would have even thought twice about the signature mark being in the book, as he wasn't in the printing industry by trade. 
 
 Anyway, this was a waste of time. I guess I learned some random book trivia? <small>And so did you if you bothered reading this</small>
 
@@ -907,7 +911,7 @@ Here's a screenshot of page 57 from a 1949 edition I found listed on ebay.
 
 The "African Drum" illistration and language graphic is on page 53 of the 1939 edition. We're way off. The book is likely not the key. 
 
-I suppose you could argue that d'A had the cipher removed from the next print run of the book for this exact reason. "Oh dear, its not possible anymore!" ... I'm guessing not.
+I suppose you could argue that D'A had the cipher removed from the next print run of the book for this exact reason. "Oh dear, its not possible anymore!" ... I'm guessing not.
 
 I also bought a 1952 edition (ebay), the one where the cipher is removed, and confirmed that once again, the page numbers shifted. How fun.
 
@@ -930,7 +934,7 @@ Why did this catch my eye at all? Well first, it's _suspiciously_ square. That s
  Why not just change the font size or use slightly wider margins like they did in the 1952 edition where they removed the cipher? Oh...okay, not falling for that mental trap. The removal has nothing to do with the reformatting of the dedication page. _The removal has nothing to do with the reformatting of the dedication page._ <small>The removal has nothing to do with the reformatting of the dedication page.</small>
  ![dedication2](/assets/images/dagapeyeff/dedication2.jpg)
 
-Joking aside, I don't presently think there's anything to this block of text. Also, sadly I was able to find no information on the Internet about "Geoffrey and Marjory Cass" or "Rachel Wood" for whoever they may have been to D'A.
+Joking aside, I don't presently think there's anything to this block of text. Plus, much like the dictionary "forgotten" rant I had earlier, why would D'A have forgotten that he used his dedication page as the key? Sadly I was able to find no information on the Internet about "Geoffrey and Marjory Cass" or "Rachel Wood" for whoever they may have been to D'A.
 
 ## Page 113: Army Cipher
 This page discusses an army signal cipher
@@ -965,16 +969,16 @@ I used the idea on page 113 to break up the text on possible repeating delimiter
 
 ## A Rabbit Hole of Playfair
 
-Is it conisidence that Mansfield's Solutions to Codes & Ciphers and d'A's  Codes and Ciphers features what is essentialy a [Wheatstone](https://en.wikipedia.org/wiki/Charles_Wheatstone#Cryptography) [Cryptograph](http://www.jproc.ca/crypto/wheatstone.html) on the cover? I suppose not, since "[cipher disks](https://en.wikipedia.org/wiki/Cipher_disk)" predate Mr. Wheatsone by a few hundred years. 
+Is it coincidence that Mansfield's Solutions to Codes & Ciphers and D'A's  Codes and Ciphers features what is essentially a [Wheatstone](https://en.wikipedia.org/wiki/Charles_Wheatstone#Cryptography) [Cryptograph](http://www.jproc.ca/crypto/wheatstone.html) on the cover? I suppose not, since "[cipher disks](https://en.wikipedia.org/wiki/Cipher_disk)" predate Mr. Wheatsone by a few hundred years. 
 
 Still, it could be a vague homage to Wheastone who also invented the much more useful Playfair system. Is the cover of this novel a round about hint to utilize Wheastone methods? Eg. Playfar? Probably not, but regardless it seems fair to conclude that playfair _could_ be part of the solution. 
 
-This is even more interesting when you consider d'A's role in WWI and the sidespread use of Playfair and ADFGX/ADFGVX ciphers in that conflict.
+This is even more interesting when you consider D'A's role in WWI and the widespread use of Playfair and ADFGX/ADFGVX ciphers in that conflict.
 
 One potential solution I think is worth playing with is a [hybrid polyibus and playfair cipher](https://en.wikipedia.org/wiki/Polybius_square#Hybrid_Polybius_Playfair_cipher). 
 
 ## More Old Books & Other Misc Sources...
-After I had found it in digital form on Archive.org it got me thinking about other books that may have been published before the d'A cipher in 1939 that had been digitized...
+After I had found it in digital form on Archive.org it got me thinking about other books that may have been published before the D'A cipher in 1939 that had been digitized...
  
 One interesting thing about the idea of looking for hints in recently digitized text from the 1920s and 1930s is that it is extremely unlikely that anyone has really read over these antiquated version of cryptography in quite some time. Additionally, nobody really had "access" to many of these texts until they were digitized (typically soemtime after 2015).
  
@@ -983,9 +987,9 @@ To Google Books we go!
 **Popular Mechanics** 
 There's a fun article from a 1926 Popular Mechanics (Vol. 46, No. 4?) titled ["The Magic Lure of Ciphers"](https://books.google.com/books?id=PNgDAAAAMBAJ&pg=PA564&dq=The+Magic+Lure+of+Ciphers#v=onepage&q=The%20Magic%20Lure%20of%20Ciphers&f=false).
  
-Although I wish I could say this article gave me some magic lightbulb idea for the d'A cipher it ultimately did not. But, it does include some interesting and direct references from Col. [George Fabyan](https://en.wikipedia.org/wiki/George_Fabyan) as well.
+Although I wish I could say this article gave me some magic lightbulb idea for the D'A cipher it ultimately did not. But, it does include some interesting and direct references from Col. [George Fabyan](https://en.wikipedia.org/wiki/George_Fabyan) as well.
  
-**[Elements of Cryptanalysis](https://www.google.com/books/edition/Elements_of_Cryptanalysis/Sx8aSJHtnEAC?hl=en&gbpv=1)** - United States. War Department (1923). This was actually a very interesting read that certainly pre-dated the d'A cipher by 16 years.
+**[Elements of Cryptanalysis](https://www.google.com/books/edition/Elements_of_Cryptanalysis/Sx8aSJHtnEAC?hl=en&gbpv=1)** - United States. War Department (1923). This was actually a very interesting read that certainly pre-dated the D'A cipher by 16 years.
 
 **[U.S. Army FM-34-40-2, Basic Crypt-Analysis](https://archive.org/details/Fm3440.2BasicCryptAnalysis/page/n115/mode/2up)** - The US Army at it again with a manual too long to read, but full of great info on basic ciphers.
 
@@ -996,9 +1000,9 @@ Although I wish I could say this article gave me some magic lightbulb idea for t
 ## Tools
 * https://regexr.com/
 * https://sites.google.com/site/cryptocrackprogram
-* Excel, Powershell, Google
+* Excel, Powershell, Python, Google
 
-## Life Notes on Alexander d'Agapeyeff
+## Life Notes on Alexander D'Agapeyeff
 * [Born 1902, St. Petersburg - Died 1955, Maugersbury](https://www.findagrave.com/memorial/32596707/alexander-e-d'agapeyeff)
 
 <hr>
