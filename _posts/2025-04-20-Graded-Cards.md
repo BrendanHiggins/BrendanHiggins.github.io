@@ -16,11 +16,7 @@ As a relatively simple/small-scale Pokemon card collector - I understand the thr
 
 For the uninitiated, card grading involves sending a card to a third-party company, like PSA, Beckett, or TAG. These companies supposedly meticulously examine the card for flaws – centering, corners, edges, surface, and print quality – and assign it a numerical grade, typically on a scale of 1 to 10. This graded card is then sealed in a rigid, bulky, plastic holder known as a “slab,” complete with the grading company’s branding. And here’s where my confusion truly begins. Why do so many people encase their card in what amounts to a plastic tomb? Let’s delve into the downsides, shall we?
 
-<center>
-
 ![PSA10](/assets/images/graded_cards/psa-10-blastoise.jpg "PSA10")
-
-</center>
 
 First, the sheer size of these slabs is ridiculous. What was once a sleek, thin, easily storable piece of cardboard now occupies significantly more space. Quite literally your card gets about 600% thicker, and significantly taller/wider too. Forget neatly fitting your collection into concise easy to look at binders. To me, it's like putting your favorite stamp from the collection in a big plastic VHS case.
 
@@ -37,12 +33,7 @@ Furthermore, this obsession with slabbing and grading injects a very adult, fina
 Personally, I find a certain charm in cards that bear the marks and war scars of their journey – a slight ding or a soft crease tells a story, connecting me to the excitement of opening that card decades ago as a child; that little imperfection I personally caused so long ago holds a kind of special nostalgic and sentimental value that no pristine, graded slab could ever replicate.
 
 ![MyBadCards](/assets/images/graded_cards/my_bad_card.jpg "MyBadCards")
-<i>
-  <center>
-  I probably bent these cards when I was 6, and that makes them cooler to me than a PSA 10
-  </center>
-</i>
-<br>
+I probably bent these cards when I was 6, and that makes them cooler to me than a PSA 10
 
 For me, the joy of collecting lies in the physical connection to my cards. The only protection the card really needs is a nice card sleeve and placement in a quality ring-less side-loaded binder (VaultX, CardGuard, etc.). Binders, in my opinion, offer plenty of protection for 99% of cards, and allows for easy viewing and easy re-organization. Each page can tell a story, or a journey as you collect. None of the slab bulk needed. 
 
