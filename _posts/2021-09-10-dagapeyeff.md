@@ -46,7 +46,7 @@ That seems lame. Let's go for the original - the 1st edition. Thanks, ebay.
 
 ![Cover](/assets/images/dagapeyeff/cover.jpg)
 
-![Unsovled-Page](/assets/images/dagapeyeff/cipher_real.jpg)
+![Unsolved-Page](/assets/images/dagapeyeff/cipher_real.jpg)
 
 It's a really neat book. Especially for a Cyber/Cipher nerd like myself. Even if I'm not a particularly talented or well-versed cryptologist.
 
