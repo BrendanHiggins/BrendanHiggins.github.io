@@ -12,7 +12,7 @@ My possibly not that controversial opinion on graded cards
 
 ---
 
-As a relatively simple/small-scale Pokemon card collector - I understand the thrill of the hunt. The satisfaction of pulling a rare card, the fun of getting a card in the email from eBay, the joy you feel when you complete a set, the careful and considerate organization of the collection - it's a fun and oddly rewarding hobby. However, there's a trend in the card collecting world that frankly baffles me: card grading.
+As a relatively simple/small-scale Pokemon card collector - I understand the thrill of the hunt. The satisfaction of pulling a rare card, the fun of getting a card in the mail from eBay, the joy you feel when you complete a set, the careful and considerate organization of the collection - it's a fun and oddly rewarding hobby. However, there's a trend in the card collecting world that frankly baffles me: card grading.
 
 For the uninitiated, card grading involves sending a card to a third-party company, like PSA, Beckett, or TAG. These companies supposedly meticulously examine the card for flaws – centering, corners, edges, surface, and print quality – and assign it a numerical grade, typically on a scale of 1 to 10. This graded card is then sealed in a rigid, bulky, plastic holder known as a “slab,” complete with the grading company’s branding. And here’s where my confusion truly begins. Why do so many people encase their card in what amounts to a plastic tomb? Let’s delve into the downsides, shall we?
 
