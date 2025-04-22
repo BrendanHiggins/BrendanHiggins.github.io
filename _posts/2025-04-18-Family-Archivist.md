@@ -73,7 +73,7 @@ Once you're done capturing a file prepare to be annoyed by the massive AVI video
 
 After that you should be good to go...
 
-Unless you have a ton of HI8 8mm cassetts, in which case you may need to buy a functional Sony DCR-TRV730 or 740 and an S-Video cable to convert those over; refer to this [Reddit DataHoarder Tutorial](https://www.reddit.com/r/DataHoarder/comments/j4rwk1/the_how_do_i_digitizetransfercapture_video_tapes/).
+Unless you have a ton of HI8 8mm cassettes, in which case you may need to buy a functional Sony DCR-TRV730 or 740 and an S-Video cable to convert those over; refer to this [Reddit DataHoarder Tutorial](https://www.reddit.com/r/DataHoarder/comments/j4rwk1/the_how_do_i_digitizetransfercapture_video_tapes/).
 
 and...that's it?
 
