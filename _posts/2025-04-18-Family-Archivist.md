@@ -57,7 +57,7 @@ The setup is somewhat straight forward - you install the firewire card into your
 
 The joy of all this? 
 
-Outside of the FireWire card which you _might_ be able to find on Amazon for \$30 or so; 100% of this will need to be found on eBay because none of these things are actually produced anymore. You will probably spend at least \$500 on a "[good](https://www.digitalfaq.com/forum/video-restore/1567-vcr-buying-guide.html)" VHS player with TBC, \$150 on the ADVC-300, and another \$30 on the adapter.
+Outside of the FireWire card which you _might_ be able to find on Amazon for \$30 or so; 100% of this will need to be found on eBay because none of these things are actually produced anymore. You will probably spend at least \$300 - \$500 on a "[good](https://www.digitalfaq.com/forum/video-restore/1567-vcr-buying-guide.html)" VHS player with TBC, \$150 on the ADVC-300, and another \$30 on the adapter. You can try out a cheaper VHS player, but your results may vary.
 
 I don't personally have one, but a small CRT TV with composite A/V in can be useful for troubleshooting (eg. making sure all your VHS stuff actually runs/works without software on your computer working).
 
