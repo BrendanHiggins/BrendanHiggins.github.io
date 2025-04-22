@@ -59,7 +59,7 @@ The joy of all this?
 
 Outside of the FireWire card which you _might_ be able to find on Amazon for \$30 or so; 100% of this will need to be found on eBay because none of these things are actually produced anymore. You will probably spend at least \$500 on a "[good](https://www.digitalfaq.com/forum/video-restore/1567-vcr-buying-guide.html)" VHS player with TBC, \$150 on the ADVC-300, and another \$30 on the adapter.
 
-I don't personally have one, but a CRT TV with composite A/V in can be useful for troubleshooting (eg. making sure all your VHS stuff actually runs/works).
+I don't personally have one, but a small CRT TV with composite A/V in can be useful for troubleshooting (eg. making sure all your VHS stuff actually runs/works without software on your computer working).
 
 Given the price, I've seen quotes where people digitize a single VHS for \$20 - \$50 per tape...so if you have 10 tapes it might be worth just paying someone else to do all this for you. Unless you're in my shoes, and you have 50+ tapes to do in which case this DIY option is the cheaper option (albeit more labor intensive!) 
 
