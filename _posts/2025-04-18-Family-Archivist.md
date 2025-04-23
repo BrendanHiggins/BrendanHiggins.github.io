@@ -69,7 +69,7 @@ Once you have all that setup you have to go get some decade+ old discontinued so
 
 Point this software at a capture folder, and go to the top to select "Capture" and start playing your VHS either via the VHR itself or via the play button. You should have your Input set to "ADVC-300" which will only be detected if your FireWire card/drivers are configured correctly.
 
-Once you're done capturing a file prepare to be annoyed by the massive AVI video format. If you don't mind the file size, let it be. But for me, I kept the AVI copies on a local disk and used HandBrake to convert the AVI to mp4 w/ H.264 encoding before uploading it to the cloud to save on cloud storage costs.
+Once you're done capturing a file prepare to be annoyed by the massive AVI video format. If you don't mind the file size, let it be. But for me, I kept the AVI copies on a local disk and used HandBrake/VLC/ffmpeg (whatever) to convert the AVI to mp4 w/ H.264 encoding before uploading it to the cloud to save on cloud storage costs.
 
 After that you should be good to go...
 
