@@ -75,6 +75,8 @@ After that you should be good to go...
 
 Unless you have a ton of HI8 8mm cassettes, in which case you may need to buy a functional Sony DCR-TRV730 or 740 and an S-Video cable to convert those over; refer to this [Reddit DataHoarder Tutorial](https://www.reddit.com/r/DataHoarder/comments/j4rwk1/the_how_do_i_digitizetransfercapture_video_tapes/).
 
+Of course, if you happen to have some family DVD's laying around from the mid 2000s then you can rip those really easily with VLC or handbrake. No tutorial, special equipment, or weird drivers necessary. 
+
 and...that's it?
 
 Good Luck. 
