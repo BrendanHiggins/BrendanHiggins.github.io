@@ -30,7 +30,7 @@ At the end of the day, the card itself hasn’t fundamentally changed; it’s ju
 
 Furthermore, this obsession with slabbing and grading injects a very adult, financially driven perspective into a hobby traditionally enjoyed by children, artificially inflating card values and creating a barrier to entry for new, younger collectors who are often priced out by the speculative market that prioritizes monetary investment over the simple joy of collecting and playing.
 
-Personally, I find a certain charm in cards that bear the marks and war scars of their journey – a slight ding or a soft crease tells a story, connecting me to the excitement of opening that card decades ago as a child; that little imperfection I personally caused so long ago holds a kind of special nostalgic and sentimental value that no pristine, graded slab could ever replicate.
+Personally, I find a certain charm in cards that bear the marks and war scars of their journey – a slight ding or a soft crease tells a story, connecting me to the excitement of opening that card decades ago as a child; that little imperfection I personally caused so long ago holds a kind of special nostalgic and sentimental value that no pristine, graded slab could ever replicate. Pokemon is a Japanese invention, so let's call it a certain [wabi-sabi](https://en.wikipedia.org/wiki/Wabi-sabi) that these used cards have? 
 
 ![MyBadCards](/assets/images/graded_cards/my_bad_card.jpg "MyBadCards")
 I probably bent these cards when I was 6, and that makes them cooler to me than a PSA 10
