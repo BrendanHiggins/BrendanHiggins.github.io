@@ -21,6 +21,7 @@ I'll list all my certs here, but I often let them expire.  <sup style="font-size
 * GitLab DevOps Professional
 <hr>
 
+* GIAC Python Coder (GPYC)
 * GIAC Cloud Threat Detection (GCTD)
 * GIAC Cloud Security Automation (GCSA)
 * GIAC Exploit Researcher and Advanced Penetration Tester (GXPN)
