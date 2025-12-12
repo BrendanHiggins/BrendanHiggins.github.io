@@ -1,11 +1,9 @@
 # Nothing secret here, just articles I may write in the future
 
-* add your google analytics tracker
-  
+
+## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
-
 * blog on godot addons
-
 * update game-dev article to include industrial game
 
 * blog on boredom, and shower thoughts...
@@ -20,8 +18,11 @@ make sure the perfection post doesn’t overlap w/ the short form content fidget
 decision paralysis and happiness – why I was happier as a kid with 2 games than an adult with 500
 The Paradox of Choice
 
-
 * blog post: worse is better, etc.
+
+## Technical
+* add your google analytics tracker
+* do something fancier with images? full-size modal pop-ups? Proper captions? slide-shows?
 
 ## Misc Troublehsooting
 ## Build & Run
