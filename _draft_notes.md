@@ -22,3 +22,17 @@ The Paradox of Choice
 
 
 * blog post: worse is better, etc.
+
+## Misc Troublehsooting
+## Build & Run
+```
+npx @11ty/eleventy
+npx @11ty/eleventy --serve
+```
+
+## Debug
+```
+npx eleventy --watch
+DEBUG=* npx eleventy
+```
+
