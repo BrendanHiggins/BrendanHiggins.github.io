@@ -3,7 +3,7 @@ name: Deploy 11ty Site
 on:
   push:
     branches:
-      - main  # Change this if your default branch is 'master'
+      - main 
 
 permissions:
   contents: write
