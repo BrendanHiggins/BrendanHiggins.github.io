@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+
+<article data-pagefind-body>
+    <header>
+        <h1>{{ title }}</h1>
+        <p><small>Published on {{ date | formatDate }}</small></p>
+    </header>
+
+    {{ content | safe }}
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>

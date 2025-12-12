@@ -1,0 +1,105 @@
+/* Site custom styles */
+
+/* Center footer content */
+footer.container {
+    text-align: center;
+}
+
+/* Ensure small is on its own line for easier centering */
+footer.container small {
+    display: block;
+}
+
+/* Apply as site default to override Pico's font choices */
+html, body, input, textarea, select, button {
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+/* Make code/pre use the same monospace explicitly */
+code, pre {
+    font-family: "Google Sans Code", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Google Sans Code", monospace;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.xs-text {
+    font-size: 0.75rem;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;          
+}
+
+.center-button {
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    display: table !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+
+.inline-tags {
+  padding: 0;
+  list-style: none; 
+  display: inline; 
+}
+
+.inline-tags li {
+  display: inline; 
+}
+
+.inline-tags li:not(:last-child)::after {
+  content: " | ";
+}
+
+/* https://picocss.com/docs/colors -- for the hex / rgb values on theme */
+
+hr {
+  height:0px;
+  width: 100%;
+  border-color: var(--pico-color-cyan-500);
+  border-width: 1px 0 0;
+  border-style: solid;
+  opacity: 0.25;
+}
+
+.hr-no-theme {
+  border-color: var(--pico-color-grey-500) !important;
+}
+
+.responsive-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto; /* Ensures the height adjusts based on the aspect ratio */
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+
+    max-height: 550px; 
+    width: auto; 
+
+    display: block;
+    margin: 2rem auto; /* 2rem vertical spacing, auto horizontal centers it */
+
+    border-radius: var(--pico-border-radius);
+    box-shadow: var(--pico-card-box-shadow);
+}
+
+.sitename-color {
+    color: var(--pico-color-cyan-250);
+}

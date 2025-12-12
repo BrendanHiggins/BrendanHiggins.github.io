@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: Home
+---
+
+<section>
+    <h3>PROJECTS</h3>
+    <div class="grid">
+    <article>
+        <header><strong>
+            <i class="fa-solid fa-book"></i>
+            <a href="https://bulletbook.club/profile/higgins" target="_blank">BulletBook</a>
+            <sup><i style="font-size: 0.50rem; opacity: 0.5;" class="fa-solid fa-arrow-up-right-from-square"></i></sup>
+        </strong></header>
+        A book reviewing web app
+    </article>
+    <article>
+        <header><strong>
+            <i class="fa-solid fa-code"></i>
+            <a href="https://brendanhiggins.dev/code-node/" target="_blank">CodeNode</a>
+            <sup><i style="font-size: 0.50rem; opacity: 0.5;" class="fa-solid fa-arrow-up-right-from-square"></i></sup>
+        </strong></header>
+        Like CyberChef but not as good
+    </article>
+    </div>
+     <hr/>
+</section>
+
+<section>
+<h3>POSTS</h3>
+        {% set ignoreTags = ['all'] %}
+        <ul class="inline-tags"> {% for tag, posts in collections %}
+            {% if tag not in ignoreTags %}
+            <li>
+                <a href="#category-{{ tag | slugify }}">{{ tag | capitalize }}</a>
+                <span>({{ posts | length }})</span>
+            </li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    <hr/>
+    {% for tag, posts in collections %}
+        {% if tag not in ignoreTags %}
+            <section id="category-{{ tag | slugify }}">
+                <h4 class="post-header">{{ tag | upper }} 
+                    <small><a data-tooltip="Jump to Top" data-placement="bottom" href="#top" class="no-bottom-margin"><i class="fa-solid fa-arrow-turn-up"></i></a></small>
+                </h4>
+                {% for post in posts | reverse %}
+                    <article>
+                        <header class="post-header">
+                            <h5 class="no-bottom-margin "><a href="{{ post.url }}">{{ post.data.title }}</a></h5>
+                            <small class="no-bottom-margin">{{ post.date | formatDate }}</small>
+                        </header>
+                        {% if post.data.description %}
+                            <small class="no-bottom-margin">{{ post.data.description }}</small>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </section>
+        <hr/>
+        {% endif %}
+    {% endfor %}
+</section>
+
+<a href="#top" role="button" class="secondary outline center-button no-bottom-margin">
+    Jump to Top <i class="fa-solid fa-arrow-turn-up"></i>
+</a>
