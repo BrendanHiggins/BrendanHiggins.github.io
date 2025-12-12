@@ -26,6 +26,7 @@ This was my introduction to the world of Static Site Generators (SSG). The logic
 
 Jekyll served me well for over 5 years (2020-2025). It’s kind of the grandfather of SSGs and has a massive ecosystem. However, I don't feel any particular attachment to it. I spun up the same template my friend was using called [Minimal Mistakes](https://mademistakes.com/work/jekyll-themes/minimal-mistakes/) and just sort of went with it. I also don't know Ruby at all. So much of the underlying framework of Gemfiles, etc. are a mystery to me. 
 
+![Jekyll-Old](/static/images/blogging/jekyll_blog.png "Jekyll-Old")
 ## Current Stack: PEA
 
 I'm sure someone else has invented this but I decided to go with my own stack: **PEA**
