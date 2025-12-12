@@ -1,5 +1,7 @@
 # Nothing secret here, just articles I may write in the future
 
+* add your google analytics tracker
+  
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
 
 * blog on godot addons
@@ -17,5 +19,6 @@ AI short form content will continue to evolve rapidly
 make sure the perfection post doesn’t overlap w/ the short form content fidget spinner stuff
 decision paralysis and happiness – why I was happier as a kid with 2 games than an adult with 500
 The Paradox of Choice
+
 
 * blog post: worse is better, etc.
