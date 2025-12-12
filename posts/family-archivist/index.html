@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Archivist: Digitizing Photos/Videos</title>
+    <meta name="description" content="A quick project, surely?">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Family Archivist: Digitizing Photos/Videos</h1>
+        <p><small>Published on Apr 18 2025</small></p>
+    </header>
+
+    <h1>Intro</h1>
+<p>Two years ago that I embarked on a personal and somewhat daunting mission: to digitally archive my family's precious memories from the clutches of physical photographs and aging videotapes. My mom and grandma had amassed a trove of moments captured on film/printed photographs, on VHS, Hi8, and even those old MiniDV tapes I vaguely remembered from childhood that needed a special VHS adapter to play.</p>
+<p>These weren't just snapshots and recordings; they were tangible links to our past, echoing with laughter, marking significant milestones, and capturing the everyday moments that knit our family together. Over time, our family has geographically dispersed across the country, making it a shame that a single precious photograph or home movie might reside in one location while so many of us no longer do. The videos, in particular, hold a special significance for many of us. They offer a snapshot into homes that no longer exist and allow us to hear the voices and see the smiles of family members who have passed on. It's a poignant experience – literally, as I write this blog post, I'm listening to my grandfather's voice narrate some footage of an approaching storm during a vacation in Maine back in 2002.</p>
+<p>As I began this project, the sheer volume of material was… well, let's just say it was enough to fill several boxes. Stacks of photo albums, and piles of tapes labeled with cryptic dates and barely legible handwriting – it was a beautiful mess.</p>
+<p>The decision to digitize everything wasn't taken lightly. I knew it would be a time-consuming process, potentially filled with technical hurdles. But the thought of these irreplaceable memories degrading further, the colors fading and the tapes becoming unplayable for one reason or another, spurred me on. I envisioned a digital archive, a safe haven where these moments could be preserved, easily shared with family, and enjoyed for generations to come.</p>
+<p>As I near the finish line of this project, I thought I would document just &quot;how&quot; I did this in case it helps anyone else facing a similar situation.</p>
+<h1>Storage</h1>
+<p>The first crucial step is deciding where and how to store your digitized photos and videos. A reliable external hard drive is an excellent starting point, providing a tangible backup right at your fingertips. I used a 5TB WD drive as a &quot;temporary&quot; solution while doing the initial conversion process.</p>
+<p>However, for true peace of mind and the added benefit of accessibility and redundancy, consider leveraging a cloud storage provider. Services like Google Drive (my personal preference), Microsoft OneDrive, Dropbox, or other cloud storage provider offer a secure and convenient way to safely store your digital archive.</p>
+<p>The beauty of cloud storage lies in its inherent redundancy; your files are typically stored across multiple servers in different locations, significantly reducing the risk of data loss due to hardware failure or other unforeseen events. Furthermore, these platforms make it incredibly easy to share your digitized photos and videos with family members, regardless of where they are in the world, fostering connection and allowing everyone to relive those cherished moments together. The only down side of this is that depending on how much material you have, you may have to pay for additional cloud storage.</p>
+<p>If you are shy about cloud, you can also copy your archive over to redundant external hard drives and mail them out to family. Having multiple copies like this in existence should help reduce any fatal digital losses.</p>
+<h1>Photos</h1>
+<p>Photos is where I started, since they are generally fairly &quot;easy&quot; to do, even when you have thousands. I personally picked up a Epson FastFoto FF-680W. This scanner is awesome because it's really easy to use, and is kind of a workhorse when it comes to volume.</p>
+<p>It's specifically made to scan 4x6 -&gt; 8x10 photos or documents really quickly. There's not a ton of &quot;advice&quot; to give here other than make sure you keep track of what you have scanned, and rename and properly categorize the photos as they are scanned into folders that make sense to you. Also, the scanner software ran a lot better on my PC than it did on my Mac, just a weird note.</p>
+<p><img src="/static/images/digital-archive/ff680w.jpg" alt="FF-680W" title="FF-680W"></p>
+<h1>Videos</h1>
+<p>There's certainly multiple ways to do video conversion, so take this method as &quot;one&quot; way. I think it works well though so there's that.</p>
+<p>To start, you need some hardware. A quality VHS player, something to convert the analog signal of VHS to digital, and you need to get that digital signal over to your PC.</p>
+<p>For me, I did this with four primary pieces of hardware:</p>
+<ul>
+<li>JVC S7600U VHS Player</li>
+<li>JVC C-P6U Cassette Adapter</li>
+<li>Canopus ADVC-300</li>
+<li>A StarTech PCIE <a href="https://en.wikipedia.org/wiki/IEEE_1394">FireWire</a> Card</li>
+</ul>
+<p>The setup is somewhat straight forward - you install the firewire card into your PCIE slot on your computer and search high and low on the internet for the <a href="https://www.startech.com/en-eu/faq/firewire-cards-windows-legacy-driver-swap?srsltid=AfmBOoo_98i9xmBUp-xcE_Ci3KutU9C3KMhlcfDRIr7pJ4fry1DnuvlG">legacy 1394a drivers</a>. Run a FireWire cable from your freshly installed FireWire card to the back of the ADVC. Next, plug in the VHS composite A/V cables from the back &quot;output&quot; ports to the front &quot;input&quot; ports on the the ADVC ... that's it. Use the Adapter when you have the mini cassettes and not a full sized VHS tape.</p>
+<p><img src="/static/images/digital-archive/vhs.jpg" alt="vhs" title="vhs"></p>
+<p><img src="/static/images/digital-archive/canopus.jpg" alt="canopus" title="canopus"></p>
+<p><img src="/static/images/digital-archive/adapter.jpg" alt="adapter" title="adapter"></p>
+<p>The joy of all this?</p>
+<p>Outside of the FireWire card which you <em>might</em> be able to find on Amazon for $30 or so; 100% of this will need to be found on eBay because none of these things are actually produced anymore. You will probably spend at least $300 - $500 on a &quot;<a href="https://www.digitalfaq.com/forum/video-restore/1567-vcr-buying-guide.html">good</a>&quot; VHS player with TBC, $150 on the ADVC-300, and another $30 on the adapter. You can try out a cheaper VHS player, but your results may vary.</p>
+<p>I don't personally have one, but a small CRT TV with composite A/V in can be useful for troubleshooting (eg. making sure all your VHS stuff actually runs/works without software on your computer working).</p>
+<p>Given the price, I've seen quotes where people digitize a single VHS for $20 - $50 per tape...so if you have 10 tapes it might be worth just paying someone else to do all this for you. Unless you're in my shoes, and you have 50+ tapes to do in which case this DIY option is the cheaper option (albeit more labor intensive!)</p>
+<p>Once you have all that setup you have to go get some decade+ old discontinued software known as <a href="http://www.scenalyzer.com/">ScenalyzerLive</a> this should come with a license key and the manual. There may be other software out there to work with this hardware setup, but this is what I found that worked for me (even on Windows 11!)</p>
+<p><img src="/static/images/digital-archive/sclive.png" alt="software" title="software"></p>
+<p>Point this software at a capture folder, and go to the top to select &quot;Capture&quot; and start playing your VHS either via the VHR itself or via the play button. You should have your Input set to &quot;ADVC-300&quot; which will only be detected if your FireWire card/drivers are configured correctly.</p>
+<p>Once you're done capturing a file prepare to be annoyed by the massive AVI video format. If you don't mind the file size, let it be. But for me, I kept the AVI copies on a local disk and used HandBrake/VLC/ffmpeg (whatever) to convert the AVI to mp4 w/ H.264 encoding before uploading it to the cloud to save on cloud storage costs.</p>
+<p>After that you should be good to go...</p>
+<p>Unless you have a ton of HI8 8mm cassettes, in which case you may need to buy a functional Sony DCR-TRV730 or 740 and an S-Video cable to convert those over; refer to this <a href="https://www.reddit.com/r/DataHoarder/comments/j4rwk1/the_how_do_i_digitizetransfercapture_video_tapes/">Reddit DataHoarder Tutorial</a>.</p>
+<p>Of course, if you happen to have some family DVD's laying around from the mid 2000s then you can rip those really easily with VLC or handbrake. No tutorial, special equipment, or weird drivers necessary.</p>
+<p>and...that's it?</p>
+<p>Good Luck.
+Have Fun!</p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>

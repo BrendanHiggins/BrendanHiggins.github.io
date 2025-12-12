@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Node: Vibe Coding A Cipher Tool</title>
+    <meta name="description" content="Like CyberChef but not">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Code Node: Vibe Coding A Cipher Tool</h1>
+        <p><small>Published on Jun 11 2025</small></p>
+    </header>
+
+    <p><img src="/static/images/code-node/code-node-banner.png" alt="code-node-banner" title="code-node-banner"></p>
+<p>At this point in my life, &quot;free time&quot; is less a reality and more a mythical creature, fleetingly appearing between my day job, hobbies, housework, friends, and family. Yet, I recently managed to whip up what I consider a pretty fun and useful single-page web application focused on building and cracking classic pen-and-paper ciphers. No, I didn't magically find an extra 40 hours in the week. I gave the increasingly popular <a href="https://en.wikipedia.org/wiki/Vibe_coding">vibe coding</a> a real try with Gemini. And yeah, that means you might find some unpolished edges or bugs – I totally expect those given the nature of this project.</p>
+<h1>My Schedule vs. My Ambition</h1>
+<p>I've got a long-standing fascination with ciphers, stemming from my security work and general interest in <a href="https://brendanhiggins.dev/technology/dagapeyeff/">the unknown</a>. I've written a solid handful of Python-driven Jupyter notebooks with the intent of solving/breaking ciphers, and with my general expertise in Splunk Query language the | eval capabilities of SPL are particularly close to my heart.</p>
+<p>However, one thing that always felt like it could be a useful tool was a <a href="https://en.wikipedia.org/wiki/Node_graph_architecture">node graph based</a> application for solving these older style ciphers. An app like that would be interactive, visual, and powerful I figured.</p>
+<p>The problem? The sheer time commitment. Building a web application from scratch takes a lot of time, and I'm not a web developer by trade. The implementation of a large variety of cipher-related functions, and the design of an intuitive node-based UI is no small feat. It's the kind of project that usually gets relegated to a &quot;someday&quot; list for me. I'd even compiled a list of 'possible' libraries: BaklavaJS? litegraph? reactflow? rete? Where would I even begin?</p>
+<h1>Enter Vibe Coding: My AI Co-Developer</h1>
+<p>This is where &quot;vibe coding&quot; came in. It's not some new programming language or framework. It's simply the iterative, conversational process of developing code with an LLM (I used Gemini). Think of it as having an incredibly fast, endlessly patient, and highly knowledgeable co-developer sitting right beside you. It's basically cheating, I'd never claim I 'coded' this application. More accurately, I guided it's creation into existence by directing the AI to do the things I wanted it to do with the app.</p>
+<p>Amusingly, the process is a bit tedious since the scope of your queries tends to be limited, the code generation time is not instant, and bugs still come up that need to be thought through so you can prompt engineer the LLM to fix it 'correctly' ... so with that in mind, it's not that vibe coding is completely skill-less; it's just less of a skill than actually coding the whole thing from scratch yourself.</p>
+<p>Essentially, instead of taking hours or even days making mistakes, googling solutions, and meticulously hammering out every line of HTML, CSS, and JavaScript (or wrestling with the nuances and my lack of knowledge of newer HTML, CSS, and JavaScript syntaxes), I could just describe what I wanted to achieve.</p>
+<blockquote>
+<p>&quot;Give me a Caesar cipher node&quot; ... &quot;Can we add a button that duplicates a node?&quot; ... &quot;Seems like the save/load function has a bug where the loaded nodes cannot be deleted, can we fix that?&quot;</p>
+</blockquote>
+<p>This approach fundamentally changed the development timeline:</p>
+<ul>
+<li>Rapid Prototyping: Ideas went from concept to functional code snippets in minutes, not hours. I could test theories, throw away bad ideas, and iterate at the speed of an LLM.</li>
+<li>Offloaded Brainpower: Gemini handled the boilerplate, the syntax, the common patterns. My brain was free to focus on the unique logic, the user experience, and the overall architecture. No need to google the docs, Gemini's already read em'</li>
+</ul>
+<h1>My Cipher Node App: Beyond the Linear Recipe</h1>
+<p>So, what did this vibe coding produce? A single-page web application designed for building and cracking classic pen-and-paper ciphers. It's got a robust set of features, allowing users to chain operations and see the flow of data.</p>
+<p>You can dive right in and check it out here: <strong><a href="https://brendanhiggins.dev/code-node/">code-node.net</a></strong></p>
+<p>Now, some of you might be thinking, &quot;Isn't that what <a href="https://gchq.github.io/CyberChef/">CyberChef</a> does?&quot; And you're not wrong, CyberChef is an absolute beast – the &quot;Cyber Swiss Army Knife&quot; indeed. It uses a &quot;recipe&quot; model where you chain operations sequentially:
+<code>input -&gt; operation 1 -&gt; operation 2 -&gt; output</code></p>
+<p>While CyberChef is incredibly powerful for creating linear pipelines, and does have some 'Flow Control' operators, handling complex, branching inputs and outputs between different 'recipes' isn't as visually straightforward as a true node graph. Code-Node is built to excel at that.</p>
+<p>Another issue, although it's a bit of a minor gripe, is that CyberChef blends ancient techniques like ROT-13 (Caesar Cipher) with very modern techniques like a SHA-256 hashing, or straight up advanced forensic functions. Although you might find a CTF that uses both of these modern and pre-computing concepts together, one of the more famous <a href="https://en.wikipedia.org/wiki/List_of_ciphertexts">unsolved ciphers</a> will likely predate a lot of these newer, digital, and often much more secure methods. With that in mind, including them can produce a degree of visual clutter if you are focused on non-digital methods.</p>
+<p>This new application, code-node, thanks to its true node-based programming model, offers something slightly different, particularly valuable for exploratory cipher analysis:</p>
+<p><strong>Visual Parallel Processing:</strong> you can see a multitude of distinct operations running side-by-side on your canvas, allowing for immediate visual comparison and parallel exploration of different attack vectors. CyberChef, while capable, doesn't easily lay out and run things in this visually parallel fashion within a single workflow.</p>
+<p><strong>Flexible Input/Output Flow:</strong> This is key. The output of one node isn't just destined for the next node in a linear chain. It can be visually connected as input to multiple other nodes. This means you can create complex branching paths and converge them later. This makes building intricate, multi-step analysis workflows incredibly intuitive and visually clear.</p>
+<p>Finally, code-node also has a lot of very basic string manipulation functions that are useful for pen-and-paper ciphers that CyberChef doesn't currently support. This visual graph approach provides a clearer mental model for complex scenarios, especially when you're trying several different decryption attempts or pre-processing steps on the same data concurrently.</p>
+<h1>Conclusion</h1>
+<p>Building this cipher app was a testament to how AI, specifically LLMs like Gemini, can transform the development process. It's not about replacing developers; it's about augmenting us, allowing us to tackle more ambitious projects in less time, and to focus our creative energy on the unique problems we're trying to solve. Do I think this app will be the key to solving an unbroken cipher? Probably not, but it's fun to use either way.</p>
+<p>So, if you've got a complex project on your &quot;someday&quot; list, and your &quot;free time&quot; is feeling elusive, maybe it's time to try a little vibe coding. You might be surprised at what you can build. I'm looking forward to updating the app with the help of AI going forward to see how good it can get.</p>
+<hr>
+<h1>code-node screenshots, examples</h1>
+<p>Using <a href="https://en.wikipedia.org/wiki/Kryptos">Kryptos</a> here's some examples to give you an idea of what the app looks like without using it.</p>
+<p><img src="/static/images/code-node/k1-screenshot.png" alt="k1-screenshot" title="k1-screenshot"></p>
+<p><img src="/static/images/code-node/k2-screenshot.png" alt="k2-screenshot" title="k2-screenshot"></p>
+<p><img src="/static/images/code-node/k3-screenshot.png" alt="k3-screenshot" title="k3-screenshot"></p>
+<p><img src="/static/images/code-node/k4-screenshot.png" alt="k4-screenshot" title="k4-screenshot"></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>

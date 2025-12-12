@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StateRank</title>
+    <meta name="description" content="A hobby website I did during COVID quarantine">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>StateRank</h1>
+        <p><small>Published on Feb 07 2024</small></p>
+    </header>
+
+    <h1>COVID-19 Hobbies</h1>
+<p>During the peak of COVID-19, something fun started to happen with everyone quarantining/stuck indoors more than ever before -- random COVID-19 hobbies! Things like streaming movies/TV shows, reading, and board/video games make sense when you're stuck inside. There were the &quot;viral&quot; hobbies as well like for whatever reason every other person attempted to make sourdough bread.</p>
+<p>I didn't start any new hobbies per se (if anything it killed my hobby in Jiu-Jitsu!) but I did get together with a close friend of mine and attempted to start a <em>website</em>. The idea was to practice coding, learn some new web technologies, and possibly monetize  the site.</p>
+<h1>staterank<span>.</span>us</h1>
+<p>We purchased the <code>staterank.us</code> domain name and began development on July 29th, 2020. The last code commit to our GitHub repository was on Sept 13th, 2020. We left the site running until July 2023.
+<img src="/static/images/staterank/gdomains.PNG" alt="gdomains" title="gdomains"></p>
+<p>I no longer own the domain so I can't promise what the domain is/will be in the future.
+<img src="/static/images/staterank/forsale.PNG" alt="forsale" title="forsale"></p>
+<p>The concept behind the website was to build a tool that helped users make decisions about what state to move to based on their preference for certain <em>aspects</em> of life that some states are &quot;better&quot; at than others.</p>
+<p>For example, someone may be a Democrat who values high-quality healthcare and a state with rich outdoor activities to participate in. Which states are ideal for them given these preferences? Alternatively, someone else may be a Republican who values low crime rates and low cost of living. Is the state they'd prefer to live in different? Probably. Let's help them figure it out with data.</p>
+<p>Perhaps a better explanation can come straight from the &quot;about&quot; section we wrote for the site:
+<img src="/static/images/staterank/about.PNG" alt="about" title="about"></p>
+<p>We thought the idea was good...maybe our execution wasn't so great because in three years we left the site operational it only had 143 users. However we also totally abandoned/stopped updating the site after 2 months of development.
+<img src="/static/images/staterank/analytics.PNG" alt="analytics" title="analytics"></p>
+<h1>The Site</h1>
+<p><img src="/static/images/staterank/splash.PNG" alt="splash" title="splash"></p>
+<p>We used fairly standard tech to get it all up and running with the most notable and important thing being <a href="https://d3js.org/">D3</a>.</p>
+<p><img src="/static/images/staterank/techstack.PNG" alt="techstack" title="techstack"></p>
+<p>Of course, simple stack or not we still had our fair share of technical bugs and UI redesigns to address before we had something functional...</p>
+<p><img src="/static/images/staterank/bug1.png" alt="bug1" title="that looks right">
+<img src="/static/images/staterank/bug2.png" alt="bug2" title="fun colors">
+<img src="/static/images/staterank/bug3.png" alt="bug3" title="hello"></p>
+<p>With those small issues ironed out we had a pretty good proof of concept website. Here is what someone's map could look like after adjusting the sliders:
+<img src="/static/images/staterank/map.PNG" alt="map" title="map"></p>
+<p>We also allowed users to disable data all at once, or one-by-one if they totally wanted to disregard a particular category.
+<img src="/static/images/staterank/disabled.PNG" alt="disabled" title="disabled"></p>
+<p>For example, here is a map with everything disabled except temperature data with a preference for colder states.
+<img src="/static/images/staterank/temp_data_only.PNG" alt="temp_data_only" title="temp_data_only"></p>
+<p>And here are two examples of the UI the user would utilize to generate their maps:
+<img src="/static/images/staterank/using_map.gif" alt="using_map" title="using_map1"></p>
+<p><img src="/static/images/staterank/using_map2.gif" alt="using_map2" title="using_map2"></p>
+<p>We attempted to put explanations and tooltips on everything we could to help make the experience of adjusting the data as easy as possible.</p>
+<p>You could also click on an individual state and get a metric-by-metric breakdown and compare it to &quot;your&quot; preferences/ratings.</p>
+<p><img src="/static/images/staterank/per_state_metrics.PNG" alt="per_state_metrics" title="per_state_metrics"></p>
+<p>However, at the end of the day, we were only able to scrape so much public data in two months, and we couldn't validate the quality or accuracy of any of that data.</p>
+<p>The only interesting feature left is the &quot;Share Map&quot; button which generates a share code:
+<img src="/static/images/staterank/share.PNG" alt="share" title="share"></p>
+<pre><code>/index.html?share=ipsnonnnnqmkmvnnm&amp;name=QnJlbmRhbk1hcA==#map
+</code></pre>
+<p>The first parameter &quot;share&quot; was somewhat complicated but mapped each slider value (0.0 - 0.75) to unique alphanumeric characters that the javascript could then parse out and update all the slider values. We could have encoded this more simply, but this weird alphabet method made for a &quot;prettier&quot; URL.</p>
+<p>The easy parameter was &quot;name&quot; which is just bas64 for whatever the user types in:</p>
+<pre><code>QnJlbmRhbk1hcA== --&gt; b64 -&gt; BrendanMap
+</code></pre>
+<p>This base 64 also had robust regex for dropping curse words and XSS patterns for security.</p>
+<p>We left a few ideas on the Trello as well...
+<img src="/static/images/staterank/trello.PNG" alt="trello" title="trello"></p>
+<p>So with that, I've at least documented the project. Success or failure aside, it was something fun to do with a friend. In total, it cost us several hours and earned us -$50.</p>
+<p><code>¯\_(ツ)_/¯</code></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>

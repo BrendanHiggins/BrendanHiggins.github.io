@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 85+ Year Old CTF: D&#39;Agapeyeff Cipher</title>
+    <meta name="description" content="I&#39;ve been reading the dictionary in my free time...?">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>The 85+ Year Old CTF: D&#39;Agapeyeff Cipher</h1>
+        <p><small>Published on Sep 10 2021</small></p>
+    </header>
+
+    <p><sub>Published 9/10/2021. Updated 12/2022, edited slightly in 01/2025.</sub></p>
+<h1>Cipher Discovery</h1>
+<p>One night while browsing Wikipedia's List of <a href="https://en.wikipedia.org/wiki/Lists_of_unsolved_problems">Unsolved Problems</a> I stumbled across an interesting page -  <a href="https://en.wikipedia.org/wiki/List_of_ciphertexts">List of ciphertexts</a>.  A lot of the information on the page wasn't particularly new to me: Beale, Enigma, Kryptos, etc.</p>
+<p>But one did catch my eye that I had not heard of -</p>
+<table>
+<thead>
+<tr>
+<th>Year of origin</th>
+<th>Ciphertext</th>
+<th>Decipherment status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1939</td>
+<td><a href="https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher">D'Agapeyeff Cipher</a></td>
+<td>Unsolved</td>
+</tr>
+</tbody>
+</table>
+<p>An unsolved 20th century cipher? For the last 80+ years? That's interesting...</p>
+<blockquote>
+<p>The D'Agapeyeff cipher is an as-yet unbroken cipher that appears in the first edition of <em>Codes and Ciphers</em>, an elementary book on cryptography published by the Russian-born English cryptographer and cartographer Alexander D'Agapeyeff in 1939.</p>
+</blockquote>
+<blockquote>
+<p>Offered as a &quot;challenge cipher&quot; at the end of the book, the ciphertext is:</p>
+</blockquote>
+<pre><code>75628 28591 62916 48164 91748 58464 74748 28483 81638 18174
+74826 26475 83828 49175 74658 37575 75936 36565 81638 17585
+75756 46282 92857 46382 75748 38165 81848 56485 64858 56382
+72628 36281 81728 16463 75828 16483 63828 58163 63630 47481
+91918 46385 84656 48565 62946 26285 91859 17491 72756 46575
+71658 36264 74818 28462 82649 18193 65626 48484 91838 57491
+81657 27483 83858 28364 62726 26562 83759 27263 82827 27283
+82858 47582 81837 28462 82837 58164 75748 58162 92000
+</code></pre>
+<p>An ELEMENTARY book? That doesn't add up. I had to check this out myself.</p>
+<p><img src="/static/images/dagapeyeff/amazon.png" alt="Amazon"></p>
+<p>That seems lame. Let's go for the original - the 1st edition. Thanks, ebay.</p>
+<p><img src="/static/images/dagapeyeff/ebay.png" alt="Amazon"></p>
+<p><img src="/static/images/dagapeyeff/cover.jpg" alt="Cover"></p>
+<p><img src="/static/images/dagapeyeff/cipher_real.jpg" alt="Unsolved-Page"></p>
+<p>It's a really neat book. Especially for a Cyber/Cipher nerd like myself. Even if I'm not a particularly talented or well-versed cryptologist.</p>
+<p>It even has that musky, mildly sweet-organic decomposition scent that books seem to develop over time.</p>
+<p><small>I spent more time smelling it than I'd like to admit.</small></p>
+<h1>&quot;He Forgot&quot;</h1>
+<p>One of the first things you'll see on the wikipedia page is this interesting quote</p>
+<blockquote>
+<p>It was not included in later editions, and D'Agapeyeff is said to have admitted later to having forgotten how he had encrypted it.</p>
+</blockquote>
+<p>Literally just about any blog online seems to mention this or other vague &quot;quotes&quot; online regarding D'Agapeyeff's son &quot;remembering him being very embarrassed that he had forgotten how to solve it&quot; or some other variation of this.</p>
+<p>Many use this as proof that the cipher is unsolvable. However, in all my research I couldn not actually find a <strong>source</strong> for this quote. Not even Wikipedia has a reference (A classic Wikipedia problem!).</p>
+<p>This reference also dates back all the way to the first Wikipedia entry for the cipher in 2005
+<img src="/static/images/dagapeyeff/original_wiki.PNG" alt="Original-Wiki"></p>
+<p>In 2021 when I first published this blog this bugged me. Thankfully, after 2 years of on/off searching and a bit of luck (maybe a lot of luck) I believe I am now the proud owner of a <strong>source</strong></p>
+<p>A letter from September 18th, 1952 with a second hand quote from the books publisher confirming this quote from DA basically admitting that he has indeed forgotten and lost his solution while traveling. This letter was found in a copy of Mansfield's &quot;The Solution of Codes and Ciphers&quot; and thankfully the seller was kind enough to include the <a href="https://www.reddit.com/r/ForgottenBookmarks/">forgotten bookmark</a> with the sale of the book!</p>
+<p><img src="/static/images/dagapeyeff/old-letter-edit.png" alt="Oxford Letter"></p>
+<p>I did edit the letter - I felt weird about putting someone's address on the internet, even if it was from 1952. As far as I can tell, this quote from D'A is not printed anywhere else on the internet. Alas, after many years I could provide an actual (second hand) citation for the mysterious Wikipedia sentence about a forgotten solution. I do wish the letter was dated closer to 1939, but 1952 will do and aligns nicely with the removal of the cipher from the edition printed that same year.</p>
+<h1>Okay, so...</h1>
+<p>So he forgot...but does that mean it's <em>impossible</em> ? Hard to say of course, but for the sake of this post and for FUN let's not <a href="https://en.wikipedia.org/wiki/Kobayashi_Maru">assume it's impossible</a>.</p>
+<p>For the sake of this post, let's assume D'A was not a complete dummy - he actually did create valid plaintext, and encrypted it with one or more known encryption/encipherment methods for the era (1939). Furthermore, on page 145 of the 1939 edition he warns</p>
+<blockquote>
+<p>It is very common in deciphering to come across mistakes ... by the encipherer ...</p>
+</blockquote>
+<p>Would he include a challenge cipher without solving it once himself to prove it was mistake free? I mean, maybe - I don't know? Was a mistake added on purpose to increase the challenge? Did he not even realize his mistake and somehow &quot;solve&quot; it in a proof-check while incorporating his same mistake twice? Again, <em>maybe</em>...</p>
+<p>Did he <a href="https://en.wikipedia.org/wiki/Multiple_encryption">superencipher</a> this thing so hard that he immediately forgot how he even did it without his notes? Guess so...if anyone stumbles across an old piece of paper somewhere in Europe with the long sought solution this on it please let me know?</p>
+<p>Unfortunately there were no cloud storage providers in 1939. Paper is lost, soiled, destroyed, etc.</p>
+<p>DA passed away at the surprisingly young age of 52 (1902 -&gt; 1955) leaving behind no known additional hints. Worst case scenario he setup the whole thing as a <a href="https://en.wikipedia.org/wiki/One-time_pad">one-time pad</a> for a laugh. I have read some sources online that claim it was possibly added as a &quot;hoax&quot; but somehow, on the eve of WWII, I don't think D'Agapaffeye was in a joking mood. Especially with the topic of ciphers being exponentially more relevant on the world stage.</p>
+<h1>General Cipher Analysis</h1>
+<p>The cipher is delimited into numeric groups of 5 digits (patristocrat form).</p>
+<pre><code>75628 28591 62916 48164 91748 58464 74748 28483 81638 18174
+74826 26475 83828 49175 74658 37575 75936 36565 81638 17585
+75756 46282 92857 46382 75748 38165 81848 56485 64858 56382
+72628 36281 81728 16463 75828 16483 63828 58163 63630 47481
+91918 46385 84656 48565 62946 26285 91859 17491 72756 46575
+71658 36264 74818 28462 82649 18193 65626 48484 91838 57491
+81657 27483 83858 28364 62726 26562 83759 27263 82827 27283
+82858 47582 81837 28462 82837 58164 75748 58162 92000
+</code></pre>
+<p>All said, there's 79 groups in an 8x10 grid with the final 5 digit grouping missing. That makes 395 individual digits.</p>
+<p>Here's a frequency analysis of the 5 digit groupings where count &gt; 1</p>
+<table>
+<thead>
+<tr>
+<th>5 Digit Sequence:</th>
+<th>81638</th>
+<th>75748</th>
+<th>28462</th>
+<th>*</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frequency:</strong></td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>But more realistically, this needs to be broken down into digraphs (pairs) and we can do a better frequency analysis.</p>
+<pre><code>75 62 82 85 91 62 91 64 81 64 91 74 85 84 64 74 74 82 84 83 81 63 81 81 74 74 82 62 64 75 83 82 84 91 75 74 65 83 75 75 75 93 63 65 65 81 63 81 75 85 75 75 64 62 82 92 85 74 63 82 75 74 83 81 65 81 84 85 64 85 64 85 85 63 82 72 62 83 62 81 81 72 81 64 63 75 82 81 64 83 63 82 85 81 63 63 63 04 74 81 91 91 84 63 85 84 65 64 85 65 62 94 62 62 85 91 85 91 74 91 72 75 64 65 75 71 65 83 62 64 74 81 82 84 62 82 64 91 81 93 65 62 64 84 84 91 83 85 74 91 81 65 72 74 83 83 85 82 83 64 62 72 62 65 62 83 75 92 72 63 82 82 72 72 83 82 85 84 75 82 81 83 72 84 62 82 83 75 81 64 75 74 85 81 62 92 00 0
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Digit Pair</th>
+<th>81</th>
+<th>75, 62, 82, 85</th>
+<th>64</th>
+<th>83</th>
+<th>74</th>
+<th>63, 91</th>
+<th>84, 65</th>
+<th>72</th>
+<th>92</th>
+<th>93</th>
+<th>04, 94,71,00,0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frequency:</strong></td>
+<td>20</td>
+<td>17</td>
+<td>16</td>
+<td>15</td>
+<td>14</td>
+<td>12</td>
+<td>11</td>
+<td>9</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Breaking the pairs down further for frequency of each digit pair:</p>
+<table>
+<thead>
+<tr>
+<th>First Digit</th>
+<th>6</th>
+<th>7</th>
+<th>8</th>
+<th>9</th>
+<th>0</th>
+<th>Second Digit</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Frequency:</strong></td>
+<td>56</td>
+<td>41</td>
+<td>80</td>
+<td>18</td>
+<td>3</td>
+<td><strong>Frequency:</strong></td>
+<td>33</td>
+<td>46</td>
+<td>29</td>
+<td>43</td>
+<td>5</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>With the exception of 0, there is no overlap between first and second digits. Here's what that looks like with a regex applied. Certainly weird, with the only outliers being: 04, 00, 0</p>
+<p><img src="/static/images/dagapeyeff/numberRegex1.png" alt="Regex1"></p>
+<p>Triplets:</p>
+<p><img src="/static/images/dagapeyeff/numberRegex2.png" alt="Regex2"></p>
+<p>Doublets:</p>
+<p><img src="/static/images/dagapeyeff/numberRegex3.png" alt="Regex3"></p>
+<p>This 14x14 grid (technically there's a spare row of 0's...) is a popular analysis tool. This is because if you discard the last three 0's as &quot;null&quot; values, you have 192 paired digits which leads to a very convenient 14x14 grid. Padding messages with 0's was also a common practice of the era for <a href="http://cryptiana.web.fc2.com/code/telegraph2.htm">telegraph messages</a>.</p>
+<p>This grid has a green color scale applied from most frequent character, to least, with the top ten values having decreasing shades of green until the bottom frequency values all end near-white.</p>
+<p>This method is also vaguely supported by this snippet  on page 127</p>
+<blockquote>
+<p>Numeral ... Ciphers ... letters are replaced by numbers...A,B,C,D may stand for any numbers (preferably double) from 10 to 99.</p>
+</blockquote>
+<style>
+.grid-special{ border:2px solid white;text-align:center;color:black;}
+.grid-special th{ border:2px solid white;background-color:#000;text-align:center;color:white;}
+</style>
+<div class="div0">
+<table class="grid=special" style="width: 100%;">
+    <thead >
+        <th>&nbsp;</th>
+        <th style="">00</th>
+        <th style="">02</th>
+        <th style="">03</th>
+        <th style="">04</th>
+        <th style="">05</th>
+        <th style="">06</th>
+        <th style="">07</th>
+        <th style="">08</th>
+        <th style="">09</th>
+        <th style="">10</th>
+        <th style="">11</th>
+        <th style="">12</th>
+        <th style="">13</th>
+        <th style="">14</th>
+    </thead>
+    <tbody style="">
+        <tr>
+            <th style="">00</th>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">84</td>
+        </tr>
+        <tr>
+            <th style="">01</th>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#145A32;">81</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#1E8449;">62</td>
+        </tr>
+        <tr>
+            <th style="">02</th>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#196F3D;border-top:2px solid red;border-bottom:2px solid red;border-left:2px solid red;">75</td>
+            <td style="background-color:#196F3D;border-top:2px solid red;border-bottom:2px solid red;">75</td>
+            <td style="background-color:#196F3D;border-top:2px solid red;border-bottom:2px solid red;border-right:2px solid red;">75</td>
+            <td style="background-color:#E9F7EF;">93</td>
+        </tr>
+        <tr>
+            <th style="">03</th>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#145A32;">81</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#E9F7EF;">92</td>
+        </tr>
+        <tr>
+            <th style="">04</th>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#A9DFBF;">74</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#145A32;border-top:2px solid red;border-left:2px solid red;border-right:2px solid red;">81</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#27AE60;">85</td>
+        </tr>
+        <tr>
+            <th style="">05</th>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#27AE60;">85</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#145A32;border-right:2px solid red;border-left:2px solid red;">81</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#52BE80;">64</td>
+        </tr>
+        <tr>
+            <th style="">06</th>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#7DCEA0;">83</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#145A32;border-left:2px solid red;border-bottom:2px solid red;border-right:2px solid red;">81</td>
+           <td style="background-color:#D4EFDF;border-top:2px solid red;border-bottom:2px solid red;border-left:2px solid red;">63</td>
+           <td style="background-color:#D4EFDF;border-top:2px solid red;border-bottom:2px solid red;">63</td>
+           <td style="background-color:#D4EFDF;border-top:2px solid red;border-bottom:2px solid red;border-right:2px solid red;">63</td>
+            <td style="background-color:#E9F7EF;">04</td>
+        </tr>
+        <tr>
+            <th style="">07</th>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#E9F7EF;">84</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#E9F7EF;">94</td>
+        </tr>
+        <tr>
+            <th style="">08</th>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#E9F7EF;">71</td>
+        </tr>
+        <tr>
+            <th style="">09</th>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#E9F7EF;">93</td>
+        </tr>
+        <tr>
+            <th style="">10</th>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#E9F7EF;">91</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#A9DFBF;">74</td>
+        </tr>
+        <tr>
+            <th style="">11</th>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#229954;;border-left:2px solid red;border-top:2px solid red;border-right:2px solid red">82</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#E9F7EF;">65</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#E9F7EF;">92</td>
+        </tr>
+        <tr>
+            <th style="">12</th>
+            <td style="background-color:#E9F7EF;">72</td>
+           <td style="background-color:#D4EFDF;">63</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#229954;;border-left:2px solid red;border-right:2px solid red;border-right:2px solid red">82</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#229954;">82</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#7DCEA0;">83</td>
+        </tr>
+        <tr>
+            <th style="">14</th>
+            <td style="background-color:#E9F7EF;">72</td>
+            <td style="background-color:#E9F7EF;">84</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#229954;border-left:2px solid red;border-bottom:2px solid red;border-right:2px solid red">82</td>
+            <td style="background-color:#7DCEA0;">83</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#52BE80;">64</td>
+            <td style="background-color:#196F3D;">75</td>
+            <td style="background-color:#A9DFBF;">74</td>
+            <td style="background-color:#27AE60;">85</td>
+            <td style="background-color:#145A32;">81</td>
+            <td style="background-color:#1E8449;">62</td>
+            <td style="background-color:#E9F7EF;">92</td>
+        </tr>
+        <tr>
+            <th style="">15</th>
+            <td style="background-color:#E9F7EF;">00</td>
+            <td style="background-color:#E9F7EF;">0</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+            <td style="background-color:#E9F7EF;">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<p>The triplet sets highlighted in red are interesting from a frequency standpoint...otherwise there are several pairs of pairs within the set and not worth highlighting. The &quot;spare&quot; row of 0's is probably safe to ignore but including it doesn't hurt for now.</p>
+<h1>Initial Possibilities</h1>
+<p>After some analysis and reading the book itself it seems to me the possible cipher may be:</p>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Book_cipher">Book Cipher</a>
+<ul>
+<li>Numeric codes align to page/line/word or letter within a given text</li>
+<li>Discussed toward the end of the book, aligns nicely with the final unsolved challenge cipher and even looks a bit like the examples given</li>
+<li>What book? The book itself or the dictionary mentioned in the text?</li>
+<li>On page 127 D'A calls these &quot;highly specialized forms of substitution&quot;</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Substitution_cipher">Substituted</a> <a href="https://en.wikipedia.org/wiki/Transposition_cipher">Transpostion</a>
+<ul>
+<li>So many permutations with this...really difficult, but often referenced with D'A analysis online</li>
+</ul>
+</li>
+<li>Other Ciphers
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Nihilist_cipher">Nihillist Cipher</a>
+<ul>
+<li>Is a numeric based symmetric key cipher</li>
+<li>If you load the cipher into <a href="https://sites.google.com/site/cryptocrackprogram">CryptoCrack</a> the initial analysis points to possible Nhillist</li>
+<li>Background -
+<ul>
+<li>D'A <em>was</em> born in Russia...maybe this is a nationalistic callback for him?</li>
+<li>The dust jacket states &quot;D'Agapeyeff was an intelligence officer in the First World War...in the Baltic until 1921 where he gained a knowledge of espionage and counter-espionage activities between Germany and Russia</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Mirabeau Cipher
+<ul>
+<li>A strange lack of information regarding this cipher on the web. Supposedly, <a href="https://en.wikipedia.org/wiki/Honor%C3%A9_Gabriel_Riqueti,_comte_de_Mirabeau">this french guy</a> used a simple numeric substitution system involving grouping seemingly arbitrary letters into groups of 5 and assigning a group # of a letter # within the group to create two digit pairs which were then sent out as the cipher.</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère</a></li>
+<li>D'A was in WWI? Maybe <a href="https://en.wikipedia.org/wiki/ADFGVX_cipher">ADFGVX</a>?</li>
+<li><a href="https://www.cryptogram.org/downloads/aca.info/ciphers/MonomeDinome.pdf">MONOME-DINOME</a> seems vaguely numeric looking...</li>
+<li>Polybius Squares, Bifid, Trifid, Tap Codes, Tridigital, Morbit, Rail fence, Porta, Ubchi...etc.</li>
+<li><small>Honestly, it's anyone's guess.</small></li>
+</ul>
+</li>
+</ul>
+<p>A few disadvantages with these more obscure ciphers is that they are not mentioned in the book. So without the modern advantage of wikipedia and the internet it's difficult to know if D'A would even know of their existence? Digging through the references in the book itself we can find <em>other</em> books he probably read as research, so if a cipher is mentioned there it's possible.</p>
+<p><strong>Some outstanding questions:</strong></p>
+<ul>
+<li>Should we &quot;keep&quot; the intervals of 5 digits or accept the 2-digit pairings and discard the 0's?
+<ul>
+<li>What about 04? 04 is &quot;distinct&quot; from the 000 at the end in some ways.</li>
+</ul>
+</li>
+<li>What structure forms the interesting 6-9/1-5 pattern we see in the two digit pairs?</li>
+</ul>
+<h1>Dictionary (Book) Cipher</h1>
+<p>One of the more obvious suggestions from the book is to use an actual dictionary to map the number of words to the sequence. However, to me, although I have looked into book ciphers more than I should probably admit the fundamental flaw with these approaches is this -- how on earth would D'A have FORGOTTEN this? I feel like the scenario of &quot;I have forgotten my complicated substitution/transposition cipher&quot; is fairly reasonable but forgetting &quot;Oh right I was counting a bunch of words in THE DICTIONARY&quot; is a lot more ... memorable? Now of course, D'A could have just been lying to everyone about having &quot;Forgotten&quot; and he knew all along it was THE DICTIONARY but...I'm just not sure (and neither are you, okay???)</p>
+<p>Anyways, we can look at it all the same. In this case, the highest number in the sequence is 92857 and the lowest is 16463.</p>
+<p>And on page #129</p>
+<blockquote>
+<p>One of the ways in which ordinary dictionaries can be used is first to agree on a certain edition, say, for instance, the <em>Concise Oxford Dictionary</em>, current edition, by Fowler and Le Mesurier...</p>
+</blockquote>
+<p>This could explain why the ciper was apparently removed from the book in 1952. The concise oxford english dictionary 3rd edition came out in 1934, and was updated to 4th edition in 1951. Hm...well we're going to need a dictionary from 1934-1939? That's not ideal...</p>
+<p>ebay? Yep - $9.
+<img src="/static/images/dagapeyeff/dictionary_cover.jpg" alt="dictionary"></p>
+<p>So this dictionary from 1938 is a mere 1507 pages long. Well that certainly qualifies for our 5 digit number pairs, right? Unfortunately, the individual words are not numbered.</p>
+<p>Let's take the same approach as before.</p>
+<pre><code>75628 28591 ... 92000
+</code></pre>
+<p>Houston, we have a problem. There's no way this 1500 page book has over 90,000 words in it.</p>
+<p>As noted in the book, page #154</p>
+<blockquote>
+<p>Even in the largest dictionaries 60,000 to 65,000 words are quite common.</p>
+</blockquote>
+<p>Assuming calling out this &quot;concise&quot; version of the dictionary was on purpose, why do we have so many numbers above 65 in our unsolved cipher? 62, 63,  64, 65, 72, 75, 81, 82, 83, 84, 91, 92...well over half the cipher leads with digit pairs beyond the scope of this dictionary.</p>
+<p>Page 153</p>
+<blockquote>
+<p>... Mr. Mansfield ... calculated dictionary progressive lists, giving numbers of words beginning with any two letters in dictionaries of 10, 20, 30, 40, 50, 60, 80, and 100 thousand words.</p>
+</blockquote>
+<p>Hold up, a dictionary with 100,000 words? That would cover my 92000 problem. Were there dictionaries in the 1930s that had 100,000 words in them? Seems like the answer is <a href="https://public.oed.com/history/#one-step-at-a-time">obviously</a>. So is the &quot;clue&quot; simply that you need a dictionary with 100k words?</p>
+<p>hm...</p>
+<p><img src="/static/images/dagapeyeff/dictionary_extra.png" alt="extra"></p>
+<p>Okay, I literally have to stop spending money on ebay. Maybe I can convince my wife they're for decoration in the living room as &quot;Vintage&quot; books? Blue matches the uh...wall...paint?</p>
+<p>So hypothetically, even if I bought this $100 dictionary...what would I find? Words, presumably. However, I have no intention of counting nearly 100,000 words by hand.</p>
+<p>Maybe we can do what Mr. Mansfield did and use some statistics. If there are ~100k words in the book, and I was to go to word 92000, where would be be in the Alphabet? X? Y? Z?</p>
+<p>I know the <a href="https://en.wikipedia.org/wiki/Letter_frequency">frequency of characters</a> in <a href="https://en.m.wikipedia.org/wiki/Etaoin_shrdlu">english words</a>, but is there a different frequency for the letters that <em>start</em> words? Eg. There's a lot of the letter &quot;E&quot; in the English language, but are there that many words that start with the letter &quot;E&quot;? First letter frequency?</p>
+<p><a href="https://en.wikipedia.org/wiki/Letter_frequency#Relative_frequencies_of_the_first_letters_of_a_word_in_the_English_language">Thank God For Wikipedia</a>. Turns out, no. While &quot;E&quot; is the most common letter in a word (13%), &quot;T&quot; is the most common first letter in a word (17%). However, in dictionaries, the most common letter is &quot;S&quot; (11%). Weird facts but it makes sense that a dictionary would contain lots of words that are not really part of the &quot;lexicon&quot; most people use.</p>
+<p>So with this, can I perform a very rough mathematical model for a dictionary of 100,000 words? Sure.</p>
+<pre><code>A would be 5700 / 100000 words
+B would be 6000 / 100000 words
+C would be 9400 / 100000 words
+...
+X would be 50 / 100000 words
+Y would be 360 / 100000 words
+Z would be 240 / 100000 words
+</code></pre>
+<p>So on and so forth...
+So, I wrote a script fucntion that takes the % of a first letter word in the dictionary, and maps it to an arbitrary # of words within a dictionary to find the approximate &quot;Letter&quot; for a given range. Then I took the 5 digits providied by the cipher, ran them through the &quot;range finder&quot; and here's the output:</p>
+<pre><code>R A E P A K T N R A 
+E S A C A D S A L R 
+A G S A G S A C A J 
+U A J R A G S A M P 
+A M A G S A C S A C 
+P N P A K A J S A L 
+P A D U A C R A J A 
+G R A E S A C P A L 
+U N A E S A E P A D 
+S A E S A E A K S A 
+E S N R N U
+</code></pre>
+<p>Well...it's a start maybe? Seems like a really long cipher if each character here represents the beginning of a whole word.</p>
+<p>If it's not a whole word, but just a literal letter, it certainly doesn't spell anything right now, plus the frequency of the letter skewed. Could you possibly re-arrange this into a real sentence? Maybe I'll write a script to try that some other time. It's also possible this could be swapped over with a simple substitution cipher to get a more accurate alphabet to work with?
+<img src="/static/images/dagapeyeff/freq_of_dictionary_stats.PNG" alt="extra"></p>
+<p>Back to the whole word theory - we would need a slightly more accurate range mapping - while the first letter is interesting, having the range also determine the frequency of the second letter would help narrow things down.</p>
+<p>It's good to know that 75628 might be a word starting with &quot;R&quot; but without the second letter its a large pool...I downloaded a random dictionary of about ~25k words from Github, and it came with 1,442 words that start with &quot;R&quot;...far too many to just randomly guess from.</p>
+<p>Here's what that would look like with 100% random words from the dictionary</p>
+<pre><code>recommended exercises photographed killer troupe nagging rows ego slightly clockwork reacted duration shoots left robotic gallon superheroes grooming swerving coat residence janitorial unbelievable jackpot regal geography slams metric plaything mistook rebirth governess sandbar corporation skirmishes coals prognosis neglected positioned kitties urgent jasper smith lucky physique drowsy unwarranted cooking ratio jungle ratio gor rustle enact staffers cool pigtails launcher utmost networks saintly evidence super estimates panicked display settle evaporated summers empire sweets knots stardom edges seasoned nixed rehab natured unbalanced
+</code></pre>
+<p>There are no repeating letters, though. These frequencies may be off slightly, if the frequency of first letter words in dictionaries changed over time (1933-2021) which they almost certainly have as new words showed up in the global vocabulary...like <em><a href="https://www.dictionary.com/browse/yeet">yeet</a></em>.</p>
+<p>Plus, who can be bothered to <em>accurately</em> count to 92,000 words? Nobody. Perhaps this cipher has never been solved simply because the solution is too tedious and prone to human decipherment (or encipherment...) error? Unfortunately, online I can't find anyone who was crazy enough to say &quot;yes, I counted to 92,000 and here's what I found.&quot;</p>
+<p>Realistically, even D'A didn't do this right? Maybe there's a copy of a dictionary somewhere with pencil'd in numbers that he used but it seems very far fetched, plus this copy of the dictionary isn't exactly clear on what you might consider a &quot;word&quot; since dictionaries contain &quot;headwords&quot; and &quot;partial&quot; words for things that end in -ful or -ing, etc...</p>
+<h1>Book Cipher Continued: Making The Cipher &quot;Fit&quot;</h1>
+<p>Before we go too deep down the &quot;longer versions of the 1933 dictionary&quot; rabbit hole, can we make the current cipher &quot;fit&quot; into our Concise dictionary instead?</p>
+<p>As noted on the wikipedia page, on page 111 D'A says</p>
+<blockquote>
+<p>The cipher is of course easily made out, but if every third, fourth, or fifth letter, as may be previously arranged, is a dummy inserted after a message has been put into cipher, it is then extremely difficult to decipher unless you are in the secret</p>
+</blockquote>
+<p>Okay, so what if we treat some numbers in our cipher text as &quot;Null&quot;? If we assume our dictionary has about ~65k words, then we should look to trim numbers &gt; 6 + maybe that pesky 0?</p>
+<p>We can go from this...</p>
+<pre><code>75628 28591 62916 48164 91748 58464 74748 28483 81638 18174
+74826 26475 83828 49175 74658 37575 75936 36565 81638 17585
+75756 46282 92857 46382 75748 38165 81848 56485 64858 56382
+72628 36281 81728 16463 75828 16483 63828 58163 63630 47481
+91918 46385 84656 48565 62946 26285 91859 17491 72756 46575
+71658 36264 74818 28462 82649 18193 65626 48484 91838 57491
+81657 27483 83858 28364 62726 26562 83759 27263 82827 27283
+82858 47582 81837 28462 82837 58164 75748 58162 92000
+</code></pre>
+<p>To this...</p>
+<pre><code>52251 21414 14544 44243 13114
+42245 32415 45355 53355 13155
+55422 25432 54315 14545 45532
+22321 12143 52143 32513 33441
+11435 45455 24225 15141 25455
+15324 41242 24113 52444 13541
+15243 35234 22252 35223 22223
+25452 13242 23514 54512 2
+</code></pre>
+<p>The 5x5 column was picked to sort of arbitrarily fit into a polybius square. Well, although it does seem sort of arbitrary to remove so many numbers from the grid it also fits the pattern that we explored with regular expressions earlier.</p>
+<p>The neat thing about this arbitrary solution is that you can technically keep the 0's if you want...</p>
+<pre><code>52251 21414 14544 44243 13114
+42245 32415 45355 53355 13155
+55422 25432 54315 14545 45532
+22321 12143 52143 32513 33044
+11143 54545 52422 51514 12545
+51532 44124 22411 35244 41354
+11524 33523 42225 23522 32222
+32545 21324 22351 45451 22000
+</code></pre>
+<p>And still have a perfectly organized grid. However, the difference between 5 digit pairs created after entry #14 are significant when shifted by that singular 0, similar to how the difference between word 2 and word 22000 is fairly large. One additional &quot;advantage&quot; of this approach is that the cipher got a lot smaller. Specifically, we go from 79 potential words in the dictionary to 40. No surprises there on the math.</p>
+<p>One unfortunate aspect of these two grids is that none of the 5 digit grouping repeat. This is sort of counter to what we might expect when compared to the dictionary cipher provided in the book where 55381 was repeated 5 times (4 times) for &quot;the&quot;.</p>
+<p>Regardless, it is possible to have sentences without using the same word twice. Perhaps d'A avoided repeating a simple word like &quot;the&quot; several times to make the cipher more difficult to solve on purpose?</p>
+<p>In the book, D'A gives a book cipher example using a dictionary (presumably the concise edition) where he starts by ordering his 5 digit pairs in ascending order, and maps words within the ranges provided (Eg. Word 55381 in the Dictionary) to their associated word pair, perhaps &quot;T&quot;...and then those word pairs, maybe the range associated with &quot;TH&quot; is mapped to the digits 55381, to help build a sentence.</p>
+<p>Fortunately...D'Agapeyeff throws us a bone...maybe.</p>
+<blockquote>
+<p>Now we can find in the dictionary the word 'the' (55381). This we can count back about twenty words for 55366 (th).</p>
+</blockquote>
+<p>Assuming me and my boy D'A are looking at the same Dictionary, I can confirm that the word &quot;the&quot; shows up on page 1270. If I count back 15 words...I sort of have the same span of words that D'A notes</p>
+<blockquote>
+<p>'thane', 'thank', 'that', 'thatch' ...</p>
+</blockquote>
+<p>But I think D'A was paraphrasing a bit here, if he was on &quot;the&quot; 55381 and goes back to word 55366 - that's a difference of 15 words not 4. So my &quot;span&quot; seems reasonable, I end up with words like: thaw, thatch, that, thanksgiving, thankless, thankful, thank, than, thallium, thalamus, etc...all leading up to &quot;-th.&quot; ...literally just &quot;th&quot; like he says in the book...which is, depending how you count subdefinitions or variations of words (like thank/thankful) about 15 words away...so maybe this is literally the same version of the dictionary that he was using? That's a good sign at least?</p>
+<p>D'A gives us the solution to the Dictionary Cipher presented</p>
+<blockquote>
+<p>The reconnaissance of the route to the sea has revealed that the aeroplane(s) defensive was over the town.</p>
+</blockquote>
+<p><img src="/static/images/dagapeyeff/mistake_cipher.jpg" alt="mistake"></p>
+<p>There's technically a mistake in this section of the book, which isn't inspiring. If word 55381 is &quot;the&quot; then why is the 4th position of the cipher <em>44381</em> ? And if you literally just count the occurrences of 55381, it only occurs 4 times, not 5. Anyway...</p>
+<p>So if 55381 was &quot;The&quot; then 42872 must be &quot;reconnaissance&quot;? That shows up on page 975...but we have a real problem, Houston. I only really noticed after a bit of flipping through the pages.</p>
+<p>Great, let's take our modified &quot;null replaced&quot; cipher and take the groupings of 14 words prior to our &quot;0 conundrum&quot; which are unchanged and see if we can figure them out:</p>
+<pre><code>12143,13114,13155,14544,14545,21414,22321,25432,32415,32513,42245,44243,45355,45532,52143,52251,53355,54315,55422
+</code></pre>
+<p>If we take this list, and compare each number to every &quot;known&quot; word/number pair in the already provided solution we can end up with some interesting data.</p>
+<table>
+<thead>
+<tr>
+<th>Cipher Word</th>
+<th>Word Diff</th>
+<th>Known Word</th>
+<th>Known Word #</th>
+<th>Known Word # Page #</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>52143</td>
+<td>-3223</td>
+<td>that</td>
+<td>55366</td>
+<td>1269</td>
+</tr>
+<tr>
+<td>52251</td>
+<td>-3115</td>
+<td>that</td>
+<td>55366</td>
+<td>1269</td>
+</tr>
+<tr>
+<td>32415</td>
+<td>-2869</td>
+<td>of</td>
+<td>35284</td>
+<td>787</td>
+</tr>
+<tr>
+<td>32513</td>
+<td>-2771</td>
+<td>of</td>
+<td>35284</td>
+<td>787</td>
+</tr>
+<tr>
+<td>53355</td>
+<td>-2011</td>
+<td>that</td>
+<td>55366</td>
+<td>1269</td>
+</tr>
+<tr>
+<td>21414</td>
+<td>-1757</td>
+<td>has</td>
+<td>23171</td>
+<td>526</td>
+</tr>
+<tr>
+<td>54315</td>
+<td>-1051</td>
+<td>that</td>
+<td>55366</td>
+<td>1269</td>
+</tr>
+<tr>
+<td>22321</td>
+<td>-850</td>
+<td>has</td>
+<td>23171</td>
+<td>526</td>
+</tr>
+<tr>
+<td>42245</td>
+<td>-627</td>
+<td>reconnaissance</td>
+<td>42872</td>
+<td>975</td>
+</tr>
+<tr>
+<td>44243</td>
+<td>9</td>
+<td>revealed</td>
+<td>44234</td>
+<td>1006</td>
+</tr>
+<tr>
+<td>55422</td>
+<td>41</td>
+<td>the</td>
+<td>55381</td>
+<td>1270</td>
+</tr>
+<tr>
+<td>12143</td>
+<td>93</td>
+<td>defensive</td>
+<td>12050</td>
+<td>297</td>
+</tr>
+<tr>
+<td>45355</td>
+<td>181</td>
+<td>route</td>
+<td>45174</td>
+<td>1030</td>
+</tr>
+<tr>
+<td>45532</td>
+<td>358</td>
+<td>route</td>
+<td>45174</td>
+<td>1030</td>
+</tr>
+<tr>
+<td>13114</td>
+<td>1064</td>
+<td>defensive</td>
+<td>12050</td>
+<td>297</td>
+</tr>
+<tr>
+<td>13155</td>
+<td>1105</td>
+<td>defensive</td>
+<td>12050</td>
+<td>297</td>
+</tr>
+<tr>
+<td>25432</td>
+<td>2261</td>
+<td>has</td>
+<td>23171</td>
+<td>526</td>
+</tr>
+<tr>
+<td>14544</td>
+<td>2494</td>
+<td>defensive</td>
+<td>12050</td>
+<td>297</td>
+</tr>
+<tr>
+<td>14545</td>
+<td>2495</td>
+<td>defensive</td>
+<td>12050</td>
+<td>297</td>
+</tr>
+</tbody>
+</table>
+<p>In this case, our cipher has the number 44243, and the cipher text solved in the book as an example has word 44234. If we simply count 9 words up from 44234 &quot;975&quot; on page 1006 we should arrive at word 44233. Counting to just 9.</p>
+<p>That gives us...</p>
+<pre><code>0 reveal(ed)
+1 reveille
+2 revel
+3 revelation
+4 revelationist
+5 revenant
+6 revendication
+7 revenge
+8 revenue
+9 reverberate
+10 revere
+11 reverence
+</code></pre>
+<p>Depending on how you &quot;count&quot; words you might land on &quot;revenue&quot; or &quot;revenge&quot; which are both interesting. However, we don't really need to count that exactly, with a seletion of ~10 potential words we could pretty easily brute force solutions until a sentence forms that makes grammatical/logical sense...right?</p>
+<p>So counting 9 is easy. However, we still have numbers too large to count accurately. I consider that anything over 500.</p>
+<p>Thankfully, we can make some solid estimates, though. Dealing with a maximum of ~3200 words is a lot better than dealing with numbers &gt; 10k. So we can <em>probably</em> start guessing some diphthongs/&quot;probable first two letters&quot; to each of our tables. The farther away from a &quot;known&quot; word we get, the fuzzier our definition may be.</p>
+<p>After-all, as D'A says himself on page 156</p>
+<blockquote>
+<p>...application of the law of probability to dictionary codes is very interesting.</p>
+</blockquote>
+<p>I may keep exploring this in the future.</p>
+<h1>I also bought this other old book...</h1>
+<p>Yes...<em>ebay</em>, again...</p>
+<p>This book was originally published in 1918 by a French author, Andre Langie, under the title of &quot;De la cryptographie; etude sur les ecritures secretes.&quot; and translated in 1922 by a British man named J.C.H. MACBETH.</p>
+<p><img src="/static/images/dagapeyeff/old_book.jpg" alt="1922">
+I mostly just thought it was cool...but it's also a reference in the bibliography in D'A's Codes and Ciphers. So I thought I'd read it to see if there was anything interesting. Especially considering it's one of the more &quot;recent&quot; references (1922) that also happened to be in English.</p>
+<p>Turns out I didn't need to buy it though, since the whole thing is scanned into the <a href="https://archive.org/details/cryptographylang00lang/mode/2up">internet archive</a>. So you can read it for free!</p>
+<p><img src="/static/images/dagapeyeff/old_book_inside.jpg" alt="1922-inside"></p>
+<p>Apparently the book I bought was used by a &quot;Lt. Kenneth Anderson Coler&quot; who was looking for Rum Runner's in Alabama during prohibition. Unfortunately whoever wrote that in pencil didn't date it. Maybe it's <a href="https://www.newspapers.com/clip/57035134/obituary-for-kenneth-anderson-coler/">this guy</a>? Also apparently sometime after Lt. Coler's use in Alabama the book got transferred to the &quot;Intelligence Unit&quot; of New York City? Interesting history for this 99 year old book.</p>
+<p>Outside of the interesting history, this book launches straight into discussion of dictionary (book) codes by page 35 (It's about 180 pages long). With an example of &quot;a dictionary of 25,000 numbered words&quot;</p>
+<p>Considering we know for a fact that D'A <em>read</em> this book as a reference before/during his own authorship of C&amp;C there's some really uninspiring quotes in here about dictionary ciphers</p>
+<blockquote>
+<p>Great patience will be required to ferret out the whole of the message...</p>
+</blockquote>
+<blockquote>
+<p>...in practice such documents are not often found with the numbers written in this straightforward way. Usually the figures are transposed and all sorts of complications interspered</p>
+</blockquote>
+<blockquote>
+<p>A common method is to rearrange the order of the figures in each group upon a prearranged plan...thus 24133, 21682 ... are transformed into 13432, 62182 ... the difficulty here is to discover the normal order of the figures in each number, and to restore them to their primitive form ... it is a case of bailing the ocean!</p>
+</blockquote>
+<p>Jeesh...this really goes back to my point about this being unsolved due to the obscure/tedious nature of of the possible solution. Considering I just guessed about this book being relevant before I purchased it, it was surprisingly on point with what I hoped it contained, though.</p>
+<p>Interestingly, Langie/Macbeth gives us a &quot;Test Message In Cipher&quot; on page 190 and goes on to explain that it will be painful and difficult to solve, and if nobody solves it in &quot;a reasonable time&quot; he'll publish the solution later. Apparently the solution was provided, since it's clearly not listed on the &quot;Unsolved Ciphers&quot; wikpedia page and supposedly is a <a href="https://www.tandfonline.com/doi/abs/10.1080/0161-117991853891?journalCode=ucry20">&quot;two-step cipher based upon a Playfair&quot;</a>. I can't seem to find the actual plaintext, however. Plus the searches are sort of bogged down by Shakespeare  references. Then again, the original publishing was in <em>French</em> so maybe I'm just not googling in French good enough.</p>
+<p>2022 Update! I Google'd a little harder and managed to get a free download of that annoying Journal website linked above. To summarize, the Macbeth test message was enciphered with a Playfair with the keyword of &quot;J. Macbeth&quot; in the first and fifth lines of the square. Then the message was transposed into Continental Morse Code with dots, dashes, and spaces representing constantans and vowels independently...ah, you know what, here's the <a href="/static/images/dagapeyeff/macbeth_test_message.pdf">pdf</a>.</p>
+<p>One interesting parallel here is that:
+Langie/Macbeth spend the pages preceding the &quot;test&quot; cipher discussing Playfair, and then provide the reader with an unsolved playfair as a challenge.</p>
+<p>In D'A's C&amp;C he spends the pages preceding his &quot;challenge&quot; cipher discussing Dictionary codes, and then provides the reader with an unsolved cipher as challenge.  If D'A was intentionally mirroring the previous work (including a challenge cipher), then he may have also intentionally preceded his cipher with a chapter on the type of cipher that he used (eg. Dictionary/Book Cipher)? Just a Thought.</p>
+<p>Also, D'A is almost more known as a cartographer and the author of &quot;Maps&quot; more than he is known as a cryptologist. So isn't it interestingly that in this book published 17 years prior says in reference to book ciphers</p>
+<blockquote>
+<p>the first thing to do - and it is not easy - is to determine the exact meaning of the two numbers ... as when preparing a survey map of a country it is first necessary to calculate with the utmost accuracy the height and distance of two given points, to form a base on which the triangulation of the whole region may be effected...</p>
+</blockquote>
+<h2>Transposition of Dictionary Positions</h2>
+<p>This book got me thinking though, removing the 6,7,8,9,(0) <em>was</em> a bit arbitrary in the sense that we were just guessing, and as D'A himself notes using nulls to throw people off really only works if you're &quot;in the secret&quot; which we are firmly not. He does spend some time discussing transposition ciphers prior to his dictionary...what if we treat each 5 digit number as a full sequence, but in the wrong order? How many permutations of each letter pair are there, and what happens to the full sequence if the same transpositional rules are applied to each sequence? Which number has the least permutations?</p>
+<p>I <em>think</em> the answer to that final question is 92000, the last number in the sequence. Using some quick scripting I found that there's 20 unique permutations of the number 92000:</p>
+<pre><code>00029,00092,00209,00290,00902,00920,02009,02090,02900,09002,09020,09200, 20009,20090,20900,29000,90002,90020,90200,92000
+</code></pre>
+<p>In this case, we can probably ignore anything above 90000 so really the sequence is only 16 unique characters long. We can also use the previous technique of finding the nearest &quot;word&quot; which we know the page/plaintext of. Also, this sequence ends up with some pretty small numbers. It's not totally unreasonable to figure out words &lt;500.</p>
+<p>For example, word 00029 is almost certainly in the &quot;AB&quot; range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming D'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to &quot;00092&quot; (shift all numbers over 2 posistions) to <em>every</em> digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either &quot;the&quot; or &quot;of&quot; or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already &quot;known&quot; plaintext examples from the example in C&amp;C?</p>
+<p>Checking all numbers, we find a fairly unsurprising pattern:</p>
+<table>
+<thead>
+<tr>
+<th>Count</th>
+<th>Name</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26</td>
+<td>120</td>
+<td>75628, 28591, ...</td>
+</tr>
+<tr>
+<td>37</td>
+<td>60</td>
+<td>62916, 48164, ...</td>
+</tr>
+<tr>
+<td>09</td>
+<td>30</td>
+<td>74748, 37575, ...</td>
+</tr>
+<tr>
+<td>06</td>
+<td>20</td>
+<td>83828, 81848, ...</td>
+</tr>
+<tr>
+<td>01</td>
+<td>10</td>
+<td>48484</td>
+</tr>
+</tbody>
+</table>
+<p>Any 5 digit number with 5 unique characters can form a high number of permuatations, 120. As the unique number of letters decrease, the fewer permutations we get. Is this useful? I'm not sure, probaly not. Other than we can narrow down to only 10 dictionary words what word 48484 could be, rather than 120 words for the most &quot;noisy&quot; of the bunch.</p>
+<p>So assuming we have a maxium of 120 permutations of certain characters, can we generate all 120 by using this technique?</p>
+<table>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>-&gt;</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>E</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>7</td>
+<td>5</td>
+<td>6</td>
+<td>2</td>
+<td>8</td>
+<td>-&gt;</td>
+<td>7</td>
+<td>5</td>
+<td>6</td>
+<td>8</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>In this case, treat the cipher as a single column of 5 digit pairs. Then map each first digit with A, second digit with B, etc. Then permuate ABCDE into its 120 versions, and bring each &quot;column&quot; of the underying cipher with</p>
+<p>Anyway, a bit of scripting later and here we have them.</p>
+<pre><code>Permutation ABCDE (1)
+75628 28591 62916 48164 91748 58464 74748 28483 81638 18174 
+74826 26475 83828 49175 74658 37575 75936 36565 81638 17585 
+75756 46282 92857 46382 75748 38165 81848 56485 64858 56382 
+72628 36281 81728 16463 75828 16483 63828 58163 63630 47481 
+91918 46385 84656 48565 62946 26285 91859 17491 72756 46575 
+71658 36264 74818 28462 82649 18193 65626 48484 91838 57491 
+81657 27483 83858 28364 62726 26562 83759 27263 82827 27283 
+82858 47582 81837 28462 82837 58164 75748 58162 92000
+
+Permutation ABCED (2)
+75682 28519 62961 48146 91784 58446 74784 28438 81683 18147 
+74862 26457 83882 49157 74685 37557 75963 36556 81683 17558 
+75765 46228 92875 46328 75784 38156 81884 56458 64885 56328 
+72682 36218 81782 16436 75882 16438 63882 58136 63603 47418 
+91981 46358 84665 48556 62964 26258 91895 17419 72765 46557 
+71685 36246 74881 28426 82694 18139 65662 48448 91883 57419 
+81675 27438 83885 28346 62762 26526 83795 27236 82872 27238 
+82885 47528 81873 28426 82873 58146 75784 58126 92000
+
+Permutation ABDEC (3)
+75286 28915 62169 48641 91487 58644 74487 28834 81386 18741 
+74268 26754 83288 49751 74586 37755 75369 36655 81386 17855 
+75567 46822 92578 46823 75487 38651 81488 56854 64588 56823 
+72286 36812 81287 16634 75288 16834 63288 58631 63306 47814 
+91189 46853 84566 48655 62469 26852 91598 17914 72567 46755 
+71586 36642 74188 28624 82496 18931 65266 48844 91388 57914 
+81576 27834 83588 28643 62267 26625 83597 27632 82278 27832 
+82588 47825 81378 28624 82378 58641 75487 58621 92000
+
+...
+&lt;116 More Permutations&gt;
+...
+
+Permutation EDCBA (120)
+82657 19582 61926 46184 84719 46485 84747 38482 83618 47181 
+62847 57462 82838 57194 85647 57573 63957 56563 83618 58571 
+65757 28264 75829 28364 84757 56183 84818 58465 85846 28365 
+82627 18263 82718 36461 82857 38461 82836 36185 03636 18474 
+81919 58364 65648 56584 64926 58262 95819 19471 65727 57564 
+85617 46263 81847 26482 94628 39181 62656 48484 83819 19475 
+75618 38472 85838 46382 62726 26562 95738 36272 72828 38272 
+85828 28574 73818 26482 73828 46185 84757 26185 00029
+
+</code></pre>
+<p>Unfortunately, I'm not entirely sure why I did this. Sure, this gives me 120 &quot;versions&quot; of the cipher, and maybe 1/120 is the &quot;right&quot; version but I still have to map these to words in the dictionary...and I still don't want to count. Additionally, this type of transform operation doesn't actually create new pairings of repeats. So we still don't have our silver bullet &quot;the&quot; that happens 5 times in the cipher.</p>
+<p>Plus, even if there was an &quot;easy&quot; match between the known words from the provided dictionary cipher (I calculated the word distances above)...the re-arranged words barely match up to any known words. I walked through some bad regex and the only &quot;digit grouping&quot; that matches from our &quot;known&quot; words at the top, to D'A cipher in the middle is 55366 which matches &quot;36565&quot; in spot 18. The rest of the &quot;matches&quot; as shown in the image below always have 1 digit too many or too few.</p>
+<p><img src="/static/images/dagapeyeff/can_you_match_a_permuatation.PNG" alt="matching-perms"></p>
+<p>Still a neat way to look at it, I suppose.</p>
+<h1>Dictionary Method: Page, Line, Letter?</h1>
+<p>On the page #129 in which D'A mentions the &quot;Dictionary Code Systems&quot;, which is what we'd call a &quot;Book Cipher&quot; he talks about a different way to utilize a book like the Dictionary to encipher text.</p>
+<blockquote>
+<p>One of the ways in which ordinary dictionaries can be used is first to agree on a certain edition...then to  only give the number of the page, and the number of the word down the page..
+100612 010417 129108</p>
+</blockquote>
+<p>With 1006, 0104, and 1291 being page numbers and 12, 17, and 08 being words &quot;down the page&quot;</p>
+<p>This would decode to</p>
+<blockquote>
+<p>Reunion Berlin Tomorrow</p>
+</blockquote>
+<p>The neat part of this cipher is that Reunion is indeed word ~12 on page 1006, and so on and so forth. So at least we've confirmed out dictionary version works?</p>
+<p>Let's try that instead? Using these cipher pages...</p>
+<pre><code>75628 28591 ...
+</code></pre>
+<p>But how are these delimited?</p>
+<ul>
+<li>Page Number. Word Number.</li>
+<li>Page Number. Line Number. Word Number</li>
+<li>Page Number. Word Number. Letter Number.</li>
+</ul>
+<p>p75.w628 - That can't be it, we won't fit 628 words on a page.</p>
+<p>p756.w28 - Unlikely as page 756 does not have 28 words on it.  You could of course go to the &quot;next page&quot; but then why not just list something like 75704. I think it's safe to say almost no page in the dictionary will have &gt;20 words on the page unless you get very lucky with a sequence of short definitions.</p>
+<p>p7562.w8 - This can't work since we only have 1500 pages in the dictionary.</p>
+<p>p75.l6.w28 - I don't like this method already because in his example when the page number fell below 1000 he padded with 0's. Additionally, we'd only be using page 16-92, which seems like a &quot;waste&quot; of the remaining 1400+ pages. Page 75 line #6 word 28 also doesn't make sense because once you get to line 6 28 words later is another line, so we've broken the order once again. Why not list the later line with a smaller word count.</p>
+<p>p756.l2.w8 - Still does not abide by the &quot;pad&quot; &lt;1k with 0 method, but it makes a bit more sense. Perhaps Line 2 could be &quot;definiton 2&quot; instead of line? In that case, defintion 2 is &quot;neap&quot; referring to a very low tide, and word 8 of that is &quot;In&quot;..maybe. Depends how you count. I suppose I can't discount this entirely, the cipher could start with the word &quot;In...&quot;</p>
+<p>p75.w6.l62 &amp; p75.w62.l8 - Neither of these make much sense since again, we'd be ignoring 1400 pages of text, and finding letter 62 of &quot;word 6&quot; is impossible, additionally letter 8 of the 62nd word seems like a frustratingly bad code.</p>
+<p>p756.w2.l8 - The second word on page 756 is once again &quot;neap&quot; and if we go to letter 8 we find uh... &quot;a. &amp; n., &amp; v.t. &amp;i. N. -tide or n., tide&quot; See...these deifnitons are often trailed with a long sequence of definitions for if its a noun, etc. Do you count that? Letter 8 is &quot;n&quot; if you ignore all of that and focus on the actual definition of &quot;tide soo<strong>n</strong> after the moon's first &amp; third quarters...&quot;</p>
+<p>Needless to say, there's a lot of different ways you can mix this up. There are some limits, like page number. But this is sort of an infinite game without discussing in advance how to process the numbers. Maybe it's backwards and lists the word number, the deftinion number, then page number in acsending order instead of decending? I think it's safe to assume one of the numbers would be page number, but what after that? Line number? Letter/Character Number? Word Number&quot; Number of <strong>bolded</strong> definitions? Maybe it's not even the whole word referenced, maybe it just wants you to take the first letter? Or the last...see, if you and your spy friend agree on a very specific sequence like</p>
+<p>&quot;Page.Definition #.Word# - always use the 1st letter if its in column 1, but use the last letter of that word if its in column 2...&quot;</p>
+<p>We'd never figure it out, and without a clue to that it would be pretty well impossible...maybe.</p>
+<h1>Page, Line, Letter: The Book Itself</h1>
+<p>Maybe we don't use a dictionary, but rather the book itself?</p>
+<table>
+<thead>
+<tr>
+<th>Page Number</th>
+<th>Line Number</th>
+<th>Letter Number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>75</td>
+<td>6</td>
+<td>28</td>
+</tr>
+<tr>
+<td>28</td>
+<td>5</td>
+<td>91</td>
+</tr>
+<tr>
+<td>92</td>
+<td>0</td>
+<td>00</td>
+</tr>
+</tbody>
+</table>
+<p>Page 75 is not entirely text. It has &quot;Boy Scout Signs&quot; injected halfway through the page, with a sub-title  and diagrams. Do you count sub titles as a line? How about diagrams that unevenly adjust page spacing? Maybe its</p>
+<p>If you treat every &quot;Line&quot; as a line, title or not, line #6 is &quot;Australia&quot; ... which does not have 28  letters to pick from. Maybe we ignotre the &quot;Page Title&quot;, that pushes line #6 to &quot;Boy Scout Signs&quot;...that also doesn't have 28 letters to pick from. If we ignotre that line, since its a title we finally have something workable:</p>
+<pre><code>The four principal scout signs derived by Lord 
+</code></pre>
+<p>Which condensed to count the letters</p>
+<pre><code>ThefourprincipalscoutsignsderivedbyLord
+</code></pre>
+<p>Letter 28 is 'e' ...but there were a lot of assumptions about titles to arrive at this letter.</p>
+<p>Let's check the next page #28...and its even worse. How do you even parse this by Line # and Letter?</p>
+<p><img src="/static/images/dagapeyeff/page28.png" alt="28"></p>
+<p>Okay, maybe page 92? Wait, what's line #0? What's Character #0? Is the code 0 indexed or  should I start count from 1? If I count from 0, then suddenly the first solution isn't 'e' it's 'r'...</p>
+<p>Perhaps the book isn't the key. Seems too sloppy, too much guess work, and this book has non-standard formatting on nearly ever page.</p>
+<p>However there are a lot of ways to slice the five digit number:</p>
+<ul>
+<li>Page, Line, Letter
+<ul>
+<li>75,6,28 -- The only &quot;Valid&quot; split I can see.</li>
+<li>7,5,628 -- Well...we certainly won't find lines with 628 letters on them.</li>
+<li>7,56,28 -- Unfortunately most pages are only ~30 lines long, so not probable.</li>
+<li>7,562,8 -- Breaks reason with &gt;30 line numbers.</li>
+<li>75,62,8 -- Breaks reason with &gt;30 line numbers.</li>
+</ul>
+</li>
+</ul>
+<p>So any split where the first digit is &lt;7 is unreasonable to apply.</p>
+<p>Example: 28591 page 2 isn't numbered, and if it were, it's an entirely blank page.</p>
+<p>So none of the alternative splits make much sense, either?</p>
+<h2>The Book Itself - &quot;Hidden Alphabet&quot;</h2>
+<p>When I was flipping through the book I noticed small upper case letters on certain pages. After some investigation, I discovered they were about every 8 pages. I did some research, and these are known as <a href="https://en.wikipedia.org/wiki/Signature_mark">Signature Marks</a>. These marks are related to a now outdated bookbinding technique that ensured the pages were bound in the right section/order when building (<a href="https://en.wikipedia.org/wiki/Octavo">binding</a>?) the book. This is also  known as &quot;collating&quot; or &quot;designation marks&quot; in bookmaking, apparently.</p>
+<p>Sadly, I found <a href="http://www.thekryptosproject.com/tjp/dagapeyeff.php">this person's</a> website later in my research. They have a whole word document from 2009 where they apparently got very excited over the discovery of the &quot;little alphabet.&quot; As far as I can tell, they never figured out what the Signature Marks are.</p>
+<p><img src="/static/images/dagapeyeff/kryptos_blog.png" alt="kryptos_blog"></p>
+<p>Although I do find it interesting that the collation does not include &quot;J&quot; ? And I give the guy in 2009 some credit, early substitution ciphers like playfair usually <em>did</em> combine <a href="https://en.wikipedia.org/wiki/Substitution_cipher#Polygraphic_substitution">I and J</a>.</p>
+<blockquote>
+<p>Each section has a different signature, and when letters are used for identification, as is the usual practice, they progress in alphabetical order, with J, V, and W usually omitted to avoid confusion, although their exclusion does have an historical basis, in that manuscripts and early printed books were usually in Latin, in which I stands for both I and J, V for both U and V, and there is no W.</p>
+</blockquote>
+<p>I don't think this is the solution to the cipher, nor the key. I don't think D'A would have had control over the way Oxford published the book. I also don't think D'A would have even thought twice about the signature mark being in the book, as he wasn't in the printing industry by trade.</p>
+<p>Anyway, this was a waste of time. I guess I learned some random book trivia? <small>And so did you if you bothered reading this</small></p>
+<h2>The Book Itself - 1949 Edition</h2>
+<p>The cipher, unchanged, is included in the 1949 edition of the book. However, the 1949 edition is apparently slightly larger. Thus, the page numbers don't align anyway.</p>
+<p>Here's a screenshot of page 57 from a 1949 edition I found listed on ebay.
+<img src="/static/images/dagapeyeff/1949ed.png" alt="1949"></p>
+<p>The &quot;African Drum&quot; illistration and language graphic is on page 53 of the 1939 edition. We're way off. The book is likely not the key.</p>
+<p>I suppose you could argue that D'A had the cipher removed from the next print run of the book for this exact reason. &quot;Oh dear, its not possible anymore!&quot; ... I'm guessing not.</p>
+<p>I also bought a 1952 edition (ebay), the one where the cipher is removed, and confirmed that once again, the page numbers shifted. How fun.</p>
+<h1>Other Approaches</h1>
+<h2>Coincidences in Text Formatting</h2>
+<p>In writing, often times framing is very important. One framing technique is known as &quot;bookending&quot; or simply a &quot;bookended story.&quot; These are stories where the very beginning of a work is paralleled in the ending to create a sense of closure, or a loop that has a satisfying resolution that harkens back to how the story began.</p>
+<p>So, I'm probably in a rabbit hole here, but the cipher in the original text is at the <em>very</em> end of the book, so what's at the beginning?</p>
+<p><img src="/static/images/dagapeyeff/dedication.jpg" alt="dedication"></p>
+<p>Why did this catch my eye at all? Well first, it's <em>suspiciously</em> square. That sounds stupid.</p>
+<p>It's 8 rows with a sentence that happens to have 10 words? Unfortunately, this pattern changes between 8-5 words per sentence, and depends how you want to count words like &quot;in-terest&quot;,&quot;co-operation&quot;,&quot;through-out&quot;...So maybe this is just a coincidence of monospace font styling. 52 words total? Either way, it caught my eye for a few minutes. It felt like certain words were sort of arbitrarily hyphenated to the next line to fit a particular formatting.</p>
+<p>Why not just change the font size or use slightly wider margins like they did in the 1952 edition where they removed the cipher? Oh...okay, not falling for that mental trap. The removal has nothing to do with the reformatting of the dedication page. <em>The removal has nothing to do with the reformatting of the dedication page.</em> <small>The removal has nothing to do with the reformatting of the dedication page.</small>
+<img src="/static/images/dagapeyeff/dedication2.jpg" alt="dedication2"></p>
+<p>Joking aside, I don't presently think there's anything to this block of text. Plus, much like the dictionary &quot;forgotten&quot; rant I had earlier, why would D'A have forgotten that he used his dedication page as the key? Sadly I was able to find no information on the Internet about &quot;Geoffrey and Marjory Cass&quot; or &quot;Rachel Wood&quot; for whoever they may have been to D'A.</p>
+<h2>Page 113: Army Cipher</h2>
+<p>This page discusses an army signal cipher
+It breaks it up into &quot;sets of five&quot; set apart by / to be grouped. Additionally, the messages ends in AAA</p>
+<blockquote>
+<p>One should note that AAA signifies the end of the message.</p>
+</blockquote>
+<p>This is similar to the cipher which has groups of 5, and it ends in 000  (AAA). Is it possible one of the repeating characters in the groups of 5 represents a delineation slash?</p>
+<p>I used the idea on page 113 to break up the text on possible repeating delimiters (Eg. /). Unfortunately, the average length of a word in English is only 5 letters. Unsurprisingly, the sequence with the highest frequency, 81, produced the smallest word lengths -- but even so the length is 17! Way beyond the expected value produced by English.</p>
+<table>
+<thead>
+<tr>
+<th>Delimiter</th>
+<th>Words</th>
+<th>Avg. Word Length</th>
+<th>Max Word Length</th>
+<th>Min Word Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>00</td>
+<td>2</td>
+<td>196</td>
+<td>392</td>
+<td>1</td>
+</tr>
+<tr>
+<td>04</td>
+<td>2</td>
+<td>196</td>
+<td>199</td>
+<td>194</td>
+</tr>
+<tr>
+<td>62</td>
+<td>18</td>
+<td>20</td>
+<td>62</td>
+<td>2</td>
+</tr>
+<tr>
+<td>63</td>
+<td>13</td>
+<td>29</td>
+<td>130</td>
+<td>6</td>
+</tr>
+<tr>
+<td>64</td>
+<td>17</td>
+<td>21</td>
+<td>58</td>
+<td>2</td>
+</tr>
+<tr>
+<td>65</td>
+<td>12</td>
+<td>31</td>
+<td>82</td>
+<td>4</td>
+</tr>
+<tr>
+<td>71</td>
+<td>2</td>
+<td>196</td>
+<td>250</td>
+<td>143</td>
+</tr>
+<tr>
+<td>72</td>
+<td>10</td>
+<td>38</td>
+<td>150</td>
+<td>6</td>
+</tr>
+<tr>
+<td>74</td>
+<td>15</td>
+<td>24</td>
+<td>74</td>
+<td>6</td>
+</tr>
+<tr>
+<td>75</td>
+<td>18</td>
+<td>20</td>
+<td>82</td>
+<td>2</td>
+</tr>
+<tr>
+<td>81</td>
+<td>21</td>
+<td>17</td>
+<td>62</td>
+<td>2</td>
+</tr>
+<tr>
+<td>82</td>
+<td>18</td>
+<td>20</td>
+<td>80</td>
+<td>4</td>
+</tr>
+<tr>
+<td>83</td>
+<td>16</td>
+<td>23</td>
+<td>74</td>
+<td>4</td>
+</tr>
+<tr>
+<td>84</td>
+<td>12</td>
+<td>31</td>
+<td>70</td>
+<td>4</td>
+</tr>
+<tr>
+<td>85</td>
+<td>18</td>
+<td>20</td>
+<td>72</td>
+<td>2</td>
+</tr>
+<tr>
+<td>91</td>
+<td>13</td>
+<td>29</td>
+<td>132</td>
+<td>2</td>
+</tr>
+<tr>
+<td>92</td>
+<td>4</td>
+<td>97</td>
+<td>222</td>
+<td>3</td>
+</tr>
+<tr>
+<td>93</td>
+<td>3</td>
+<td>130</td>
+<td>194</td>
+<td>82</td>
+</tr>
+<tr>
+<td>94</td>
+<td>2</td>
+<td>196</td>
+<td>222</td>
+<td>171</td>
+</tr>
+</tbody>
+</table>
+<h2>A Rabbit Hole of Playfair</h2>
+<p>Is it coincidence that Mansfield's Solutions to Codes &amp; Ciphers and D'A's  Codes and Ciphers features what is essentially a <a href="https://en.wikipedia.org/wiki/Charles_Wheatstone#Cryptography">Wheatstone</a> <a href="http://www.jproc.ca/crypto/wheatstone.html">Cryptograph</a> on the cover? I suppose not, since &quot;<a href="https://en.wikipedia.org/wiki/Cipher_disk">cipher disks</a>&quot; predate Mr. Wheatsone by a few hundred years.</p>
+<p>Still, it could be a vague homage to Wheastone who also invented the much more useful Playfair system. Is the cover of this novel a round about hint to utilize Wheastone methods? Eg. Playfar? Probably not, but regardless it seems fair to conclude that playfair <em>could</em> be part of the solution.</p>
+<p>This is even more interesting when you consider D'A's role in WWI and the widespread use of Playfair and ADFGX/ADFGVX ciphers in that conflict.</p>
+<p>One potential solution I think is worth playing with is a <a href="https://en.wikipedia.org/wiki/Polybius_square#Hybrid_Polybius_Playfair_cipher">hybrid polyibus and playfair cipher</a>.</p>
+<h2>More Old Books &amp; Other Misc Sources...</h2>
+<p>After I had found it in digital form on Archive.org it got me thinking about other books that may have been published before the D'A cipher in 1939 that had been digitized...</p>
+<p>One interesting thing about the idea of looking for hints in recently digitized text from the 1920s and 1930s is that it is extremely unlikely that anyone has really read over these antiquated version of cryptography in quite some time. Additionally, nobody really had &quot;access&quot; to many of these texts until they were digitized (typically soemtime after 2015).</p>
+<p>To Google Books we go!</p>
+<p><strong>Popular Mechanics</strong>
+There's a fun article from a 1926 Popular Mechanics (Vol. 46, No. 4?) titled <a href="https://books.google.com/books?id=PNgDAAAAMBAJ&amp;pg=PA564&amp;dq=The+Magic+Lure+of+Ciphers#v=onepage&amp;q=The%20Magic%20Lure%20of%20Ciphers&amp;f=false">&quot;The Magic Lure of Ciphers&quot;</a>.</p>
+<p>Although I wish I could say this article gave me some magic lightbulb idea for the D'A cipher it ultimately did not. But, it does include some interesting and direct references from Col. <a href="https://en.wikipedia.org/wiki/George_Fabyan">George Fabyan</a> as well.</p>
+<p><strong><a href="https://www.google.com/books/edition/Elements_of_Cryptanalysis/Sx8aSJHtnEAC?hl=en&amp;gbpv=1">Elements of Cryptanalysis</a></strong> - United States. War Department (1923). This was actually a very interesting read that certainly pre-dated the D'A cipher by 16 years.</p>
+<p><strong><a href="https://archive.org/details/Fm3440.2BasicCryptAnalysis/page/n115/mode/2up">U.S. Army FM-34-40-2, Basic Crypt-Analysis</a></strong> - The US Army at it again with a manual too long to read, but full of great info on basic ciphers.</p>
+<h1>References &amp; Additional Reading</h1>
+<h2>Wikipedia</h2>
+<ul>
+<li>https://en.wikipedia.org/wiki/D%27Agapeyeff_cipher</li>
+</ul>
+<h2>Tools</h2>
+<ul>
+<li>https://regexr.com/</li>
+<li>https://sites.google.com/site/cryptocrackprogram</li>
+<li>Excel, Powershell, Python, Google</li>
+</ul>
+<h2>Life Notes on Alexander D'Agapeyeff</h2>
+<ul>
+<li><a href="https://www.findagrave.com/memorial/32596707/alexander-e-d'agapeyeff">Born 1902, St. Petersburg - Died 1955, Maugersbury</a></li>
+</ul>
+<hr>
+<p><img src="/static/images/dagapeyeff/bookStack.jpg" alt="bookStack"></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>

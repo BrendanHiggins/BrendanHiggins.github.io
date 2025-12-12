@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killing Floor 2 Server with Google Cloud Platform</title>
+    <meta name="description" content="Setting up a KF2 Server in GCP">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Killing Floor 2 Server with Google Cloud Platform</h1>
+        <p><small>Published on May 12 2020</small></p>
+    </header>
+
+    <p><img src="/static/images/kf2/Steam.png" alt="kf2-steam" title="kf2-steam"></p>
+<p>So, you want to play Killing Floor 2 (KF2) with your just your buddies.
+The Matchmaking gives you trolls, and server take-over option for private matches always put you into games with 200+ ping or just flat out doesn't work. You don't want to pay some company for an overpriced server, either!</p>
+<p>So what do you do? You setup a KF2 server in Google Cloud Platform (GCP). Why GCP? Well because a lot of folks already have a gmail, it's an easy thing to get started with.</p>
+<!--more-->
+<p><img src="/static/images/kf2/gcp-social.png" alt="GCP-Logo" title="GCP"></p>
+<ul>
+<li>TOC
+{:toc}</li>
+</ul>
+<hr>
+<h4>GCP Console Details<br></h4>
+<p><strong>Step 1:</strong><br>Create a new Project Called &quot;KF2 Server&quot;</p>
+<p><strong>Step 2:</strong><br>Compute &gt; Compute Engine &gt; Create Instance</p>
+<ul>
+<li>Name: KF2-Server</li>
+<li>Region: Select a datacenter location nearest to you + your friends</li>
+<li>Machine Configuration: I went with N1-standard-1 (1 vCPU, 3.75 GB Memory), but feel free to go up to N1-standard-2 if you want more performance (You shouldn't need this.)</li>
+<li>Boot Disk: Change &gt; Ubuntu &gt; 18.04 TLS (Or Higher)
+<ul>
+<li>10GB is too small to run the server, I recommend going 50 GB + to be safe.</li>
+</ul>
+</li>
+<li>Firewall: Allow HTTP/HTTPS Traffic (Optional, but I did it anyway)</li>
+</ul>
+<p>&gt; Create</p>
+<p><strong>Step 3:</strong><br>Networking &gt; VPC network &gt; External IP Address
+Locate your compute instance, and set your IP to 'Static'</p>
+<p>Networking &gt; VPC network &gt; &gt; Firewall Rules &gt; &quot;Create Firewall Rule&quot;</p>
+<ul>
+<li>Name: kf2</li>
+<li>Type: Allow</li>
+<li>Targets Tag: 'kf2'</li>
+<li>IP Ranges: 0.0.0.0/0</li>
+<li>TCP: 8080</li>
+<li>UDP: 7777, 27015, 20560, 123</li>
+</ul>
+<p>Compute &gt; Compute Engine &gt; 'KF2-Server' Edit &gt; Network Tags</p>
+<ul>
+<li>Add 'kf2' as a network tag and save</li>
+</ul>
+<hr>
+<h4>Setting up the KF2 Server<br></h4>
+<p>SSH into your newly created GCP Compute Box and perform the following.
+If you don't know how to use cli or don't understand these commands, that's okay, but you should probably do some lite googling first to be safe.</p>
+<p>$Bash</p>
+<pre><code>sudo apt update
+sudo apt install lib32gcc1 lib32stdc++6 -y
+mkdir steam
+cd steam
+wget &quot;http://media.steampowered.com/installer/steamcmd_linux.tar.gz&quot;
+tar -xvzf steamcmd_linux.tar.gz`
+./steamcmd.sh
+</code></pre>
+<p>$Steam</p>
+<pre><code>login anonymous
+force_install_dir /home/&lt;Your Username&gt;/steam/killingfloor
+app_update 232130 validate
+quit
+</code></pre>
+<p>After the server is installed, you'll want to change a few basic config files.</p>
+<pre><code>cd killingfloor/KFGame/Config
+</code></pre>
+<p>Using vim or nano, change the following config files to your liking:</p>
+<pre><code>KFWeb.ini
+    [IpDrv.WebServer]
+    bEnabled=TRUE
+
+LinuxServer-KFGame.ini
+    [Engine.AccessControl]
+    AdminPassword=SuperSecretAdminPassword
+    GamePassword=SuperSecretPassword
+
+    [Engine.GameReplicationInfo]
+    ServerName=Whatever You Want It To Be Called
+
+    [KFGame.KFGameInfo]
+    ServerMOTD=Your GCP Server!
+    WebsiteLink=
+    ClanMotto=
+
+LinuxServer-KFEngine.ini
+    [Engine.GameEngine]
+    bUsedForTakeover=FALSE
+</code></pre>
+<p>To start the server, simply run:</p>
+<pre><code>./Binaries/Win64/KFGameSteamServer.bin.x86_64 kf-bioticslab
+</code></pre>
+<p>To save on GCP Fees simply Ctrl+C the server process and shut it (stop) the VM down until next time you want to play. To be sure you've done it right, your VM should have a grey 'stop' logo - if you see green - you may be getting charged!</p>
+<hr>
+<h4>You're all done!</h4>
+<p>With the server running, you should be able to find your server (I named mine 'Zebra') in the Public Browser, and you should be able to join with the passwords you set.</p>
+<p>To manage your server simply navigate to the web admin page in your browser:</p>
+<p>http://<code>&lt;Your GCP Static IP</code>&gt;:8080/ServerAdmin/</p>
+<p>Login with 'admin' and the password you set for AdminPassword in KFGame.ini</p>
+<p><img src="/static/images/kf2/browser.PNG" alt="Publicly Listed Server" title="KF2-1">
+<span style="margin:auto; display:table;font-size:0.75em;"><em>Publicly Listed Server</em></span></p>
+<p><img src="/static/images/kf2/Success.PNG" alt="In Lobby" title="KF2-2">
+<span style="margin:auto; display:table;font-size:0.75em;"><em>In Lobby</em></span></p>
+<p><img src="/static/images/kf2/WebAdmin.PNG" alt="Web Admin Interface" title="KF2-3">
+<span style="margin:auto; display:table;font-size:0.75em;"><em>Web Admin Interface</em></span></p>
+<hr>
+<h4>How To Update Your Server</h4>
+<p>If you're like me, you might have ~6+ months go by between you booting this server up. If so, it is likely that KF2 will have updated, forcing you to also update your server. Fear not, the steps are pretty simple to get back to playing.</p>
+<p>SSH back into your GCP VM -</p>
+<pre><code>cd steam
+sudo ./steamcmd.sh
+login anonymous
+force_install_dir /home/&lt;Your Username&gt;/steam/killingfloor
+app_update 232130
+</code></pre>
+<p>After this, you may need to re-enable the Web Interface and restart your sever binary (See instructions above).</p>
+<p>If you are also like me, your initial 40GB HDD provisioned for your VM may not be cutting it <code>[SteamCMD Error 0x202</code>] (Esp. with custom maps added).</p>
+<p>To update that...</p>
+<p>Compute Engine &gt; VM Instances &gt; [Your KF2 VM] &gt; Boot disk &gt; Edit</p>
+<p>Once you've added additional storage, save and follow <a href="https://cloud.google.com/compute/docs/disks/add-persistent-disk#resize_partitions">these instructions</a> from Google.</p>
+<p>Easy Mode:</p>
+<pre><code>sudo su
+df -Th
+growpart /dev/sda 1
+resize2fs /dev/sda1
+</code></pre>
+<p>Make sure your partition is actually sda1 (via df command) before running.</p>
+<hr>
+<h4>Bonus! How to add custom maps.</h4>
+<p>Step 1:
+Find a <a href="https://steamcommunity.com/workshop/browse/?appid=232090&amp;requiredtags%5B%5D=Maps">map</a>, and grab the URL.</p>
+<p>URL:
+https://steamcommunity.com/sharedfiles/filedetails/?id=670421536</p>
+<p>The bit we want is the Workshop ID # - 670421536, in this case.</p>
+<p>Linux Servers apparently can't make their own Cache folder.</p>
+<pre><code>$ mkdir -p KFGame/Cache
+</code></pre>
+<p>Add the following entries to the bottom of config files:</p>
+<pre><code>LinuxServer-KFEngine.ini
+    [OnlineSubsystemSteamworks.KFWorkshopSteamworks]
+    ServerSubscribedWorkshopItems=670421536  // KF-Deck17_V1 (This is A Comment)
+    
+LinuxServer-KFGame.ini
+    [KF-Deck17_V1 KFMapSummary]
+    MapName=KF-Deck17_V1
+    ScreenshotPathName=UI_MapPreview_TEX.UI_MapPreview_Placeholder
+</code></pre>
+<p>To add more maps, simply add another entry for each config. (You do not need to repeat the [OnlineSubsystem...] header for KFGame.ini, though. You can confirm the name of the map for the KFGame.ini entry by checking the name via</p>
+<pre><code>ls KfGame/Cache/670421536/0/BrewedPC/
+</code></pre>
+<p>Don't forget to add the Map to the Server 'Map Cycle' via the Web Admin Page.</p>
+<p>More detailed instructions can be found <a href="https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)#Setting_Up_Steam_Workshop_For_Servers">here</a>.</p>
+<h4>2023 Updates:</h4>
+<p>GCP changed the UI a little, but it's mostly the same as before.</p>
+<p>Spin up a box I did: e2-medium, us-central1-a, debian-11, 100gb disk, external ipv4 ephemeral NIC.
+You still need to add the FW rule for the server ports as described and add the tag, along with allow http/https.</p>
+<pre><code>ping 8.8.8.8
+sudo su
+sudo apt update
+sudo dpkg --configure -a
+sudo apt-get install lib32gcc-s1
+mkdir steam &amp;&amp; cd steam
+curl -sqL &quot;https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz&quot; | tar zxvf -
+./steamcmd.sh
+quit
+pwd
+./steamcmd.sh
+force_install_dir /home/&lt;your_path&gt;/steam/killingfloor
+login anonymous
+app_update 232130 validate
+quit
+</code></pre>
+<p>For reference on disk size, the KF2 server downloaded ~33 GB. So 100gb might be overkill, but it's annoying to re-size disks, etc. Use this page for help: https://developer.valvesoftware.com/wiki/SteamCMD#Manually</p>
+<p>KFWeb.ini is now DefaultWeb.ini
+KFGame.ini is now DefaultGame.ini
+KFEngine.ini is now DefaultEngine.ini</p>
+<p>As always, make sure you shut down / stop the instance when you're not playing.</p>
+<hr>
+<h4>References / Other Guides:</h4>
+<ul>
+<li><a href="https://wiki.killingfloor2.com/index.php?title=Dedicated_Server_(Killing_Floor_2)">KF2 Wiki - Dedicated Server</a></li>
+<li><a href="https://cloud.google.com/community/tutorials/setup-arma-server-compute-engine">Set up an Arma 3 server on Compute Engine</a></li>
+<li><a href="https://developer.valvesoftware.com/wiki/SteamCMD#Package_from_repositories">SteamCMD</a></li>
+<li><a href="https://steamcommunity.com/app/232090/discussions/0/1693785669846855564/">KF2 Server Guide</a></li>
+</ul>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>
