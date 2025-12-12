@@ -1,6 +1,6 @@
 # Personal Blog
 
-* (11ty)[https://www.11ty.dev/docs/]
+* [11ty](https://www.11ty.dev/docs/)
 
 ## Build & Run
 ```
@@ -12,4 +12,5 @@ npx @11ty/eleventy --serve
 ```
 npx eleventy --watch
 DEBUG=* npx eleventy
+
 ```
