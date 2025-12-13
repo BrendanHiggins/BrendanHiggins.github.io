@@ -1,6 +1,5 @@
 # Nothing secret here, just articles I may write in the future
 
-
 ## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
 * blog on godot addons
@@ -20,6 +19,8 @@ The Paradox of Choice
 
 * blog post: worse is better, etc.
 
+* why I dont write more security posts...well...
+
 ## Technical
 * add your google analytics tracker
 * do something fancier with images? full-size modal pop-ups? Proper captions? slide-shows?
@@ -27,12 +28,15 @@ The Paradox of Choice
 ## Misc Troublehsooting
 ## Build & Run
 ```
-npx @11ty/eleventy
-npx @11ty/eleventy --serve
+npm install
+npm run build
+npm start
 ```
 
 ## Debug
 ```
+npx @11ty/eleventy
+npx @11ty/eleventy --serve
 npx eleventy --watch
 DEBUG=* npx eleventy
 ```

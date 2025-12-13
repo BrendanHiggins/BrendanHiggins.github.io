@@ -3,6 +3,7 @@
 /* Center footer content */
 footer.container {
     text-align: center;
+    padding-top:0px;
 }
 
 /* Ensure small is on its own line for easier centering */
@@ -49,6 +50,10 @@ html {
 
 .no-bottom-margin {
     margin-bottom: 0;
+}
+
+.no-bottom-padding {
+    padding-bottom: 0;
 }
 
 .inline-tags {
