@@ -2,7 +2,7 @@
 
 ## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
-* blog on godot addons
+* blog on godot addons + Blog on Godot Model Array script! or other useful utilities we've written.
 * update game-dev article to include industrial game
 
 * blog on boredom, and shower thoughts...
@@ -23,7 +23,7 @@ The Paradox of Choice
 
 ## Technical
 * add your google analytics tracker
-* do something fancier with images? full-size modal pop-ups? Proper captions? slide-shows?
+* do something fancier with images? full-size modal pop-ups? Proper captions? slide-shows? use alpine?
 
 ## Misc Troublehsooting
 ## Build & Run
@@ -40,4 +40,5 @@ npx @11ty/eleventy --serve
 npx eleventy --watch
 DEBUG=* npx eleventy
 ```
+
 
