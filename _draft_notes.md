@@ -21,6 +21,8 @@ The Paradox of Choice
 
 * why I dont write more security posts...well...
 
+* Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/)
+
 ## Technical
 * add your google analytics tracker
 * do something fancier with images? full-size modal pop-ups? Proper captions? slide-shows? use alpine?
@@ -40,5 +42,6 @@ npx @11ty/eleventy --serve
 npx eleventy --watch
 DEBUG=* npx eleventy
 ```
+
 
 
