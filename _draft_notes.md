@@ -21,6 +21,8 @@ The Paradox of Choice
 
 * why I dont write more security posts...well...
 
+* how many different ways I've made daily videos since 2011...movie maker, clip champ, sony vegas, power point, python...
+   
 * Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/)
 
 ## Technical
@@ -42,6 +44,7 @@ npx @11ty/eleventy --serve
 npx eleventy --watch
 DEBUG=* npx eleventy
 ```
+
 
 
 
