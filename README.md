@@ -1,3 +1,3 @@
 # Personal Blog
 
-* [11ty](https://www.11ty.dev/docs/)
+* [brendanhiggins.dev](https://brendanhiggins.dev/)
