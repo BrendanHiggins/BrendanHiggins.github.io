@@ -81,8 +81,6 @@ After a hard class, you might be a little sore/stiff. I've jammed my fingers a f
 
 Perhaps I've been fortunate in avoiding injury, but as long as you're calm (trying not to spaz), and using 111% of your strength you should be okay. Just try to find training partners who aren't out for blood.
 
-![bruises](/static/images/bjj1/bruises.jpg "bruises")
-
 As far as preventative things to have on hand:
 * BJJ Athletic Finger Tape
 * Finger 'Buddy Loops' for Jammed Fingers
@@ -108,6 +106,3 @@ I bought a $20 JanSport 'Mesh Pack' backpack to store my Gi in and take to class
 Would I recommend you get out and try BJJ? Yes.
 
 Although I also recognize it won't be for everyone, and that's okay too. <i class="fas fa-thumbs-up"></i>
-
-
-![dying](/static/images/bjj1/ego.PNG "dying")
