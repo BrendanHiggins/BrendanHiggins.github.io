@@ -7,7 +7,7 @@ layout: posts.njk
 ---
 
 # The Pandemic Killed My BJJ Momentum
-If you read my first post [Year 1 Review](https://brendanhiggins.dev/miscellaneous/BJJ/) you may recall I never got my 2nd white belt stripe due to COVID. Well, as you can expect, COVID did a lot more than delay the stripe. It essentially shutdown the gym for months, and during that time, I moved away from Pleasanton/Dublin back to SoCal. Then from SoCal to GA. Essentially, I took a 4 year break where I got busy with life and came up with lots of excuses not to go to BJJ again.
+If you read my first post [Year 1 Review](https://brendanhiggins.dev/posts/bjj-1/) you may recall I never got my 2nd white belt stripe due to COVID. Well, as you can expect, COVID did a lot more than delay the stripe. It essentially shutdown the gym for months, and during that time, I moved away from Pleasanton/Dublin back to SoCal. Then from SoCal to GA. Essentially, I took a 4 year break where I got busy with life and came up with lots of excuses not to go to BJJ again.
 
 Finally, I signed up at a new gym - [Ascension Mixed Martial Arts](https://ascensionmma.com/) in March 2024.
 

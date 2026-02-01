@@ -11,7 +11,7 @@ layout: posts.njk
 At this point in my life, "free time" is less a reality and more a mythical creature, fleetingly appearing between my day job, hobbies, housework, friends, and family. Yet, I recently managed to whip up what I consider a pretty fun and useful single-page web application focused on building and cracking classic pen-and-paper ciphers. No, I didn't magically find an extra 40 hours in the week. I gave the increasingly popular [vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) a real try with Gemini. And yeah, that means you might find some unpolished edges or bugs – I totally expect those given the nature of this project.
 
 # My Schedule vs. My Ambition
-I've got a long-standing fascination with ciphers, stemming from my security work and general interest in [the unknown](https://brendanhiggins.dev/technology/dagapeyeff/). I've written a solid handful of Python-driven Jupyter notebooks with the intent of solving/breaking ciphers, and with my general expertise in Splunk Query language the | eval capabilities of SPL are particularly close to my heart.
+I've got a long-standing fascination with ciphers, stemming from my security work and general interest in [the unknown](https://brendanhiggins.dev/posts/dagapeyeff/). I've written a solid handful of Python-driven Jupyter notebooks with the intent of solving/breaking ciphers, and with my general expertise in Splunk Query language the | eval capabilities of SPL are particularly close to my heart.
 
 However, one thing that always felt like it could be a useful tool was a [node graph based](https://en.wikipedia.org/wiki/Node_graph_architecture) application for solving these older style ciphers. An app like that would be interactive, visual, and powerful I figured. 
 

@@ -2,8 +2,6 @@
 
 ## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
-* blog on godot addons + Blog on Godot Model Array script! or other useful utilities we've written.
-* update game-dev article to include industrial game
 
 * blog on boredom, and shower thoughts...
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
