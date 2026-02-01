@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godot: Utility Addons</title>
+    <meta name="description" content="A few tools I find useful">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Godot: Utility Addons</h1>
+        <p><small>Published on Feb 01 2026</small></p>
+    </header>
+
+    <h2>Godot: Utility Addons</h2>
+<p>If you've read my post on <a href="https://brendanhiggins.dev/posts/game-dev-as-a-hobby/">game development</a> you may already know I dabble with game development in the Godot engine.
+This post will outline 3 addons and 1 utility script I've come up with that I find useful.</p>
+<h2>Folder Collapse (Addon)</h2>
+<p>Problem: As your project grows, your res:// folder grows with it. Before you know it, you have dozens of expanded folders in your FileSystem dock. Open a directory of textures and you may have to scroll past possibly hundreds of files. Queue scrolling.</p>
+<p>Solution: This addon is a simple utility node that automatically collapses the folder tree in your FileSystem dock to root res://. It saves you that extra click of having to manually tidy up your workspace. It resets your view so you can navigate to exactly where you need to be without the visual clutter of previous tasks.</p>
+<p><img src="/static/images/godot_addons/collapse_folders_1.png" alt="collapse-folders-1" title="collapse-folders-1">
+<img src="/static/images/godot_addons/collapse_folders_2.png" alt="collapse-folders-2" title="collapse-folders-2"></p>
+<p>Also, yes collapse is a default function. It's useful, but I prefer to collapse everything all at once with 1 click for a quick reset without having to navigate to root. The search utility for the tree is also amazing, as well as 'favorites', of course.
+<img src="/static/images/godot_addons/collapse_folders_3.png" alt="collapse-folders-3" title="collapse-folders-3"></p>
+<h2>Scene Tree Collapse (Addon)</h2>
+<p>Problem: Just like the folder collapse issue above, if you work with complex UI layouts or complex characters, you may end up with a very deep scene tree. Same problem as above, get ready to scroll.</p>
+<p>Solution: This addon functions identically to the folder collapse addon but works specifically for the Scene Tree dock. It quickly folds up all open nodes, returning your scene hierarchy to a clean, top-level state. It gives you the same collapse reset I described above, but for your scenes. Straight forward I hope.</p>
+<p><img src="/static/images/godot_addons/collapse_scene_tree_1.png" alt="collapse-scene-tree-1" title="collapse-scene-tree-1">
+<img src="/static/images/godot_addons/collapse_scene_tree_2.png" alt="collapse-scene-tree-2" title="collapse-scene-tree-2"></p>
+<h2>Node Sort (Addon)</h2>
+<p>Problem: Godot usually orders nodes by the order in which they were added. Sometimes, if you're disorganized like me and have done a bunch of node renaming or duplication, you may end up with an unorganized node.</p>
+<p>Solution: This addon simply takes a selected node and sorts all of its direct children alphabetically by name. It could probably use a new UI location because center screen is a bit awkward I admit.</p>
+<p><img src="/static/images/godot_addons/node_sort_1.png" alt="node-sort-1" title="node-sort-1">
+<img src="/static/images/godot_addons/node_sort_2.png" alt="node-sort-2" title="node-sort-2">
+<img src="/static/images/godot_addons/node_sort_3.png" alt="node-sort-3" title="node-sort-3"></p>
+<h2>Model Array (Script)</h2>
+<p>Problem: Coming from Blender, one of the tools I missed most was the Array Modifier. Placing 20 pillars in a perfect row (or grid) manually in the Godot editor is tedious and prone to alignment errors. Yes, you can use grid snap but it's an extra step and still doesn't ensure you don't mis-align something.</p>
+<p>Solution: This script creates the logic of Blender's Array Modifier directly within Godot. You simply add a Node3D and attach the script. You can then add your model (mesh), set the count, and the offset and it generates the instances for you. It's also a @tool class so you can preview the array of models in the editor. It's perfect for setting up...perfect things?</p>
+<p>Manual placement example...
+<img src="/static/images/godot_addons/messy_models_1.png" alt="messy-models-1" title="messy-models-1"></p>
+<p>With model array script...
+<img src="/static/images/godot_addons/messy_models_2.png" alt="messy-models-2" title="messy-models-2">
+<img src="/static/images/godot_addons/messy_models_3.png" alt="messy-models-3" title="messy-models-3">
+<img src="/static/images/godot_addons/messy_models_4.png" alt="messy-models-4" title="messy-models-4"></p>
+<h3>Models</h3>
+<ul>
+<li>Column by Quaternius (https://poly.pizza/m/wLubNpOTX4)</li>
+<li>Small Table by Quaternius (https://poly.pizza/m/rAEBvfb1FT)</li>
+<li>Mug by Kenney (https://poly.pizza/m/fis2ugeLbn)</li>
+</ul>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+</body>
+</html>
