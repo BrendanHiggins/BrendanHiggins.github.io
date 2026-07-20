@@ -1,9 +1,13 @@
 # Nothing secret here, just articles I may write in the future
 
 ## Blogs
+* I Published a book!
+
+* I published a game!
+  
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
 
-* blog on boredom, and shower thoughts...
+* blog on boredom, and shower thoughts... REFAPATHY in keep
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
 https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
 
@@ -15,13 +19,13 @@ make sure the perfection post doesn’t overlap w/ the short form content fidget
 decision paralysis and happiness – why I was happier as a kid with 2 games than an adult with 500
 The Paradox of Choice
 
-* blog post: worse is better, etc.
+* blog post: worse is better, silver plating, gold plating, etc.
 
 * why I dont write more security posts...well...
 
 * how many different ways I've made daily videos since 2011...movie maker, clip champ, sony vegas, power point, python...
    
-* Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/)
+* Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/) .. cheaper to buy new than negotiate, boomer bailouts, etc.
 
 ## Technical
 * add your google analytics tracker
