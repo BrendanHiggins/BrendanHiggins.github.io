@@ -4,6 +4,9 @@
 * I Published a book!
 
 * I published a game!
+
+* Blog living in the moment, embracing the fact that life is beautiful and you only have so much time in the day to do everything: dreams and all.
+if heaven is real: Blog: too many things I want to do
   
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book
 
@@ -11,6 +14,9 @@
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
 https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
 
+* Blog: AI Writing, slippery slope.
+  
+* Coffee blog: Caffiene gotta have it - Blog: I've made coffee every way a human can
 
 * blog on drowning in content
 AI short form content will continue to evolve rapidly
@@ -26,6 +32,7 @@ The Paradox of Choice
 * how many different ways I've made daily videos since 2011...movie maker, clip champ, sony vegas, power point, python...
    
 * Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/) .. cheaper to buy new than negotiate, boomer bailouts, etc.
+Thats because a house isn't an investment, its a liability. Would still rather deal with my house, mortgage and its problems over a rental with the same problems and a landlord that won't fix them.
 
 ## Technical
 * add your google analytics tracker
