@@ -20,9 +20,56 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" href="/favicon.png">
 
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
+    
+    
+    
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg');"></div>
 
     <header class="container">
         <nav>
@@ -99,6 +146,27 @@
     </footer>
 </article>
     </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
 
     <footer class="container">
         <hr class="hr-no-theme"/>
