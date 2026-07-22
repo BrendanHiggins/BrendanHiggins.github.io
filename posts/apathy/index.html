@@ -6,7 +6,7 @@
     <title>Digital Perfection &amp; Apathy</title>
     <meta name="description" content="The Overlooked Emotion &amp; How I Blame The Internet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.cyan.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
     <link rel="stylesheet" href="/css/style.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,9 +33,14 @@
                 </li>
             </ul>
             <ul>
-                <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
-                <li><a href="/about"><i class="fa-solid fa-circle-info"></i></a></li>
-                <li><a href="/search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -188,6 +193,64 @@ Why spend time learning programming languages and logic when AI can seemingly wr
         <small><em>It is not the critic who counts.</em></small>
         <small>© 2025 brendanhiggins.dev</small>
     </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
 
 </body>
 </html>

@@ -75,7 +75,7 @@ html {
 hr {
   height:0px;
   width: 100%;
-  border-color: var(--pico-color-cyan-500);
+  border-color: var(--pico-color-jade-500);
   border-width: 1px 0 0;
   border-style: solid;
   opacity: 0.25;
@@ -106,5 +106,5 @@ article img {
 }
 
 .sitename-color {
-    color: var(--pico-color-cyan-250);
+    color: var(--pico-color-jade-250);
 }
