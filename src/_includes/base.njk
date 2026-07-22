@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -64,18 +64,21 @@
 </head>
 <body>
     {% set bgSvg = "/svg/topography.svg" %}
+    {% set bgOpacity = "0.05" %}
     {% set tagStr = tags | string | lower if tags else "" %}
     {% if "tech" in tagStr %}
         {% set bgSvg = "/svg/signals.svg" %}
     {% elif "literature" in tagStr %}
         {% set bgSvg = "/svg/diagonal-lines.svg" %}
+        {% set bgOpacity = "0.10" %}
     {% elif "cyber" in tagStr %}
         {% set bgSvg = "/svg/circuit-board.svg" %}
     {% elif "misc" in tagStr %}
         {% set bgSvg = "/svg/texture.svg" %}
+        {% set bgOpacity = "0.10" %}
     {% endif %}
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('{{ bgSvg }}');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('{{ bgSvg }}'); opacity: {{ bgOpacity }};"></div>
 
     <header class="container">
         <nav>
