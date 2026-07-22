@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,10 +66,11 @@
     
     
     
+    
         
     
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg'); opacity: 0.05;"></div>
 
     <header class="container">
         <nav>
@@ -1455,6 +1456,8 @@ There's a fun article from a 1926 Popular Mechanics (Vol. 46, No. 4?) titled <a 
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 

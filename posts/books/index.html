@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,10 +66,12 @@
     
     
     
+    
+        
         
     
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/diagonal-lines.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/diagonal-lines.svg'); opacity: 0.10;"></div>
 
     <header class="container">
         <nav>
@@ -246,6 +248,8 @@ I've bounced around a lot on how I score books, but this is how I currently do i
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 

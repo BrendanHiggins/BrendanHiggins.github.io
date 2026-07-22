@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,10 +66,12 @@
     
     
     
+    
+        
         
     
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
 
     <header class="container">
         <nav>
@@ -193,6 +195,8 @@ I probably bent these cards when I was 6, and that makes them cooler to me than 
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 

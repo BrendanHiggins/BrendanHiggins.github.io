@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,10 +66,12 @@
     
     
     
+    
+        
         
     
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
 
     <header class="container">
         <nav>
@@ -254,6 +256,8 @@ After a hard class, you might be a little sore/stiff. I've jammed my fingers a f
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 

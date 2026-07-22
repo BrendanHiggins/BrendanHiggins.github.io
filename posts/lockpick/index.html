@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,10 +66,11 @@
     
     
     
+    
         
     
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg'); opacity: 0.05;"></div>
 
     <header class="container">
         <nav>
@@ -234,6 +235,8 @@ In 2015 I had a college professor who taught an Ethical Hacking class. A small p
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 

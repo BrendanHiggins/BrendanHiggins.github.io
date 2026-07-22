@@ -27,7 +27,7 @@
                 currentIndex: 0,
                 images: [],
                 init() {
-                    const imgEls = Array.from(document.querySelectorAll('article img'));
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
                     this.images = imgEls.map((img, idx) => {
                         img.addEventListener('click', () => this.open(idx));
                         return {
@@ -66,8 +66,9 @@
     
     
     
+    
 
-    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/topography.svg');"></div>
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/topography.svg'); opacity: 0.05;"></div>
 
     <header class="container">
         <nav>
@@ -105,6 +106,13 @@
     </article>
     <article>
         <header><strong>
+            <i class="fa-solid fa-book-open"></i>
+            <a href="/posts/the-arbiter/">The Arbiter</a>
+        </strong></header>
+        My Debut Scifi Novel
+    </article>
+    <article>
+        <header><strong>
             <i class="fa-solid fa-code"></i>
             <a href="https://brendanhiggins.dev/code-node/" target="_blank">CodeNode</a>
             <sup><i style="font-size: 0.50rem; opacity: 0.5;" class="fa-solid fa-arrow-up-right-from-square"></i></sup>
@@ -136,7 +144,7 @@
             
             <li>
                 <a href="#category-literature">Literature</a>
-                <span>(1)</span>
+                <span>(2)</span>
             </li>
             
         
@@ -147,11 +155,6 @@
             </li>
             
         
-            
-            <li>
-                <a href="#category-posts">Posts</a>
-                <span>(21)</span>
-            </li>
             
         
             
@@ -337,6 +340,16 @@
                 
                     <article>
                         <header class="post-header">
+                            <h5 class="no-bottom-margin "><a href="/posts/the-arbiter/">The Arbiter</a></h5>
+                            <small class="no-bottom-margin">Jul 22 2026</small>
+                        </header>
+                        
+                            <small class="no-bottom-margin">My debut sci-fi novel</small>
+                        
+                    </article>
+                
+                    <article>
+                        <header class="post-header">
                             <h5 class="no-bottom-margin "><a href="/posts/books/">Books - A Blogging Journey</a></h5>
                             <small class="no-bottom-margin">Apr 06 2020</small>
                         </header>
@@ -409,224 +422,6 @@
         <hr/>
         
     
-        
-            <section id="category-posts">
-                <h4 class="post-header">POSTS 
-                    <small><a data-tooltip="Jump to Top" data-placement="bottom" href="#top" class="no-bottom-margin"><i class="fa-solid fa-arrow-turn-up"></i></a></small>
-                </h4>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/godot-utility-addons/">Godot: Utility Addons</a></h5>
-                            <small class="no-bottom-margin">Feb 01 2026</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">A few tools I find useful</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/youtube-channel-hider/">Chrome Extension: YouTube Channel Hider</a></h5>
-                            <small class="no-bottom-margin">Dec 11 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">When you have kids...</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/blogging-11ty/">Personal Blogging</a></h5>
-                            <small class="no-bottom-margin">Dec 08 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Migrating from Jekyll to 11ty</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/amazon-order-hider/">Chrome Extension: Amazon Order Hider</a></h5>
-                            <small class="no-bottom-margin">Jun 19 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">When a website removes a useful feature...</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/code-node/">Code Node: Vibe Coding A Cipher Tool</a></h5>
-                            <small class="no-bottom-margin">Jun 11 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Like CyberChef but not</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/graded-cards/">Card Collecting: Graded Cards Are Lame</a></h5>
-                            <small class="no-bottom-margin">Apr 20 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">My possibly not that controversial opinion on graded cards</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/family-archivist/">Family Archivist: Digitizing Photos/Videos</a></h5>
-                            <small class="no-bottom-margin">Apr 18 2025</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">A quick project, surely?</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/game-dev-as-a-hobby/">Game Dev as a Hobby</a></h5>
-                            <small class="no-bottom-margin">Dec 24 2024</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Easier said than done.</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/bjj-2/">Jiu-Jitsu - Year Two</a></h5>
-                            <small class="no-bottom-margin">Apr 19 2024</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Reviewing my much delayed 2nd year doing Jiu-Jitsu</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/staterank/">StateRank</a></h5>
-                            <small class="no-bottom-margin">Feb 07 2024</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">A hobby website I did during COVID quarantine</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/apathy/">Digital Perfection &amp; Apathy</a></h5>
-                            <small class="no-bottom-margin">Feb 03 2024</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">The Overlooked Emotion &amp; How I Blame The Internet</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/oliver/">My Friend Oliver</a></h5>
-                            <small class="no-bottom-margin">Aug 26 2023</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">All dogs go to Heaven</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/canine-kidney-disease/">Canine Kidney Disease</a></h5>
-                            <small class="no-bottom-margin">Apr 23 2022</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">CKD Diet</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/dagapeyeff/">The 85+ Year Old CTF: D&#39;Agapeyeff Cipher</a></h5>
-                            <small class="no-bottom-margin">Sep 10 2021</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">I&#39;ve been reading the dictionary in my free time...?</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/covid-cards/">COVID-19 Vaccination Cards</a></h5>
-                            <small class="no-bottom-margin">Aug 20 2021</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">If you&#39;re going to do something wrong, do it big!</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/lockpick/">Lockpicking &amp; The Physical Domain of Cyber Security</a></h5>
-                            <small class="no-bottom-margin">Jun 29 2021</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Physical security is part of the CISSP knowledge domains after all</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/fb-lego-scams/">Facebook Ad Phishing - Discount Legos!</a></h5>
-                            <small class="no-bottom-margin">Sep 10 2020</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Facebook coming in clutch with these malicious ads</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/bjj-1/">Jiu-Jitsu - First Year In Review</a></h5>
-                            <small class="no-bottom-margin">Jul 15 2020</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Reviewing my first year doing Jiu-Jitsu</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/kf2-serv/">Killing Floor 2 Server with Google Cloud Platform</a></h5>
-                            <small class="no-bottom-margin">May 12 2020</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Setting up a KF2 Server in GCP</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/instagram-ux/">Instagram: A Journey of Misleading User Controls, Dark UX, and Generally Bad Decisions.</a></h5>
-                            <small class="no-bottom-margin">Apr 10 2020</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">A personal experience with poor/dark UX on Instagram and its potentially damaging effects</small>
-                        
-                    </article>
-                
-                    <article>
-                        <header class="post-header">
-                            <h5 class="no-bottom-margin "><a href="/posts/books/">Books - A Blogging Journey</a></h5>
-                            <small class="no-bottom-margin">Apr 06 2020</small>
-                        </header>
-                        
-                            <small class="no-bottom-margin">Reading More</small>
-                        
-                    </article>
-                
-            </section>
-        <hr/>
         
     
         
@@ -709,6 +504,8 @@
                 "/posts/youtube-channel-hider/",
             
                 "/posts/godot-utility-addons/",
+            
+                "/posts/the-arbiter/",
             
         ];
 
