@@ -103,8 +103,129 @@ article img {
 
     border-radius: var(--pico-border-radius);
     box-shadow: var(--pico-card-box-shadow);
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article img:hover {
+    transform: scale(1.015);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 .sitename-color {
     color: var(--pico-color-jade-250);
+}
+
+/* Lightbox Modal Styles */
+[x-cloak] { display: none !important; }
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.lightbox-content {
+    max-width: 90vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: var(--pico-border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-caption {
+    margin-top: 0.75rem;
+    color: #fff;
+    font-size: 0.95rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.4rem 1rem;
+    border-radius: var(--pico-border-radius);
+}
+
+.lightbox-counter {
+    opacity: 0.75;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5rem;
+    width: auto;
+    z-index: 10000;
+}
+
+.lightbox-close:hover {
+    color: var(--pico-color-jade-500);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    width: auto;
+    transition: background 0.2s ease;
+    z-index: 10000;
+}
+
+.lightbox-nav:hover {
+    background: var(--pico-color-jade-500);
+    border-color: var(--pico-color-jade-500);
+}
+
+.lightbox-prev {
+    left: 1.5rem;
+}
+
+.lightbox-next {
+    right: 1.5rem;
+}
+
+/* Background SVG Pattern Styles */
+.site-bg-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.05;
+    background-color: var(--pico-color-jade-500);
+    -webkit-mask-image: var(--bg-svg-url);
+    mask-image: var(--bg-svg-url);
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
 }

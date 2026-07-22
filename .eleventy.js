@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
   // Copy favicon files to the output root
   eleventyConfig.addPassthroughCopy("src/favicon*");
 
+  // Copy the svg folder to the output
+  eleventyConfig.addPassthroughCopy("src/svg");
+
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/css");
 
