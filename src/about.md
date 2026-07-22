@@ -9,6 +9,8 @@ Just a guy with interests in technology, coding, cybersecurity, video games, and
 
 Opinions and ideas expressed here are solely my own and do not express the views or opinions of my employer or any professional affiliation that I may have.
 
+This is kept a bit vague by design. 
+
 # Links:
 <small>
     <a href="https://github.com/BrendanHiggins" target="_blank"><i class="fa-brands fa-github"></i> Github</a>

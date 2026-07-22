@@ -12,6 +12,11 @@ module.exports = function (eleventyConfig) {
   // Watch for CSS changes
   eleventyConfig.addWatchTarget("src/css");
 
+  // Add a collection of all blog posts
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/posts/*.md");
+  });
+
   // Add a date formatting filter for templates: "Dec 07 2025"
   eleventyConfig.addFilter("formatDate", function (dateObj) {
     if (!dateObj) return "";
