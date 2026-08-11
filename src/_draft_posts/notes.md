@@ -3,9 +3,10 @@
 ## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book evolution
 
-* I published a book
 * I published a game???
 
+* physical games: did I beat them all because I was in HS, Middle School, etc...? Did I have more imagination and less responsibility? Was physical media more intentional than STEAM and the era of digital media.
+  
 * blog on boredom, and shower thoughts...
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
 https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
