@@ -2,7 +2,7 @@
 title: "Worse is Better: Please Stop With The Razzle-Dazzle"
 description: "Modern web design, and project management are a waste of resources"
 date: 2026-07-04
-tags: WebDev, Technology, Design, UX, Software Engineering
+tags: Tech
 layout: posts.njk
 ---
 
