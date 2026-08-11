@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worse is Better: Please Stop With The Razzle-Dazzle</title>
+    <meta name="description" content="Modern web design, and project management are a waste of resources">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/signals.svg'); opacity: 0.05;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Worse is Better: Please Stop With The Razzle-Dazzle</h1>
+        <p><small>Published on Jul 04 2026</small></p>
+    </header>
+
+    <h1>A garden hose on Amazon...</h1>
+<p>My <a href="https://stuyk.com/">friend</a> and I talk about this a lot. So I figured I'd finally write about it.</p>
+<p>Try buying a garden hose on amazon today.</p>
+<p><img src="../static/images/worse_is_better/modern_amazon_interface.png" alt="amazon_ux"></p>
+<p>Where do we even begin with this? First of all, the performance is objectively bad.</p>
+<p>There's noticeable load times on desktop, and the Lighthouse report is poor. This is pretty bad for a company as large and as successful as Amazon.</p>
+<p><img src="../static/images/worse_is_better/amazon-lighthouse-report.png" alt="amazon lighthouse"></p>
+<p>Second, there's just so many &quot;regions&quot; here to contend with, some vertical, some horizontal, some with tons of white-space etc. All five distinct regions compete for immediate visual attention. Perhaps most aggregious of all, the user now has two competing left-hand columns: the alexa AI shopping chat interface (blue), and the classic functional filters that have been around for a long time (green).</p>
+<p><img src="../static/images/worse_is_better/modern_amazon_interface_sections.png" alt="amazon regions"></p>
+<p>Now, go to <a href="https://www.mcmaster.com/">McMaster-Carr</a>. I know it's a little unfair to compare Amazon to an industrial supply company, but both of them have similar designs and sell hundreds of thousands of distinct products.</p>
+<p><img src="../static/images/worse_is_better/carr-ux.png" alt="McMaster-Carr ux"></p>
+<p>Even if we broke this page up into regions like we did with Amazon, I can only identify 3. The header, the side-bar, and the main panel.</p>
+<p>The lighthouse report is much better.</p>
+<p><img src="../static/images/worse_is_better/carr-perfomance.png" alt="carr lighthouse"></p>
+<p>The site loads instantly. It consists of high-density text, logical hierarchical categories, intuitive filtering, and zero unnecessary fluff. You find the exact part you need in seconds or minutes at worst. You could theoretically add it to your cart, and check out before a bad application (one worse than Amazon, they're out there!) might finish loading their first JavaScript packages. There's dozens of youtube videos of web folks analyzing this website and it's design and perfomance considerations.</p>
+<p>McMaster-Carr is a great showcase of form over function, and of utility over beauty. It serves as a reminder of a truth software engineers and web designers keep forgetting: <strong>function beats novelty every single time.</strong></p>
+<h1>The Problems</h1>
+<p>To understand how the modern web became so bloated, we need to examine two well-documented patterns in software development and project management.</p>
+<h2>1. The Second-System Effect</h2>
+<p>Coined by Fred Brooks in <em>The Mythical Man-Month</em>, the <a href="https://en.wikipedia.org/wiki/Second-system_effect">Second-System Effect</a> describes the dangerous tendency to over-engineer a product when rebuilding it from scratch.</p>
+<p>When a team builds version 1.0 of a system, they are cautious. They build the core functionality, cut scope, and get it working. 1.0 is almost always a minimum viable product. Functional, maybe a little too bare-bones, but it works. The proof of concept makes it to production, and proves that it can work. But version 1.0 always leaves behind a list of small grievances, ideas, and &quot;nice-to-haves&quot; that didn't make the cut.</p>
+<p>When it comes time to build version 2.0 (the second system), the team pours <em>everything</em> they suppressed into the project. They add more complex features, customizations, and whatever else comes to mind. The result is often an over-designed, fragile mess that is far harder to maintain than the &quot;ugly&quot; original. Obviously this can be avoided with enough discipline, but the second-system effect is very real.</p>
+<p>If a web application is working and serving its users effectively, the best decision is often to leave it alone. <em>If it ain't broke, don't fix it.</em></p>
+<p>Or in less catchy phrase: <em>if your end-users aren't complaining about it, don't fix it.</em></p>
+<h2>2. Gold Plating</h2>
+<p>In project management, <a href="https://en.wikipedia.org/wiki/Gold_plating_(project_management)">Gold Plating</a> refers to adding unnecessary features, visual polish, or complex functionality beyond what was requested or required.</p>
+<p>Engineers and designers fall into this trap constantly because we love to solve hard problems and make things look sleek. We swap plain HTML forms for more complex web component frameworks. We replace native web features with custom Javascript libraries. We fiddle with the CSS and theme. We add animations and spinners and emojis.</p>
+<p>We come up with things to do so we can justify our job roles. I'm a web developer... so I must... develop web features?</p>
+<p>Well, what if the website is objectively functional, arguably perfect? Now what do you do? Tinker and update. Even if nobody asked. Project managers excel at this. They invent work so they can manage the work, and then they push that work onto the designers, and developers who then implement that vision. The vision that, again, nobody asked for.</p>
+<p>More often than not, none of these additions help the user complete their primary task faster. Instead, they introduce accessibility problems, and performance degradation. Gold plating turns straightforward tools into sluggish experiences.</p>
+<p>Even worse, sometimes these designs are done purposely. They implement <a href="https://en.wikipedia.org/wiki/Dark_pattern">dark patterns</a> to slow you down on purpose. Amazon might not want you to find your ideal garden hose in &lt;15s. They want to you get stuck on a page, be shown ads, shown other related products and hope you &quot;window shop&quot; and spend more money as a result. This same pattern is true in real life as well with stores engineered using &quot;choice architecture&quot; to maximize the amount of time and money you spend inside. The longer you stay in a store, physical or digital, the more likely you will spend money there.</p>
+<h1>The Unattractive Solution</h1>
+<p>There's a solution to both of these things: simplicity. Keep it simple, stupid (KISS). Let things be <em>worse</em> on purpose because your perception of &quot;bad&quot; vs &quot;good&quot; is probably incorrect anyways.</p>
+<h2>Worse is Better</h2>
+<p>In 1989, computer scientist Richard P. Gabriel wrote an essay introducing the concept of <a href="https://en.wikipedia.org/wiki/Worse_is_better">&quot;Worse is Better&quot;</a>. He contrasted two design philosophies:</p>
+<ul>
+<li><strong>The Massachusetts (MIT) Approach:</strong> Strives for absolute correctness, completeness, and architectural elegance. The implementation <em>must</em> be correct, even if it requires extreme complexity.</li>
+<li><strong>The New Jersey (Unix) Approach:</strong> Strives for simplicity of implementation and interface. It prioritizes getting a working system deployed quickly over absolute theoretical perfection.</li>
+</ul>
+<p>Gabriel noted that the New Jersey approach (&quot;Worse is Better&quot;) consistently wins in the real world. A simple, slightly imperfect tool that is fast, resilient, and easy to deploy will outcompete a complex, perfectly engineered system every single time.</p>
+<p>Modern web, software development has drifted far into the MIT approach. We build massive abstraction layers and complex build pipelines just to serve static text and image assets. We have traded the raw simplicity of the early web for high-overhead complexity. These complex projects lead to technical debt in later years, require more employees to maintain, and generally fail harder and bigger than a more simple approach. Complexity costs more up front, and costs more in the long run.</p>
+<p>In cyber products, we often joke about these meaningless &quot;pew-pew&quot; attack maps. They mean nothing, and run fake data most of the time. It's  fun eye-candy for a CEO with no concept of reality, but adding these to your product adds visual bloat and perfomance implications that actually negatively impact things. And yes, these are sto;; real. I've seen some in product demos <em>this year</em> (2026).
+<img src="../static/images/worse_is_better/cyber-pew-pew.png" alt="pew-pew"></p>
+<h2>Standardized UX is a Feature, Not a Limitation</h2>
+<p>There is a strange impulse in web design to reinvent established user interaction patterns. Every marketing team wants a &quot;unique brand experience,&quot; which usually translates to non-standard navigation menus, search bars in expected places, and generally unexpected application behavior.</p>
+<p><a href="https://lawsofux.com/jakobs-law/">Jakob's Law</a> of User Experience states that <strong>users spend most of their time on other sites.</strong> This means users expect your site to work the same way as every other site they already know.</p>
+<p>When you adhere to established UX patterns, users don't have to think about how to use your interface:</p>
+<ul>
+<li>A search bar at the top of the page should look and act like a search bar.</li>
+<li>Blue underlined text should be a clickable hyperlink.</li>
+<li>Form inputs should use native browser field validation.</li>
+<li>Back buttons should navigate back in history without breaking routing state.</li>
+</ul>
+<p>Deviating from these patterns to be visually distinct usually adds friction. If you want to get crazy with a website it's okay for a personal blog or a portfolio or something much more niche. But if you are designing the application for many users, you <em>must</em> stick to the established patterns.</p>
+<h2>The Industrial Web Standard</h2>
+<p>McMaster-Carr, Craigslist, and Wikipedia all share a common trait: they refuse to participate in design trends.</p>
+<p>They do not use floating pop-ups. They do not hide navigation options behind mysterious hamburger menus. They do not load megabytes of framework code before showing you a sentence of text. They treat the user's time and bandwidth with absolute respect.</p>
+<p>Embrace simplicity.</p>
+<p>Or just use <a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)">lynx</a>.</p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>

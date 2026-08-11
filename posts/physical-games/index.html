@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burden of Ownership: Why Physical Games Forced Us to Finish Them</title>
+    <meta name="description" content="Contrasting my physical game collection to my infinite Steam backlog.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>The Burden of Ownership: Why Physical Games Forced Us to Finish Them</h1>
+        <p><small>Published on Aug 11 2026</small></p>
+    </header>
+
+    <p>The other day I dug through my closet, found an unmarked box, and pulled out my dusty PS3. It hadn't been plugged in for over 6 years, maybe longer. My son wanted to play a game he had seen on YouTube. I knew I owned it already on PS3, but not on Steam. I didn't see a reason to re-purchase it either. So out came the box.</p>
+<p>Alongside it was my big binder of games. Years back I pulled all the discs out of their hard-shell plastic cases and consolidated them. I remember it was sort of sad to see the cover art go, but they were all scratched and dirty and not worth anything to a collector anyway. I had PS1 games, PS2 games, PS3 games, and PS4 games. I also had Xbox and Xbox 360 games. My stint with Xbox was shorter because, while I loved Xbox and had plenty of games for it, my 360 got 3 <a href="https://en.wikipedia.org/wiki/Xbox_360_technical_problems">&quot;Red Rings of Death&quot;</a>. I gave up on the console and its later generations for the rest of my life.</p>
+<p><img src="../static/images/gaming-ownership/ps3_games.jpg" alt="PS3 Games">
+ABOVE: My PS3 games before I consolidated them into a binder.</p>
+<p>I was flipping through my games, many of which I had forgotten I played. And not just played, but <em>beaten</em> and sometimes even 100% finished. Every achievement and secret discovered. I was sort of impressed as the memories came back to me. It's easy to forget a game you played over 15 years ago.</p>
+<p>And then it hit me: why don't I beat games anymore?</p>
+<p>Counting off the top of my head, games I've beaten in the last 5 years include:
+Abiotic Factor, Terraria (again), Factorio, V Rising, Hades, Grounded, Deep Rock Galactic, Vermintide 2, Control, Ghost Recon Wildlands, Ghost Recon Breakpoint, The Division 2, Killing Floor 2.</p>
+<p>And I'm listing several multiplayer games here that don't technically have an &quot;end,&quot; but I'm listing them because I put a lot of hours into them. That list is 13 games? Let's round up and say I forgot about 2 games. So 15 total games.</p>
+<p>I looked through my binder of physical games and the count was well over 30.</p>
+<p>Why did I beat more games in the past than I do today? Did I beat them all because I was in high school or middle school? Did I have more imagination and less responsibility?</p>
+<p>Or is physical media inherently more intentional than Steam and the era of digital media?</p>
+<p>Back then, I got 1 or 2 games at a time, maybe 4 or 5 at Christmas. That was it for the year. If I wanted to game, then I played those games and those games only until I beat them and could &quot;justify&quot; asking my parents for a new game, or using whatever money I had as a kid to buy a new one myself. Games were always $50 or $60 even back in the early 2000s, so a new game was a real investment.</p>
+<p>As a quick side note, I'm mostly focusing on console games here, but the pattern holds for PC too: I beat Starcraft 2 when I bought it physically on disc back in 2010, but I never beat the expansion packs that I bought digitally on Battle.net years later.</p>
+<p>Perhaps the tangible nature of physical media creates a completely different psychological contract between you and the game.</p>
+<p>When you buy a physical game, you aren't just purchasing access to it; you are bringing an object into your home. It sits on your shelf or in your binder. You pick up the case, feel the weight of it, and physically feed the disc into the optical drive. That small amount of physical friction anchors the experience. You made a deliberate choice to play <em>that</em> specific game, and the physical disc humming quietly as it spins inside the console serves as a constant reminder of that commitment.</p>
+<p><img src="../static/images/gaming-ownership/steam-games.png" alt="Steam Library">
+ABOVE: My steam library is easily 4-5x the size of my physical game collection. And the 30% metric here is almost certainly wrong in my opinion.</p>
+<p>There is also the matter of dedicated physical space.</p>
+<p>My PC is a machine of infinite purpose. It is where I code, write, browse the web, shop, pay bills, talk with friends, send emails, manage photos, listen to music, watch movies, and game. Gaming is just one item on a long list of things my desktop does. But back when I used consoles, that setup existed for a single reason: gaming.</p>
+<p>It is a lot like the sleep hygiene rule about using your bed only for sleeping. Training your brain that bed == sleep makes you fall asleep faster, whereas working or watching TV in bed links that space with alertness and stress, leading to insomnia. A PC environment operates the same way: my brain does not always know what to focus on because the device handles everything. Back when I played console games, the TV and the sofa were a dedicated space. That TV didn't even have cable hooked up to it. The only thing it could do was play the game running on the machine below it.</p>
+<p>Digital media eliminates almost all of that physical and spatial relation. As a result, it erases the sense of value or purpose.</p>
+<p>When a seasonal Steam sale hits, buying five games for $5 or $10 each feels like a steal. But because acquiring them required nothing more than a click or two, you end up having zero emotional or physical investment in them. They exist only as rows of text in the steam interface.</p>
+<p>This ties directly into the concept that online shopping in general makes spending money easier. Digital money creates a psychological distance that lowers the pain of paying compared to handing over physical cash, or even the brief friction of tapping your debit card at checkout.</p>
+<p>When a game becomes frictionless to acquire, it becomes equally frictionless to abandon. The moment a digital game gets slightly repetitive, frustrating, or slow, you don't stick around to push through it like you used to. You just close it out and click on one of the other 200 titles waiting in your digital library. Or, more likely, you pull up YouTube and stop playing games entirely.</p>
+<p>That is assuming you play them at all. The number of games I've purchased and literally never installed is astoundingly high.</p>
+<p>The abundance of choice creates decision paralysis and invokes the classic <a href="https://en.wikipedia.org/wiki/Overchoice">paradox of choice</a>: having more options often leaves us feeling less satisfied. The lack of a physical presence removes any subtle obligation to see the experience through to the end.</p>
+<p>There is also the underlying truth of ownership itself.</p>
+<p>The primary benefit of physical media is simple: I actually own it. I can pull my dusty PS3 out of a closet after 6 years, or 10 years, or 15 years, plug in the power cable, insert a disc, and it boots up. It doesn't necessarily need to update, nor does it need to authenticate with a server to check if my account is active. The games of that era do not require an 80GB day-one patch just to open the main menu. As long as the hardware holds up, I own that experience forever.</p>
+<p>With digital platforms, we are effectively renting licenses that exist at the <a href="https://en.wikipedia.org/wiki/Stop_Killing_Games">whim of platform holders</a> and network infrastructure. When you don't truly own the media you buy, your relationship with it changes. It feels temporary and disposable.</p>
+<p>Then again, maybe the format of the media isn't the primary culprit at all. Maybe it has nothing to do with digital convenience or short attention spans, and everything to do with the simple reality of growing up.</p>
+<p>I'm no longer a kid. I'm an adult with a family, a job, and real responsibilities. I simply don't have time to game like I used to. Binging a game from 6 PM until 1 AM on a school night without a care in the world after finishing my homework is a thing of the past. It probably won't be a thing again until my kids get much older, or maybe even until I retire. That era of life might just be gone for now.</p>
+<p>Along with less time comes a strange and unexpected thing: <a href="https://www.bps.org.uk/research-digest/us-one-seven-leisurely-moments-comes-guilt">leisure guilt</a>.</p>
+<p>When I sit down to play a single-player game today, there is a simmering anxiety. I tell myself I should be doing something productive. I should be spending time with my wife, playing with my kids, working out, reading, or building a side project. Indulging in a narrative single-player game can feel almost selfish.</p>
+<p>It is worth noting that multiplayer games manage to evade some of this. Sitting on voice chat with friends gets mentally categorized as &quot;socializing&quot; or catching up, which feels like a legitimate adult activity. Plus, when you are wasting time together, the guilt is shared. The more people in the lobby, the less selfish it feels to enjoy yourself. It is a diffusion of responsibility.</p>
+<p>Single-player games offer no such cover. I bought <em>Elden Ring</em>, but I've never installed it because I know I don't have the runway for a massive RPG. I bought <em>Red Dead Redemption 2</em>, <em>Hogwarts Legacy</em>, and the <em>Mass Effect Legendary Edition.</em>
+None of them ever installed. I could list a dozen more titles that fall under this pattern as well. It's a counter-intuitive problem. If someone asks me if I want to play one of those amazing titles, my immediate reaction is, &quot;Yes! Absolutely, and I already own it!&quot; But there they sit, untouched. ¯_(ツ)_/¯</p>
+<p>Maybe I need to buy a STEAM Machine, set it up at the TV away from my desk, and reclaim a physical space reserved solely for gaming. Or maybe I just need to take responsibility for my own lack of free time, my own shifting priorities, and my inability to commit to a 60-hour RPG campaign without feeling guilty about it.</p>
+<p>Or maybe I am just rationalizing my ruined attention span after years of short-form internet consumption. Who knows?</p>
+<p>Either way, looking back through that CD binder was a good reminder of what it felt like to give a hobby your undivided attention. I probably won't start buying physical games again, especially since they are rapidly becoming <a href="https://www.npr.org/2026/07/26/nx-s1-5893491/sony-says-it-will-stop-producing-physical-discs-for-playstation-games">a thing of the past</a>, but I can certainly try to bring a little more of that old intentionality back into my gaming mindset.</p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
