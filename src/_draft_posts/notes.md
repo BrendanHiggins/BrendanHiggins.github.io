@@ -4,13 +4,10 @@
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book evolution
 
 * I published a game???
-
-* physical games: did I beat them all because I was in HS, Middle School, etc...? Did I have more imagination and less responsibility? Was physical media more intentional than STEAM and the era of digital media.
   
 * blog on boredom, and shower thoughts...
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
 https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
-
 
 * blog on drowning in content
 AI short form content will continue to evolve rapidly
@@ -18,8 +15,6 @@ AI short form content will continue to evolve rapidly
 make sure the perfection post doesn’t overlap w/ the short form content fidget spinner stuff
 decision paralysis and happiness – why I was happier as a kid with 2 games than an adult with 500
 The Paradox of Choice
-
-* blog post: worse is better, etc.
 
 * update youtube channel hider w/ new version -- but add the post video tri suggestions to the code before you do and update github repo w/ the code
 
