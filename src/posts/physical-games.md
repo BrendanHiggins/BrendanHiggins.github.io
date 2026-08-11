@@ -22,7 +22,7 @@ Abiotic Factor, Terraria (again), Factorio, V Rising, Hades, Grounded, Deep Rock
 
 And I'm listing several multiplayer games here that don't technically have an "end," but I'm listing them because I put a lot of hours into them. That list is 13 games? Let's round up and say I forgot about 2 games. So 15 total games.
 
-I looked through my binder of physical games and the count was well over 30.
+I looked through my binder of physical games and the count was well over 50.
 
 Why did I beat more games in the past than I do today? Did I beat them all because I was in high school or middle school? Did I have more imagination and less responsibility? 
 
@@ -74,10 +74,10 @@ When I sit down to play a single-player game today, there is a simmering anxiety
 It is worth noting that multiplayer games manage to evade some of this. Sitting on voice chat with friends gets mentally categorized as "socializing" or catching up, which feels like a legitimate adult activity. Plus, when you are wasting time together, the guilt is shared. The more people in the lobby, the less selfish it feels to enjoy yourself. It is a diffusion of responsibility.
 
 Single-player games offer no such cover. I bought *Elden Ring*, but I've never installed it because I know I don't have the runway for a massive RPG. I bought *Red Dead Redemption 2*, *Hogwarts Legacy*, and the *Mass Effect Legendary Edition.* 
-None of them ever installed. I could list a dozen more titles that fall under this pattern as well. It's a counter-intuitive problem. If someone asks me if I want to play one of those amazing titles, my immediate reaction is, "Yes! Absolutely, and I already own it!" But there they sit, untouched. ¯\_(ツ)_/¯
+None of them ever installed. I could list a dozen more titles that fall under this pattern as well. It's a counter-intuitive problem. If someone asks me if I want to play one of those amazing titles, my immediate reaction is, "Yes! Absolutely, and I already own it!" But there they sit, untouched. 
 
 Maybe I need to buy a STEAM Machine, set it up at the TV away from my desk, and reclaim a physical space reserved solely for gaming. Or maybe I just need to take responsibility for my own lack of free time, my own shifting priorities, and my inability to commit to a 60-hour RPG campaign without feeling guilty about it. 
 
 Or maybe I am just rationalizing my ruined attention span after years of short-form internet consumption. Who knows? 
 
-Either way, looking back through that CD binder was a good reminder of what it felt like to give a hobby your undivided attention. I probably won't start buying physical games again, especially since they are rapidly becoming [a thing of the past](https://www.npr.org/2026/07/26/nx-s1-5893491/sony-says-it-will-stop-producing-physical-discs-for-playstation-games), but I can certainly try to bring a little more of that old intentionality back into my gaming mindset.
+Either way, looking back through that binder of games was a good reminder of what it felt like to give a hobby your undivided attention. I probably won't start buying physical games again, especially since they are rapidly becoming [a thing of the past](https://www.npr.org/2026/07/26/nx-s1-5893491/sony-says-it-will-stop-producing-physical-discs-for-playstation-games), but I can certainly try to bring a little more of that old intentionality back into my gaming mindset.

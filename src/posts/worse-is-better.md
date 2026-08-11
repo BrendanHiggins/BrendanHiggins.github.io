@@ -80,7 +80,7 @@ Gabriel noted that the New Jersey approach ("Worse is Better") consistently wins
 
 Modern web, software development has drifted far into the MIT approach. We build massive abstraction layers and complex build pipelines just to serve static text and image assets. We have traded the raw simplicity of the early web for high-overhead complexity. These complex projects lead to technical debt in later years, require more employees to maintain, and generally fail harder and bigger than a more simple approach. Complexity costs more up front, and costs more in the long run.
 
-In cyber products, we often joke about these meaningless "pew-pew" attack maps. They mean nothing, and run fake data most of the time. It's  fun eye-candy for a CEO with no concept of reality, but adding these to your product adds visual bloat and perfomance implications that actually negatively impact things. And yes, these are sto;; real. I've seen some in product demos _this year_ (2026).
+In cyber products, we often joke about these meaningless "pew-pew" attack maps. They mean nothing, and run fake data most of the time. It's  fun eye-candy for a CEO with no concept of reality, but adding these to your product adds visual bloat and perfomance implications that actually negatively impact things. And yes, these are still a thing and very much real. I've seen some in product demos _this year_ (2026).
 ![pew-pew](/static/images/worse_is_better/cyber-pew-pew.png)
 
 ## Standardized UX is a Feature, Not a Limitation
