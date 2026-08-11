@@ -10,7 +10,7 @@ The other day I dug through my closet, found an unmarked box, and pulled out my 
 
 Alongside it was my big binder of games. Years back I pulled all the discs out of their hard-shell plastic cases and consolidated them. I remember it was sort of sad to see the cover art go, but they were all scratched and dirty and not worth anything to a collector anyway. I had PS1 games, PS2 games, PS3 games, and PS4 games. I also had Xbox and Xbox 360 games. My stint with Xbox was shorter because, while I loved Xbox and had plenty of games for it, my 360 got 3 ["Red Rings of Death"](https://en.wikipedia.org/wiki/Xbox_360_technical_problems). I gave up on the console and its later generations for the rest of my life.
 
-![PS3 Games](../static/images/gaming-ownership/ps3_games.jpg)
+![PS3 Games](/static/images/gaming-ownership/ps3_games.jpg)
 ABOVE: My PS3 games before I consolidated them into a binder.
 
 I was flipping through my games, many of which I had forgotten I played. And not just played, but *beaten* and sometimes even 100% finished. Every achievement and secret discovered. I was sort of impressed as the memories came back to me. It's easy to forget a game you played over 15 years ago.
@@ -36,7 +36,7 @@ Perhaps the tangible nature of physical media creates a completely different psy
 
 When you buy a physical game, you aren't just purchasing access to it; you are bringing an object into your home. It sits on your shelf or in your binder. You pick up the case, feel the weight of it, and physically feed the disc into the optical drive. That small amount of physical friction anchors the experience. You made a deliberate choice to play *that* specific game, and the physical disc humming quietly as it spins inside the console serves as a constant reminder of that commitment.
 
-![Steam Library](../static/images/gaming-ownership/steam-games.png)
+![Steam Library](/static/images/gaming-ownership/steam-games.png)
 ABOVE: My steam library is easily 4-5x the size of my physical game collection. And the 30% metric here is almost certainly wrong in my opinion. 
 
 There is also the matter of dedicated physical space. 

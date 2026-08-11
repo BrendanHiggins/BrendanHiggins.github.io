@@ -12,27 +12,27 @@ My [friend](https://stuyk.com/) and I talk about this a lot. So I figured I'd fi
 
 Try buying a garden hose on amazon today.
 
-![amazon_ux](../static/images/worse_is_better/modern_amazon_interface.png)
+![amazon_ux](/static/images/worse_is_better/modern_amazon_interface.png)
 
 Where do we even begin with this? First of all, the performance is objectively bad. 
 
 There's noticeable load times on desktop, and the Lighthouse report is poor. This is pretty bad for a company as large and as successful as Amazon.
 
-![amazon lighthouse](../static/images/worse_is_better/amazon-lighthouse-report.png)
+![amazon lighthouse](/static/images/worse_is_better/amazon-lighthouse-report.png)
 
 Second, there's just so many "regions" here to contend with, some vertical, some horizontal, some with tons of white-space etc. All five distinct regions compete for immediate visual attention. Perhaps most aggregious of all, the user now has two competing left-hand columns: the alexa AI shopping chat interface (blue), and the classic functional filters that have been around for a long time (green).
 
-![amazon regions](../static/images/worse_is_better/modern_amazon_interface_sections.png)
+![amazon regions](/static/images/worse_is_better/modern_amazon_interface_sections.png)
 
 Now, go to [McMaster-Carr](https://www.mcmaster.com/). I know it's a little unfair to compare Amazon to an industrial supply company, but both of them have similar designs and sell hundreds of thousands of distinct products.
 
-![McMaster-Carr ux](../static/images/worse_is_better/carr-ux.png)
+![McMaster-Carr ux](/static/images/worse_is_better/carr-ux.png)
 
 Even if we broke this page up into regions like we did with Amazon, I can only identify 3. The header, the side-bar, and the main panel.
 
 The lighthouse report is much better.
 
-![carr lighthouse](../static/images/worse_is_better/carr-perfomance.png)
+![carr lighthouse](/static/images/worse_is_better/carr-perfomance.png)
 
 The site loads instantly. It consists of high-density text, logical hierarchical categories, intuitive filtering, and zero unnecessary fluff. You find the exact part you need in seconds or minutes at worst. You could theoretically add it to your cart, and check out before a bad application (one worse than Amazon, they're out there!) might finish loading their first JavaScript packages. There's dozens of youtube videos of web folks analyzing this website and it's design and perfomance considerations. 
 
@@ -81,7 +81,7 @@ Gabriel noted that the New Jersey approach ("Worse is Better") consistently wins
 Modern web, software development has drifted far into the MIT approach. We build massive abstraction layers and complex build pipelines just to serve static text and image assets. We have traded the raw simplicity of the early web for high-overhead complexity. These complex projects lead to technical debt in later years, require more employees to maintain, and generally fail harder and bigger than a more simple approach. Complexity costs more up front, and costs more in the long run.
 
 In cyber products, we often joke about these meaningless "pew-pew" attack maps. They mean nothing, and run fake data most of the time. It's  fun eye-candy for a CEO with no concept of reality, but adding these to your product adds visual bloat and perfomance implications that actually negatively impact things. And yes, these are sto;; real. I've seen some in product demos _this year_ (2026).
-![pew-pew](../static/images/worse_is_better/cyber-pew-pew.png)
+![pew-pew](/static/images/worse_is_better/cyber-pew-pew.png)
 
 ## Standardized UX is a Feature, Not a Limitation
 
