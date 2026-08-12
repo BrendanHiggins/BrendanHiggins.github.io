@@ -34,7 +34,7 @@ This approach fundamentally changed the development timeline:
 # My Cipher Node App: Beyond the Linear Recipe
 So, what did this vibe coding produce? A single-page web application designed for building and cracking classic pen-and-paper ciphers. It's got a robust set of features, allowing users to chain operations and see the flow of data.
 
-You can dive right in and check it out here: **[code-node.net](https://brendanhiggins.dev/code-node/)**
+You can dive right in and check it out **[here](https://brendanhiggins.dev/code-node/)**
 
 Now, some of you might be thinking, "Isn't that what [CyberChef](https://gchq.github.io/CyberChef/) does?" And you're not wrong, CyberChef is an absolute beast – the "Cyber Swiss Army Knife" indeed. It uses a "recipe" model where you chain operations sequentially: 
 ```input -> operation 1 -> operation 2 -> output```
