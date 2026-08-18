@@ -10,12 +10,9 @@
 https://www.youtube.com/watch?v=orQKfIXMiA8&feature=youtu.be
 https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
 
-* blog on drowning in content
-AI short form content will continue to evolve rapidly
-& why short form is taking over
-make sure the perfection post doesn’t overlap w/ the short form content fidget spinner stuff
-decision paralysis and happiness – why I was happier as a kid with 2 games than an adult with 500
-The Paradox of Choice
+* blog on drowning in content AI short form content will continue to evolve rapidly & why short form is taking over make sure the perfection post doesn’t overlap w/ the short form content fidget spinner stuff
+
+* joyless ai efficiency 
 
 * update youtube channel hider w/ new version -- but add the post video tri suggestions to the code before you do and update github repo w/ the code
 
