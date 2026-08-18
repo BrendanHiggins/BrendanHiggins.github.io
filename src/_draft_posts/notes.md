@@ -2,7 +2,8 @@
 
 ## Blogs
 * Books 'Reading More' vs Book Reviewing Journey-> Bullet Book evolution
-
+* https://www.reddit.com/r/books/comments/1vbctom/the_value_of_mens_book_clubs_amid_the_male/
+  
 * I published a game???
   
 * blog on boredom, and shower thoughts...
