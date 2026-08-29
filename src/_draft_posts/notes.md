@@ -21,3 +21,18 @@ https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
 * how many different ways I've made daily videos since 2011...movie maker, clip champ, sony vegas, power point, python...
    
 * Millenial homeowners (https://www.reddit.com/r/FirstTimeHomeBuyer/comments/1pkvxta/i_am_officially_done_with_starter_homes_its_not/) and my experience in a 1999 home (let alone something from the 80s or sooner!) and why I ended up buying a 2022 home instead.. 
+
+# Misc 1
+Addicted to productivity.
+Inability to slow down, enjoy.
+A link to depression for some, anxiety if less severe. Taking time off work is painful, thats why many workplaces force you to take it off.
+Why "unlimited PTO" is a trap.
+Why people die after retirement.
+etc.
+How to slow down, disconnect. It's a skill.
+How phones and email and beepers killed us in this regard.
+
+# Misc 2 WFH
+https://thehill.com/opinion/technology/6033665-economic-value-personal-time-salary/
+https://www.colorado.edu/today/2026/08/12/remote-workers-report-highest-well-being-study-7700-employees
+https://old.reddit.com/r/science/comments/1vsn4g7/remote_workers_report_the_highest_wellbeing_while/
