@@ -20,6 +20,8 @@ https://www.youtube.com/watch?v=BImKhRGmHLE&feature=youtu.be
 https://www.reddit.com/r/technology/comments/1wn7qdj/engineer_says_claude_code_has_made_his_job/
 "There is no sense of victory, nobody is resolvintg bugs, searching, testing, winning. Nobody is thinking anymore. everything is an llm soul-sucking. ship the code, no matter what"
 
+* blog on AI guilt: using it sucks the joy from things I used to enjoy: CTFs, coding, even visual art... but not using it makes you feel like you are falling behind / useless. Being the guy who still drives a cart and buggy makes you a pretty bad uber eats delivery driver, etc....reality is ruby on rails guys: enjoy that you lived through an era of coding by hand, now enjoy steering super intelligence to create at unprecedented speed
+
 * hyperselection and paradox of choice: https://theconversation.com/how-hyperselection-is-making-modern-life-efficient-pleasant-and-boring-290862
 
 * Give yourself time to think
@@ -32,6 +34,7 @@ People were so bored in the 1900s... now we're not. Look where so many breakthro
 * update youtube channel hider w/ new version -- but add the post video tri suggestions to the code before you do and update github repo w/ the code
 
 * why I dont write more security posts...well...
+* cyber certs are a joke really, asking for money and CPEs .. but not your job!
 
 * how many different ways I've made daily videos since 2011...movie maker, clip champ, sony vegas, power point, python...
    

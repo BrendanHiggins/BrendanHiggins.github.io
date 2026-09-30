@@ -32,7 +32,7 @@ The extension is as simple as it looks, you can punch in an amazon order # and a
 
 This extension is so minor and silly I'm not actually going to bother to upload it to the Chrome Web Store, etc. But you can download it [here on my github](https://github.com/BrendanHiggins/amazon-order-hider).
 
-To install it, clone the the git repo somewhere locally on your PC. Then, head to ```chrome://extensions/``` and turn on developer mode.
+To install it, clone the git repo somewhere locally on your PC. Then, head to ```chrome://extensions/``` and turn on developer mode.
 
 ![amazon-7](/static/images/amazon-hide-order/amazon-7.png "amazon-7")
 

@@ -465,7 +465,7 @@ Anyways, we can look at it all the same. In this case, the highest number in the
 And on page #129
 > One of the ways in which ordinary dictionaries can be used is first to agree on a certain edition, say, for instance, the _Concise Oxford Dictionary_, current edition, by Fowler and Le Mesurier...
 
-This could explain why the ciper was apparently removed from the book in 1952. The concise oxford english dictionary 3rd edition came out in 1934, and was updated to 4th edition in 1951. Hm...well we're going to need a dictionary from 1934-1939? That's not ideal...
+This could explain why the cipher was apparently removed from the book in 1952. The concise oxford english dictionary 3rd edition came out in 1934, and was updated to 4th edition in 1951. Hm...well we're going to need a dictionary from 1934-1939? That's not ideal...
 
 ebay? Yep - $9.
 ![dictionary](/static/images/dagapeyeff/dictionary_cover.jpg)
@@ -497,7 +497,7 @@ Okay, I literally have to stop spending money on ebay. Maybe I can convince my w
 
 So hypothetically, even if I bought this $100 dictionary...what would I find? Words, presumably. However, I have no intention of counting nearly 100,000 words by hand.
 
- Maybe we can do what Mr. Mansfield did and use some statistics. If there are ~100k words in the book, and I was to go to word 92000, where would be be in the Alphabet? X? Y? Z?
+ Maybe we can do what Mr. Mansfield did and use some statistics. If there are ~100k words in the book, and I was to go to word 92000, where would be in the Alphabet? X? Y? Z?
  
 I know the [frequency of characters](https://en.wikipedia.org/wiki/Letter_frequency) in [english words](https://en.m.wikipedia.org/wiki/Etaoin_shrdlu), but is there a different frequency for the letters that _start_ words? Eg. There's a lot of the letter "E" in the English language, but are there that many words that start with the letter "E"? First letter frequency?
 
@@ -515,7 +515,7 @@ Z would be 240 / 100000 words
 ```
 
 So on and so forth...
-So, I wrote a script fucntion that takes the % of a first letter word in the dictionary, and maps it to an arbitrary # of words within a dictionary to find the approximate "Letter" for a given range. Then I took the 5 digits providied by the cipher, ran them through the "range finder" and here's the output:
+So, I wrote a script function that takes the % of a first letter word in the dictionary, and maps it to an arbitrary # of words within a dictionary to find the approximate "Letter" for a given range. Then I took the 5 digits provided by the cipher, ran them through the "range finder" and here's the output:
 ```
 R A E P A K T N R A 
 E S A C A D S A L R 
@@ -668,7 +668,7 @@ That gives us...
 11 reverence
 ```
 
-Depending on how you "count" words you might land on "revenue" or "revenge" which are both interesting. However, we don't really need to count that exactly, with a seletion of ~10 potential words we could pretty easily brute force solutions until a sentence forms that makes grammatical/logical sense...right?
+Depending on how you "count" words you might land on "revenue" or "revenge" which are both interesting. However, we don't really need to count that exactly, with a selection of ~10 potential words we could pretty easily brute force solutions until a sentence forms that makes grammatical/logical sense...right?
 
 So counting 9 is easy. However, we still have numbers too large to count accurately. I consider that anything over 500.
 
@@ -702,9 +702,9 @@ Considering we know for a fact that D'A _read_ this book as a reference before/d
 
 > A common method is to rearrange the order of the figures in each group upon a prearranged plan...thus 24133, 21682 ... are transformed into 13432, 62182 ... the difficulty here is to discover the normal order of the figures in each number, and to restore them to their primitive form ... it is a case of bailing the ocean!
 
-Jeesh...this really goes back to my point about this being unsolved due to the obscure/tedious nature of of the possible solution. Considering I just guessed about this book being relevant before I purchased it, it was surprisingly on point with what I hoped it contained, though.
+Jeesh...this really goes back to my point about this being unsolved due to the obscure/tedious nature of the possible solution. Considering I just guessed about this book being relevant before I purchased it, it was surprisingly on point with what I hoped it contained, though.
 
-Interestingly, Langie/Macbeth gives us a "Test Message In Cipher" on page 190 and goes on to explain that it will be painful and difficult to solve, and if nobody solves it in "a reasonable time" he'll publish the solution later. Apparently the solution was provided, since it's clearly not listed on the "Unsolved Ciphers" wikpedia page and supposedly is a ["two-step cipher based upon a Playfair"](https://www.tandfonline.com/doi/abs/10.1080/0161-117991853891?journalCode=ucry20). I can't seem to find the actual plaintext, however. Plus the searches are sort of bogged down by Shakespeare  references. Then again, the original publishing was in _French_ so maybe I'm just not googling in French good enough.
+Interestingly, Langie/Macbeth gives us a "Test Message In Cipher" on page 190 and goes on to explain that it will be painful and difficult to solve, and if nobody solves it in "a reasonable time" he'll publish the solution later. Apparently the solution was provided, since it's clearly not listed on the "Unsolved Ciphers" wikipedia page and supposedly is a ["two-step cipher based upon a Playfair"](https://www.tandfonline.com/doi/abs/10.1080/0161-117991853891?journalCode=ucry20). I can't seem to find the actual plaintext, however. Plus the searches are sort of bogged down by Shakespeare  references. Then again, the original publishing was in _French_ so maybe I'm just not googling in French good enough.
 
 2022 Update! I Google'd a little harder and managed to get a free download of that annoying Journal website linked above. To summarize, the Macbeth test message was enciphered with a Playfair with the keyword of "J. Macbeth" in the first and fifth lines of the square. Then the message was transposed into Continental Morse Code with dots, dashes, and spaces representing constantans and vowels independently...ah, you know what, here's the [pdf](/static/images/dagapeyeff/macbeth_test_message.pdf).
 
@@ -725,7 +725,7 @@ I _think_ the answer to that final question is 92000, the last number in the seq
 ```
 In this case, we can probably ignore anything above 90000 so really the sequence is only 16 unique characters long. We can also use the previous technique of finding the nearest "word" which we know the page/plaintext of. Also, this sequence ends up with some pretty small numbers. It's not totally unreasonable to figure out words <500.
 
-For example, word 00029 is almost certainly in the "AB" range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming D'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to "00092" (shift all numbers over 2 posistions) to _every_ digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either "the" or "of" or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already "known" plaintext examples from the example in C&C?
+For example, word 00029 is almost certainly in the "AB" range of words, and its not too hard to count to 29. As always, sort of depends how you count but possibly: abbey, abbot, abbreviate, abdicate, etc. Assuming D'A kept with his military theme, none of these jump out to me. This was just a test though, we have to run the permutation sequence that leads to "00092" (shift all numbers over 2 positions) to _every_ digit in the sequence and see what makes sense. Before I script this, what I'm really looking for is a higher # of repeat groups. In both book cipher examples given in the two books they find a sequence used several times and map it to a common word as starting point, either "the" or "of" or some other very common word. Maybe we can brute for the permutations that lead to the highest repeat digit group and/or has matches for already "known" plaintext examples from the example in C&C?
 
 Checking all numbers, we find a fairly unsurprising pattern:
 
@@ -737,15 +737,15 @@ Checking all numbers, we find a fairly unsurprising pattern:
 | 06 | 20  | 83828, 81848, ... |
 | 01 | 10  | 48484 |
 
-Any 5 digit number with 5 unique characters can form a high number of permuatations, 120. As the unique number of letters decrease, the fewer permutations we get. Is this useful? I'm not sure, probaly not. Other than we can narrow down to only 10 dictionary words what word 48484 could be, rather than 120 words for the most "noisy" of the bunch.
+Any 5 digit number with 5 unique characters can form a high number of permutations, 120. As the unique number of letters decrease, the fewer permutations we get. Is this useful? I'm not sure, probably not. Other than we can narrow down to only 10 dictionary words what word 48484 could be, rather than 120 words for the most "noisy" of the bunch.
 
-So assuming we have a maxium of 120 permutations of certain characters, can we generate all 120 by using this technique?
+So assuming we have a maximum of 120 permutations of certain characters, can we generate all 120 by using this technique?
 
 |A|B|C|D|E|->|A|B|C|E|D|
 |----|----|----|----|----|----|----|----|----|----|----|
 | 7 | 5  | 6 | 2 | 8 |->| 7 | 5  | 6 | 8 | 2 | 
 
-In this case, treat the cipher as a single column of 5 digit pairs. Then map each first digit with A, second digit with B, etc. Then permuate ABCDE into its 120 versions, and bring each "column" of the underying cipher with
+In this case, treat the cipher as a single column of 5 digit pairs. Then map each first digit with A, second digit with B, etc. Then permutate ABCDE into its 120 versions, and bring each "column" of the underlying cipher with
 
 Anyway, a bit of scripting later and here we have them.
 ```
@@ -834,13 +834,13 @@ p7562.w8 - This can't work since we only have 1500 pages in the dictionary.
 
 p75.l6.w28 - I don't like this method already because in his example when the page number fell below 1000 he padded with 0's. Additionally, we'd only be using page 16-92, which seems like a "waste" of the remaining 1400+ pages. Page 75 line #6 word 28 also doesn't make sense because once you get to line 6 28 words later is another line, so we've broken the order once again. Why not list the later line with a smaller word count.
 
-p756.l2.w8 - Still does not abide by the "pad" <1k with 0 method, but it makes a bit more sense. Perhaps Line 2 could be "definiton 2" instead of line? In that case, defintion 2 is "neap" referring to a very low tide, and word 8 of that is "In"..maybe. Depends how you count. I suppose I can't discount this entirely, the cipher could start with the word "In..."
+p756.l2.w8 - Still does not abide by the "pad" <1k with 0 method, but it makes a bit more sense. Perhaps Line 2 could be "definition 2" instead of line? In that case, definition 2 is "neap" referring to a very low tide, and word 8 of that is "In"..maybe. Depends how you count. I suppose I can't discount this entirely, the cipher could start with the word "In..."
 
 p75.w6.l62 & p75.w62.l8 - Neither of these make much sense since again, we'd be ignoring 1400 pages of text, and finding letter 62 of "word 6" is impossible, additionally letter 8 of the 62nd word seems like a frustratingly bad code. 
 
-p756.w2.l8 - The second word on page 756 is once again "neap" and if we go to letter 8 we find uh... "a. & n., & v.t. &i. N. -tide or n., tide" See...these deifnitons are often trailed with a long sequence of definitions for if its a noun, etc. Do you count that? Letter 8 is "n" if you ignore all of that and focus on the actual definition of "tide soo**n** after the moon's first & third quarters..."
+p756.w2.l8 - The second word on page 756 is once again "neap" and if we go to letter 8 we find uh... "a. & n., & v.t. &i. N. -tide or n., tide" See...these definitions are often trailed with a long sequence of definitions for if its a noun, etc. Do you count that? Letter 8 is "n" if you ignore all of that and focus on the actual definition of "tide soo**n** after the moon's first & third quarters..."
 
-Needless to say, there's a lot of different ways you can mix this up. There are some limits, like page number. But this is sort of an infinite game without discussing in advance how to process the numbers. Maybe it's backwards and lists the word number, the deftinion number, then page number in acsending order instead of decending? I think it's safe to assume one of the numbers would be page number, but what after that? Line number? Letter/Character Number? Word Number" Number of **bolded** definitions? Maybe it's not even the whole word referenced, maybe it just wants you to take the first letter? Or the last...see, if you and your spy friend agree on a very specific sequence like
+Needless to say, there's a lot of different ways you can mix this up. There are some limits, like page number. But this is sort of an infinite game without discussing in advance how to process the numbers. Maybe it's backwards and lists the word number, the definition number, then page number in ascending order instead of descending? I think it's safe to assume one of the numbers would be page number, but what after that? Line number? Letter/Character Number? Word Number" Number of **bolded** definitions? Maybe it's not even the whole word referenced, maybe it just wants you to take the first letter? Or the last...see, if you and your spy friend agree on a very specific sequence like
 
 "Page.Definition #.Word# - always use the 1st letter if its in column 1, but use the last letter of that word if its in column 2..."
 
@@ -910,7 +910,7 @@ The cipher, unchanged, is included in the 1949 edition of the book. However, the
 Here's a screenshot of page 57 from a 1949 edition I found listed on ebay.
 ![1949](/static/images/dagapeyeff/1949ed.png)
 
-The "African Drum" illistration and language graphic is on page 53 of the 1939 edition. We're way off. The book is likely not the key. 
+The "African Drum" illustration and language graphic is on page 53 of the 1939 edition. We're way off. The book is likely not the key. 
 
 I suppose you could argue that D'A had the cipher removed from the next print run of the book for this exact reason. "Oh dear, its not possible anymore!" ... I'm guessing not.
 
@@ -970,7 +970,7 @@ I used the idea on page 113 to break up the text on possible repeating delimiter
 
 ## A Rabbit Hole of Playfair
 
-Is it coincidence that Mansfield's Solutions to Codes & Ciphers and D'A's  Codes and Ciphers features what is essentially a [Wheatstone](https://en.wikipedia.org/wiki/Charles_Wheatstone#Cryptography) [Cryptograph](http://www.jproc.ca/crypto/wheatstone.html) on the cover? I suppose not, since "[cipher disks](https://en.wikipedia.org/wiki/Cipher_disk)" predate Mr. Wheatsone by a few hundred years. 
+Is it coincidence that Mansfield's Solutions to Codes & Ciphers and D'A's  Codes and Ciphers features what is essentially a [Wheatstone](https://en.wikipedia.org/wiki/Charles_Wheatstone#Cryptography) [Cryptograph](http://www.jproc.ca/crypto/wheatstone.html) on the cover? I suppose not, since "[cipher disks](https://en.wikipedia.org/wiki/Cipher_disk)" predate Mr. Wheatstone by a few hundred years. 
 
 Still, it could be a vague homage to Wheastone who also invented the much more useful Playfair system. Is the cover of this novel a round about hint to utilize Wheastone methods? Eg. Playfar? Probably not, but regardless it seems fair to conclude that playfair _could_ be part of the solution. 
 
@@ -981,7 +981,7 @@ One potential solution I think is worth playing with is a [hybrid polyibus and p
 ## More Old Books & Other Misc Sources...
 After I had found it in digital form on Archive.org it got me thinking about other books that may have been published before the D'A cipher in 1939 that had been digitized...
  
-One interesting thing about the idea of looking for hints in recently digitized text from the 1920s and 1930s is that it is extremely unlikely that anyone has really read over these antiquated version of cryptography in quite some time. Additionally, nobody really had "access" to many of these texts until they were digitized (typically soemtime after 2015).
+One interesting thing about the idea of looking for hints in recently digitized text from the 1920s and 1930s is that it is extremely unlikely that anyone has really read over these antiquated version of cryptography in quite some time. Additionally, nobody really had "access" to many of these texts until they were digitized (typically sometime after 2015).
  
 To Google Books we go!
  

@@ -44,7 +44,7 @@ For me, I did this with four primary pieces of hardware:
 * Canopus ADVC-300
 * A StarTech PCIE [FireWire](https://en.wikipedia.org/wiki/IEEE_1394) Card
 
-The setup is somewhat straight forward - you install the firewire card into your PCIE slot on your computer and search high and low on the internet for the [legacy 1394a drivers](https://www.startech.com/en-eu/faq/firewire-cards-windows-legacy-driver-swap?srsltid=AfmBOoo_98i9xmBUp-xcE_Ci3KutU9C3KMhlcfDRIr7pJ4fry1DnuvlG). Run a FireWire cable from your freshly installed FireWire card to the back of the ADVC. Next, plug in the VHS composite A/V cables from the back "output" ports to the front "input" ports on the the ADVC ... that's it. Use the Adapter when you have the mini cassettes and not a full sized VHS tape.
+The setup is somewhat straight forward - you install the firewire card into your PCIE slot on your computer and search high and low on the internet for the [legacy 1394a drivers](https://www.startech.com/en-eu/faq/firewire-cards-windows-legacy-driver-swap?srsltid=AfmBOoo_98i9xmBUp-xcE_Ci3KutU9C3KMhlcfDRIr7pJ4fry1DnuvlG). Run a FireWire cable from your freshly installed FireWire card to the back of the ADVC. Next, plug in the VHS composite A/V cables from the back "output" ports to the front "input" ports on the ADVC ... that's it. Use the Adapter when you have the mini cassettes and not a full sized VHS tape.
 
 ![vhs](/static/images/digital-archive/vhs.jpg "vhs")
 

@@ -34,7 +34,7 @@ Even though I now have my blue belt in BJJ, I still feel like I'm finding my foo
 * I definitely experience some imposter syndrome – I know I'm capable, but sometimes it just doesn't feel that way on the mats.
 
 # Misc
-I don't have any new musings on recovery, supplements, or hygiene from my year 1 post. The only "new" bit of equipment I can comment on is that I sometimes use an "Under Armour Gameday 3-Pad Tanktop" under my rashguard that that has some padding along the ribs/spine. Wearing a padded shirt probably seems kind of lame on paper, but a few weeks into the new gym I got a floating rib injury from a rough knee-on-belly/ribs that messed me up for two weeks. If a bit of padding on my ribs prevents that again and means I can train more, then I'm wearing my rib pads and nobody can tell me otherwise. It offers no real competitive advantage in the gym, so it is what it is.
+I don't have any new musings on recovery, supplements, or hygiene from my year 1 post. The only "new" bit of equipment I can comment on is that I sometimes use an "Under Armour Gameday 3-Pad Tanktop" under my rashguard that has some padding along the ribs/spine. Wearing a padded shirt probably seems kind of lame on paper, but a few weeks into the new gym I got a floating rib injury from a rough knee-on-belly/ribs that messed me up for two weeks. If a bit of padding on my ribs prevents that again and means I can train more, then I'm wearing my rib pads and nobody can tell me otherwise. It offers no real competitive advantage in the gym, so it is what it is.
 
 I also kind of gave up on wearing contacts, I just run off to the edge of the mats and throw on my glasses if I can't see what's going on with the instruction.
 

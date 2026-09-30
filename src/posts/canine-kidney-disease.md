@@ -27,7 +27,7 @@ I'm going to paraphrase a bit here, but here's the professional advice I did get
 
 Prior to diagnosis, Oliver was already eating a mix of chicken flavored [Hill's Science Diet Adult Sensitive Stomach & Skin (Small Breed)](https://www.hillspet.com/dog-food/sd-canine-adult-sensitive-stomach-and-skin-small-breed-dry) / basic [Hill's Science Diet Adult (Small Breed)](https://www.hillspet.com/dog-food/sd-canine-adult-small-breed-dry) food. He always seemed to do well on that, and I don't think Hill's is considered a "bad" or "cheap" brand as far as kibbles go.
 
-So, naturally I took my perscription went on chewy.com and bought the chicken flavored [Hill's Prescription Diet k/d](https://www.hillspet.com/dog-food/pd-kd-canine-dry) food and a bottle of [Epakatin](https://www.vetoquinolusa.com/content/epakitin). 
+So, naturally I took my prescription went on chewy.com and bought the chicken flavored [Hill's Prescription Diet k/d](https://www.hillspet.com/dog-food/pd-kd-canine-dry) food and a bottle of [Epakatin](https://www.vetoquinolusa.com/content/epakitin). 
 
 This seemed like safe start, but I knew there was probably more I could do for the little guy, so I went to _the internet_ ...
 
@@ -149,7 +149,7 @@ I will, in very small amounts, add in some 90% lean/10% fat, or 93% lean/7% fat 
 
 I might give him the occasional [dog multi-vitamin](https://www.chewy.com/zesty-paws-8-in-1-bites-chicken/dp/159496) as a treat since it has probiotics, CoQ10, and some other not-so-bad things in it, especially in moderation.
 
-That's it. All that reading, all that research, and we have an incredibly specific diet. Whew, thanks...Internet? I hope I don't acidentally make things worse?
+That's it. All that reading, all that research, and we have an incredibly specific diet. Whew, thanks...Internet? I hope I don't accidentally make things worse?
 
 <img src="/static/images/oliver-kidney/oliver_blog.PNG" alt="oliver_blog">
 

@@ -20,7 +20,7 @@ There's noticeable load times on desktop, and the Lighthouse report is poor. Thi
 
 ![amazon lighthouse](/static/images/worse_is_better/amazon-lighthouse-report.png)
 
-Second, there's just so many "regions" here to contend with, some vertical, some horizontal, some with tons of white-space etc. All five distinct regions compete for immediate visual attention. Perhaps most aggregious of all, the user now has two competing left-hand columns: the alexa AI shopping chat interface (blue), and the classic functional filters that have been around for a long time (green).
+Second, there's just so many "regions" here to contend with, some vertical, some horizontal, some with tons of white-space etc. All five distinct regions compete for immediate visual attention. Perhaps most egregious of all, the user now has two competing left-hand columns: the alexa AI shopping chat interface (blue), and the classic functional filters that have been around for a long time (green).
 
 ![amazon regions](/static/images/worse_is_better/modern_amazon_interface_sections.png)
 
@@ -34,7 +34,7 @@ The lighthouse report is much better.
 
 ![carr lighthouse](/static/images/worse_is_better/carr-perfomance.png)
 
-The site loads instantly. It consists of high-density text, logical hierarchical categories, intuitive filtering, and zero unnecessary fluff. You find the exact part you need in seconds or minutes at worst. You could theoretically add it to your cart, and check out before a bad application (one worse than Amazon, they're out there!) might finish loading their first JavaScript packages. There's dozens of youtube videos of web folks analyzing this website and it's design and perfomance considerations. 
+The site loads instantly. It consists of high-density text, logical hierarchical categories, intuitive filtering, and zero unnecessary fluff. You find the exact part you need in seconds or minutes at worst. You could theoretically add it to your cart, and check out before a bad application (one worse than Amazon, they're out there!) might finish loading their first JavaScript packages. There's dozens of youtube videos of web folks analyzing this website and it's design and performance considerations. 
 
 McMaster-Carr is a great showcase of form over function, and of utility over beauty. It serves as a reminder of a truth software engineers and web designers keep forgetting: **function beats novelty every single time.**
 

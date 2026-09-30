@@ -38,7 +38,7 @@ Today, this blog runs on this exact stack.
 
 11ty is a simpler, faster alternative written in JavaScript. It creates zero-client-side JavaScript by default and compiles your site incredibly fast. It feels flexible in a way other generators don't—it doesn't force a specific structure on you.
 
-To style it, I decided to avoid the more common Tailwind or Boostrap and went with Pico CSS. 
+To style it, I decided to avoid the more common Tailwind or Bootstrap and went with Pico CSS. 
 
 Pico CSS is a minimal CSS framework for semantic HTML. It styles standard HTML elements (\<h1>, \<p>, \<button>) beautifully without requiring me to add a half dozen classes to my markup. It keeps the code clean and readable.
 

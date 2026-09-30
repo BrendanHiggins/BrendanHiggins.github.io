@@ -292,7 +292,7 @@ Once this blob of data is generated, the state official signs the blob with an E
 }
 ```
 
-In this case, per JSON Web Token (JWT) [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519), the "d" variable is private to the state signing official. Unless you know how to reverse Ellipitcal Curve Digital Signing Algorithms, you're out of luck in reproducing your own cryptographically verifiable key.
+In this case, per JSON Web Token (JWT) [RFC7519](https://datatracker.ietf.org/doc/html/rfc7519), the "d" variable is private to the state signing official. Unless you know how to reverse Elliptical Curve Digital Signing Algorithms, you're out of luck in reproducing your own cryptographically verifiable key.
 
 Once this is signed, the JWT protocol takes over and minifies the payload, deflates to base64, appends a JWS header, cryptographically signs itself, numerically encodes it and pipes out a neat QR code.
 

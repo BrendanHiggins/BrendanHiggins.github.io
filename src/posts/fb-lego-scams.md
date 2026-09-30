@@ -7,7 +7,7 @@ layout: posts.njk
 ---
 
 # Facebook Ads
-Don't trust ads you see on Facebook, even if if it seems like a giant multibillion dollar corporation should be able to keep malicious ads off their platform.
+Don't trust ads you see on Facebook, even if it seems like a giant multibillion dollar corporation should be able to keep malicious ads off their platform.
 
 **In late 2020, they can't.**
 
