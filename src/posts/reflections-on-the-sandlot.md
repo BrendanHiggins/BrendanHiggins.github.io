@@ -12,19 +12,19 @@ The older I get, the more I think about _The Sandlot_. I know that is kind of a 
 
 Over the decades, the film has cemented itself as a classic. A coming-of-age masterpiece. A slice of life. Americana. It is an unapologetic tribute to mid-century American neighborhood life: the innocence of long summers, tight-knit communities, breaking the rules, paying the consequences, and the fierce loyalty among kids who only know each other by their last names or nicknames.
 
-More than anything, it is a film about boys, made for boys, celebrating boyhood in its rawest, most innocent state. Dirty knees, treehouse sleepovers, tall tales about the neighborhood beast, and a shared obsession that gives shape to the endless summer days. Those qualities feel increasingly rare in modern filmmaking. It comes from an era that did not feel the need to deconstruct childhood or rush kids into miniature adults; it just let them run wild until the porch lights flickered on.
+More than anything, it is a film about boys, made for boys, celebrating boyhood in its rawest, most innocent state. Dirty knees, tree house sleepovers, tall tales about the neighborhood beast, and a shared obsession that gives shape to the endless summer days. Those qualities feel increasingly rare in modern filmmaking. It comes from an era that did not feel the need to deconstruct childhood or rush kids into adulthood; it just let them run wild until the porch lights flickered on.
 
 It is s'mores, fireworks, hot lifeguards, problem solving, bad decisions, kindness, bravery, and baseball. I can't even tell you the last time I sat down and watched the movie, but the entire plot is inexplicably etched into my memory.
 
-Despite all these things, I don't think any of those things are the reason why the movie stays lodged in my head.
+Despite all these things, I don't think any of them are the reason why the movie stays lodged in my head.
 
 What really stands out to me, upon reflection, is that I had none of that.
 
 There was no grass where I grew up.
 
-I spent my childhood in the Mojave desert. Hard-packed dirt roads that rattled the windows of the car on the way to school. Dust devils and wildfires were common. There were no sidewalks, no curbs, no neatly plotted subdivisions with folks sitting out on front porches.
+I spent my childhood in the Mojave desert. Hard-packed dirt roads that rattled the windows of the car on the way to school. Dust devils and wildfires were common. There were no sidewalks, no curbs, no neatly plotted subdivisions with folks sitting out on front porches. Even cul-de-sacs were unknown to me.
 
-You did not hop on a bicycle to pedal over to a friend’s house because friends lived miles away through the dust and heat. A dirt bike might have worked, but I never had one. As a result, I never put on a costume and walked door-to-door for Halloween. 
+You did not hop on a bicycle to pedal over to a friend’s house because friends lived miles away through the dust and heat. A dirt bike might have worked, but I never had one. As a result, I never put on a costume and walked door-to-door for Halloween. Fireworks were not only illegal, but posed such a hire fire risk that I never personally set one off until I was well into my teens. We had local firework shows, of course, but in the same way that they were portrayed in the film.
 
 I certainly never played a pickup game of baseball in an empty lot. 
 
