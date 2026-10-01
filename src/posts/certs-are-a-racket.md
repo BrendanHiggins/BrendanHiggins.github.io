@@ -1,5 +1,5 @@
 ---
-title: "The Cyber Security Cert Racket"
+title: "The Cybersecurity Cert Racket"
 description: "$$$"
 date: 2026-09-29
 tags: Cyber
