@@ -1,6 +1,6 @@
 ---
 title: "Why I don't write more security posts"
-description: ""
+description: "It is what it is."
 date: 2021-09-21
 tags: Cyber
 layout: posts.njk

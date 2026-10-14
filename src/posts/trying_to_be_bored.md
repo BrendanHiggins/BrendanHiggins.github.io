@@ -132,6 +132,7 @@ Let the wall do the work. Let your brain activate. Give yourself time to think.
 
 The best ideas you will ever have are waiting for you on the other side of that silence.
 
+
 Some Videos I enjoyed on this topic:
-[Video 1](https://www.youtube.com/watch?v=orQKfIXMiA8)
-[Video 2](https://www.youtube.com/watch?v=BImKhRGmHLE)
+* [Video 1](https://www.youtube.com/watch?v=orQKfIXMiA8)
+* [Video 2](https://www.youtube.com/watch?v=BImKhRGmHLE)
