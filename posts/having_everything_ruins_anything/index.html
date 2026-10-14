@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Having Everything Ruins Anything</title>
+    <meta name="description" content="Confusing but true.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Having Everything Ruins Anything</h1>
+        <p><small>Published on Oct 10 2026</small></p>
+    </header>
+
+    <h1>Having Everything Ruins Anything</h1>
+<p>You sit down in the evening with a few free hours to yourself.</p>
+<p>You fire up Netflix. You browse the trending row, scroll past a dozen high-budget dramas, switch over to AppleTV, flip through Amazon Prime, and check Disney+ just in case. Forty minutes evaporate. Nothing looks right. Everything looks fine, but nothing looks <em>right</em>.</p>
+<p>You end up opening YouTube on your phone while half-watching season 2 of The Office, which you’ve already seen a dozen times. You bore of YoutTube, and doomscroll Reddit until your eyes burn and it’s time to sleep.</p>
+<p>You had access to virtually the entire creative output of human civilization for zero marginal cost, and you spent it paralyzed and bored.</p>
+<p>We have solved the problem of scarcity. In doing so, we may have accidentally broken our ability to care.</p>
+<h1>The Dopamine Flattening</h1>
+<p>The human brain is a little engine. It does not measure pleasure in absolute terms; it measures the contrast between different emotional states.</p>
+<p>When you were a kid, waiting a week for a single episode of your favorite cartoon or sitcom made that episode feel monumental. Important, even.</p>
+<p>Saving up allowance to buy a paperback book meant you read every single page twice, even the not-so-great chapters. Buying a physical CD meant you sat on the carpet in your room and listened to the album on repeat because even if you skipped a song, it simply looped back to the start.</p>
+<p>Today, there is virtually no contrast. There is no waiting. There is only an endless, uninterrupted broken fire hydrant of novelty being blasted at you nearly 24x7.</p>
+<p>YouTube, TikTok, Instagram, Reddit, dozens of different streaming apps, an infinite library on your Kindle, podcasts queued for every commute, audiobooks at 1.5x speed, a spotify catalog of so much music you couldn't listen to it all in a lifetime, cupboards full of newly released board games, trading cards to collect, and niche forums for every conceivable obsession.</p>
+<p>When novelty is everywhere, novelty ceases to feel novel. The neurochemistry is straightforward: flooding your receptors with constant, effortless stimulation gradually lowers the baseline.</p>
+<p>You aren't actually experiencing profound satisfaction; you're just maintaining a high-idle hum of cheap dopamine to keep boredom at bay. The highs flatten out. Everything starts to feel basic, ordinary, and plain. Even when, on paper, it isn't.</p>
+<p>It's not depression, it's simply overconsumption.</p>
+<h1>Hyperselection and the Sterile Life</h1>
+<p>The problem isn't just volume; it's optimization.</p>
+<p>We now live in an era of <em>hyperselection</em>. Algorithms study our micro-pauses, our swipes, and our past preferences to deliver precisely what we are most statistically likely to tolerate next. Every friction point in  our digital lives has largely been engineered out of existence. Spotify predicts your mood. Netflix serves thumbnails tailored to your demographic profile. Amazon surfaces the exact item you murmured about yesterday.</p>
+<p>On paper, this sounds ideal: high efficiency, zero wasted time, pure customization.</p>
+<p>In practice, it makes entertainment completely sterile.</p>
+<p>Real enjoyment historically required a gamble. You rented a movie on VHS from BlockBuster just based on the cover art and the description on the back. It was a gamble. Sometimes it was terrible, other times it may have been a wonderful experience.</p>
+<p>You bought a book because the opening paragraph grabbed you in an aisle at Barnes and Noble, not because an algorithm determined it matched your reading habits with 94% confidence.</p>
+<p>This still happens, of course, but with platforms like Amazon's Kindle it certainly happens less than it did 20 years ago. You can still find a random BluRay at Target to buy, too, if you're inclined. But most of that isn't discovery, it's someone buying a piece of media they've already seen and decide they want to own.</p>
+<p>Hyperselection removes the accidental. It replaces the thrill of discovery with predictability. A drip feed that always pleases, but never genuinely surprises.</p>
+<h1>Slouching Towards Gluttony</h1>
+<p>Faced with this tidal wave of choice, our brains have adapted in the worst possible way: we have collapsed our attention spans down to seconds.</p>
+<p>When a two-hour film feels like too much of a commitment, and a forty-minute episode feels like a gamble, we retreat to the frictionless safety of short-form video. TikTok, Instagram Reels, and YouTube Shorts demand nothing. If a clip fails to grip you in the first 1.5 seconds, your thumb flicks upward and the slot machine spins again. You risk nothing, you commit to nothing, and you retain nothing.</p>
+<p>Everyone knows that short-form content is devouring our collective attention not because it is good art, but because when you are drowning in abundance, your brain simply refuses to invest in anything that takes more than thirty seconds to pay off. We become restless in our leisure time. The time is limited so we are afraid to stay in one place for too long.</p>
+<p>We live in a gluttonous world. It's encouraging. It's a byproduct of successful capitalist societies. That's a different topic, but the reality is the world we live in actively is harming your brain. It's causing you psychological damage and you don't even realize why.</p>
+<h1>The Paradox of Choice</h1>
+<p>The Paradox of Choice is the concept where the more options you provide someone, the less satisfied they become with whatever they pick.</p>
+<p>When you have three movies to pick from, you pick one and enjoy it. If it has a slow middle act, you forgive it. But when you have a thousand movies available, any flaw in the one you chose feels like an error in judgment. <em>You picked the wrong one</em>. The entire time you are watching, a voice in the back of your head whispers: <em>You could be watching something better right now.</em></p>
+<p>The infinite catalog breeds regret. Every choice is haunted by the dozens of valid alternatives you decided against.</p>
+<p>You can see the exact same psychological trap play out with something as mundane as dinner.</p>
+<p>You sit down at a restaurant with an eight-page laminated menu (Yes, I'm looking at you Cheesecake Factory). Twenty appetizers, twenty entrees, twenty pastas, twenty steaks, twenty seafood choices, six daily specials, and a dozen side substitutions. You deliberate. You weigh the chicken sandwich against the country fried steak. Well both are fried? Which one sounds better? Then again, the blackened salmon sounds good. Less greasy too. You finally place your order.</p>
+<p>Then the food arrives.</p>
+<p>The server sets your plate down, and it looks fine. But then they slide your wife's dish across the table. Damn that looks good. And it smells good too.</p>
+<p>You immediately feel like you made the wrong choice. Chicken Tenders? Again? You panic ordered again didn't you?</p>
+<p>Those chicken tenders didn't get any worse than they were seconds ago when they showed up. They didn't change at all. But the mere existence of a seemingly superior alternative across the table poisons your viewpoint. The entire dinner, you aren't really tasting your food. You are eating your entree while eyeing her plate, stewing in the invisible tax of buyer's remorse. <em>I should have gotten what she got.</em></p>
+<p>This is why the best high-end restaurants in the world don't hand you an encyclopedia of options. They don't give you a menu with fifty choices. They give you a fixed tasting menu.</p>
+<p>You sit down, and the kitchen dictates the meal. Course one, course two, course three, all the way to dessert. They remove your autonomy on purpose.</p>
+<p>And ironically, people walk away from those dinners raving. Not just because the culinary technique is elite, but because the psychological friction of choice was completely eliminated. You can’t regret the ribeye when there was no ribeye to order. You can’t have FOMO over what the person next to you is having, because they're eating the exact same curated course at the exact same moment as you.</p>
+<p>By killing the choices and options, they give you back the ability to simply sit there, be present, and enjoy what is directly in front of you.</p>
+<h1>Well, Gosh Darn It. Help me.</h1>
+<p>When my wife and I were on our honeymoon, we stayed at an unusual cabin tucked away from everything deep in North West Washington. It was essentially a filming location for Twilight.</p>
+<p>One evening, a steady rain set in. There was no television mounted on the wall. There was Wi-Fi, but it was very slow. Our options for entertainment were slim. We'd already gone out to dinner and returned. Inside a cupboard in the room was about five board games. It was your usual suspects, the kind of games you find at a thrift store or your grandparents house.</p>
+<p>We pulled out <em>The Game of LIFE</em>.</p>
+<p>Under normal circumstances at home, with streaming libraries brimming and fast internet, neither of us would have chosen <em>LIFE</em>. It is simple and often not that fun when you get down to it. But for a honeymoon, it somehow felt like the right game at that moment. And given that we had no real other choices we played it anyway.</p>
+<p>So we spun the plastic wheel, drove little colored cars full of blue and pink peg people around the cardboard track, and had a great time. By taking the choices, that rainy cabin forced us into a corner where enjoyment was the only sensible outcome.</p>
+<p>So, what does that memory tell me?</p>
+<p>It tells me that when infinite options vanish, presence rushes in to fill the void. You cannot fix an overabundance problem by consuming more efficiently. You cannot optimize your way out of a dopamine flood with a more precise algorithm.</p>
+<p>You can try to fix these problems with artificial constraints. You need a dam.</p>
+<ol>
+<li><strong>Reintroduce scarcity.</strong> Pick a single book and commit to finishing it before buying or starting another, even if you hit a slow chapter. This is one reason why having a book club is beneficial for reading. The group peer pressure of the selected novel forces you to continue on. Reading books &quot;alone&quot; allows you more easily to DNF, move on. Infinite books, remember?</li>
+<li><strong>Embrace your choices.</strong> Stop reading twenty reviews before watching a movie. Set a timer and pick something. Maybe it's obscure, or slightly outside your comfort zone based purely on a whim. The willingness to spend time on the unknown is the price for finding the unexpected.</li>
+<li><strong>Starve yourself of entertainment.</strong> It's hard, but stop consuming. Let yourself sit on a porch, stare at a tree, or wait in a waiting room without pulling out your phone. Close your eyes. Let your mind wander. Think.</li>
+</ol>
+<p>The world will keep pumping out content at an industrial scale. Algorithms will get better, short-form sludge will multiply and evolve with AI, and the options will continue toward infinity.</p>
+<p>The solution isn't having access to everything. It's knowing when to stop. When to turn off the feed, and commit to one thing long enough to actually feel it.</p>
+<p>You never know, you might just enjoy it.</p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/why_no_security_posts/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+                "/posts/reflections-on-the-sandlot/",
+            
+                "/posts/certs-are-a-racket/",
+            
+                "/posts/insulting_gifts/",
+            
+                "/posts/having_everything_ruins_anything/",
+            
+                "/posts/trying_to_be_bored/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>

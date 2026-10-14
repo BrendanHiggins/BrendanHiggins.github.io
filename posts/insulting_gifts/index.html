@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It&#39;s the thought that counts…</title>
+    <meta name="description" content="...right?">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>It&#39;s the thought that counts…</h1>
+        <p><small>Published on Sep 30 2026</small></p>
+    </header>
+
+    <p>It's the thought that counts… right?</p>
+<p>We're often told that, both growing up and as adults. You unwrap a box, and what's inside is… questionable.</p>
+<p>Except let's be honest: what if there was seemingly no thought? That's a problem.</p>
+<p>There is a distinct threshold where giving a gift stops being a polite social grace and turns into a small insult.</p>
+<p>The cultural expectation that you must arrive with <em>something</em> has created an entire industry of landfill-bound junk, hurried drugstore purchases, and well-intentioned blunders that leave the recipient worse off than if you had simply shown up with empty hands and a sincere smile.</p>
+<h1>1. The Burden of Ownership</h1>
+<p>When you give someone an object they do not want, you haven't given them a present. You have given them a chore.</p>
+<p>They now own an item they have to store, dust, or figure out how to quietly discard. If it is fragile, bulky, or loud, it demands a place in their home.</p>
+<p>Worse, guilt attaches itself to the object. They cannot throw it away next week because you might visit or ask about it. You didn't give them a gift; you gave them clutter.</p>
+<p>There's also this concept of &quot;landfill maxxing.&quot; Please don't give a gift you know is almost certainly destined for the trash. All you've done is contributed to the problem of overconsumption and garbage.</p>
+<h1>2. The Relationship Mirror</h1>
+<p>Nothing exposes how little someone knows you quite like a gift that misses by a mile.</p>
+<p>If a distant coworker gives you a generic mug, that's expected.</p>
+<p>But when someone in your close circle, or even a family member, gifts you an item that reveals they fundamentally misunderstand your taste, your lifestyle, or your values, it lands pretty badly.</p>
+<p>It's usually not so bad as giving beef jerky to a vegetarian, or a bottle of bourbon to someone two years sober. It's usually much more subtle:</p>
+<ul>
+<li>A pair of loud, novelty socks when you hardly wear socks at all.</li>
+<li>A small succulent when you don't own plants, have never shown an interest, and don't get natural light in your apartment.</li>
+<li>Fancy artisanal coffee beans when you only drink tea.</li>
+<li>A cheap set of barbecue rubs for someone who doesn't own a grill.</li>
+<li>An oversized decorative sign that says <em>GATHER</em> or <em>LIVE LAUGH LOVE</em> for someone whose home is clean and minimalist.</li>
+<li>The ultra-generic, department store &quot;World's Best Dad,&quot; &quot;Mom Life,&quot; or &quot;Proud Son&quot; trinkets that fit any occasion on paper, but say nothing in reality.</li>
+</ul>
+<p>Gifts like these are proof of inattention. They subtly say, &quot;I have never paid attention to who you are or what you like.&quot;</p>
+<p>It's not directly insulting, but it can be quietly hurtful.</p>
+<h1>3. The Obligation Trap</h1>
+<p>The moment an item changes hands, a social debt is created. The recipient has to perform gratitude. They have to muster an enthusiastic smile, offer an awkward compliment about the gift, and figure out how to balance the tit-for-tat gifting ledger down the road.</p>
+<p>When the gift is thoughtful, that reciprocity is typically a pleasure. When the gift is thoughtless, the performance feels exhausting and hollow for everyone in the room.</p>
+<p><em>Ah, yes, our yearly exchange of meaningless $30 trash. Enjoy!</em></p>
+<p>Showing up empty-handed can feel awkward, but it is honest. It admits circumstance: life got chaotic, time slipped away, or you simply didn't want to buy junk just to check a box.</p>
+<p>Showing up with cash or a gift card feels cheap to some, but at least it's practical.</p>
+<p>If you don't know what to get someone, buy the meal. Pick up the bar tab. Bring good drinks, or just offer a direct, heartfelt greeting. Don't buy a novelty item off the shelf out of panic.</p>
+<p>A good rule of thumb when you're strapped for an idea: pick something they can consume. Good food or a drink they will actually enjoy rarely goes to waste.</p>
+<p>No gift at all says you came as you are. A thoughtless gift proves you didn't think at all.</p>
+<p><em>For what it's worth, I don't really experience this in my life. But I know some people that do.</em></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/why_no_security_posts/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+                "/posts/reflections-on-the-sandlot/",
+            
+                "/posts/certs-are-a-racket/",
+            
+                "/posts/insulting_gifts/",
+            
+                "/posts/having_everything_ruins_anything/",
+            
+                "/posts/trying_to_be_bored/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>

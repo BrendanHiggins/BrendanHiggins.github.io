@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I don&#39;t write more security posts</title>
+    <meta name="description" content="brendanhiggins.dev">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/circuit-board.svg'); opacity: 0.05;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Why I don&#39;t write more security posts</h1>
+        <p><small>Published on Sep 21 2021</small></p>
+    </header>
+
+    <p>If you know my background, you might expect this blog to be packed with write-ups on threat detection, log analysis, CTFs, bug bounties, etc.</p>
+<p>Well, it isn't. And that is deliberate.</p>
+<p>The short answer is simple: I like my sanity, I like my boundaries, and the internet has enough generic technical content already.</p>
+<p>The longer answer comes down to a few basic realities.</p>
+<h1>1. I enjoy the the clock stopping at 5pm</h1>
+<p>I do cyber for a living. I spend forty-plus hours a weeks doing _cybersecurity_. It can be demanding, high-context work that requires focus.</p>
+<p>When I shut down my laptop at the end of the day, I want my brain back. Keeping my mental engagement with enterprise infosec isolated to working hours isn't a lack of passion on my part.</p>
+<p>It's really just self-preservation. If your entire identity is consumed by the exact problems you solve for a paycheck, you may be on a fast track to burnout.</p>
+<h1>2. The twenty-four-seven lifestyle has an expiration date</h1>
+<p>Early in my career, and especially back in college, I was that guy. I lived and breathed it. I ran a small home lab, followed dozens of security researchers on social media, and treated every spare weekend as an opportunity to build another tool or study for another exam. I was grinding, and that's okay. That's how you get your start.</p>
+<p>A lot of people in this field stay in that gear forever, and if that works for them, fine. But as I’ve gotten older, I respect mental boundaries a lot more.</p>
+<p>Life gets bigger. Your responsibilities shift. There are other things worth building, reading, and exploring.</p>
+<p>I have a friend who is an extraordinarily talented cyber professional. They log off at 5 and pursue woodworking, bushcraft, and hunting. That extreme distinction between how they spend their time is likely what enables them to be so talented in the first place. A respect for the work, and knowing their own brain and its limits for single topic focus.</p>
+<h1>3. The employer tightrope</h1>
+<p>Security is an inherently sensitive domain. The moment you start blogging in-depth about real-world scenarios, tooling, architecture, or operational tradecraft, you are walking a line next to your employer.</p>
+<p>Even if you sanitize everything, change hostnames, and speak in broad generalities, there is always the lingering headache of corporate risk.</p>
+<p>One poorly phrased sentence or overly specific write-up can trigger a conversation with legal or HR that nobody wants to have. Worse, you give your adversaries important information about your enterprise. Keeping my professional life separate from my public writing simply eliminates that worry and friction entirely.</p>
+<h1>4. AI killed the generic tech blog</h1>
+<p>Let’s be honest: the era of the fun, quirky technical blog post is in steep decline.</p>
+<p>If you want an explanation of how a specific persistence mechanism works, a script to parse a tricky log format, or a breakdown of an API, you don't need my blog. Modern LLMs can generate that on demand, customized to your exact environment, in about two seconds.</p>
+<p>Writing technical tutorials today feels like a bad use of my time these days.</p>
+<p>This site is far more enjoyable when I use it to explore things an algorithm can't necessarily spit out on command: weird creative projects, book reviews, game design, miscellaneous projects, or personal reflections. Those represent actual human perspectives, which is what blogs are supposed to be about.</p>
+<h1>5. I still love the work</h1>
+<p>None of this means I have fallen out of love with cybersecurity. I still find the field fascinating. I still spend some time off the clock tinkering with things, digging into odd cryptography problems, or generally consuming cyber related news.</p>
+<p>The difference is that those things are just there to scratch an itch. Most of them are half-finished experiments, rabbit holes, or personal curiosities that simply don’t warrant becoming a polished, public-facing article.</p>
+<p>I am very appreciative of bloggers that still have a passion for the subject that enables them to make meaningful posts. I'm just not sure I'm in that camp.</p>
+<p>At the end of the day, this site is not a resume. I do security because it's fun, important work, pays the bills, and challenges my brain during the day.</p>
+<p>But when I come here to write, I’d rather talk about other things.</p>
+<p><strong>¯\_(ツ)_/¯</strong></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/why_no_security_posts/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+                "/posts/reflections-on-the-sandlot/",
+            
+                "/posts/certs-are-a-racket/",
+            
+                "/posts/insulting_gifts/",
+            
+                "/posts/having_everything_ruins_anything/",
+            
+                "/posts/trying_to_be_bored/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying to be Bored</title>
+    <meta name="description" content="You read that right.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.pumpkin.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/c66265a3dd.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('lightbox', () => ({
+                isOpen: false,
+                currentIndex: 0,
+                images: [],
+                init() {
+                    const imgEls = Array.from(document.querySelectorAll('article img')).filter(img => !img.closest('a'));
+                    this.images = imgEls.map((img, idx) => {
+                        img.addEventListener('click', () => this.open(idx));
+                        return {
+                            src: img.getAttribute('src'),
+                            alt: img.getAttribute('alt') || '',
+                            title: img.getAttribute('title') || img.getAttribute('alt') || ''
+                        };
+                    });
+                },
+                open(index) {
+                    this.currentIndex = index;
+                    this.isOpen = true;
+                    document.body.style.overflow = 'hidden';
+                },
+                close() {
+                    this.isOpen = false;
+                    document.body.style.overflow = '';
+                },
+                next() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+                },
+                prev() {
+                    if (this.images.length === 0) return;
+                    this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+                },
+                get currentImage() {
+                    return this.images[this.currentIndex] || {};
+                }
+            }));
+        });
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    
+    
+    
+    
+        
+        
+    
+
+    <div class="site-bg-pattern" style="--bg-svg-url: url('/svg/texture.svg'); opacity: 0.10;"></div>
+
+    <header class="container">
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-caret-right sitename-color"></i>
+                    <strong><a id="#top" href="/" class="contrast sitename-color">brendanhiggins.dev</a></strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/" data-tooltip="Home" data-placement="bottom" aria-label="Home"><i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#" id="random-post-btn" data-tooltip="Random Post" data-placement="bottom" aria-label="Random Post" onclick="goToRandomPost(event)">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                </li>
+                <li><a href="/about" data-tooltip="About" data-placement="bottom" aria-label="About"><i class="fa-solid fa-circle-info"></i></a></li>
+                <li><a href="/search" data-tooltip="Search" data-placement="bottom" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container no-bottom-padding">
+        
+<article data-pagefind-body>
+    <header>
+        <h1>Trying to be Bored</h1>
+        <p><small>Published on Oct 13 2026</small></p>
+    </header>
+
+    <h1>Am I getting dumber?</h1>
+<p>I ask myself that question a lot these days. I sit down to work on a problem, and the gears grind. And not in a good way. Sparks and rust peel off the gears as they chug along, skipping teeth and making weird crunching sounds that if your car was making you'd take it into the shop ASAP.</p>
+<p>Anyway, while that's going on, I stare at a blank page or a KANBAN ticket, and my mental stamina feels thin.</p>
+<p>The answer, I've realized, is no. I am not dumb. I am distracted.</p>
+<p>My phone is always within arm's reach. It sits on my desk next to my keyboard. It rides in the front pocket of my jeans. It sleeps on my nightstand. The moment I have a small gap in my day, my &quot;check my phone&quot; reflex (addiction) fires off. It doesn't matter where I am, it's just autopilot. I tap my thumb. I swipe. My feed refreshes.</p>
+<p>We have engineered dead air out of the human experience. In doing so, we accidentally killed our ability to think.</p>
+<p>And no, this is not a unique problem with AI. It's been a problem for a while, and it's only getting worse with time.</p>
+<h1>The Power of the Shower</h1>
+<p>The concept of &quot;shower thoughts&quot; has been around for a long time. I think it's important to consider why the shower is such a good place to think.</p>
+<p>So the premise is: why do your sharpest ideas, your best creative epiphanies, and your cleanest solutions to complex problems only show up when you are standing under the shower head?</p>
+<p>For one, it's usually quiet. You have built-in white noise. It's relaxing. Sometimes it's even a bit dark. You're usually alone. Nobody bothers you. These are all ingredients for a good environment to think in. A bath could work too if you're into that.</p>
+<p>But there's another reason, water is generally not good for phones and electronics. Yes, I know you could probably take your IP68 rated phone into the shower and it would still work, but people don't. It's not worth the risk of breaking your $1000+ phone. Plus, I think generally people subconsciously appreciate leaving their phone behind when they get into a shower. Plus your hands are all wet, and water makes touch screens act up.</p>
+<p>So for however long you're in there, you have uninterrupted time to idly think. Your brain has few if any external inputs to process. So it does what human brains were designed to do: it activates. It meanders. It connects two distant memories, solves a logic puzzle you abandoned three days ago, and serves it up as a shower thought.</p>
+<p>Then you step out onto the bath mat, grab a towel, reach for your phone to write the idea down, notice three push notifications, and the idea vanishes like a dream you can't quite remember.</p>
+<p>It isn't a mystery why we get ideas in the shower. The real mystery is why we refuse to give ourselves those same thoughtful minutes anywhere else in life.</p>
+<h1>Why Thinking Hurts</h1>
+<p>It is easy to blame Big Tech. We tell ourselves that algorithms were weaponized by engineers in Silicon Valley to hijack our dopamine pathways. That is true, but it lets us off the hook too easily.</p>
+<p>We don't just reach for the screen because they want us to. We reach for it because we want an escape hatch.</p>
+<p>Thinking is hard. More than that, thinking is uncomfortable.</p>
+<p>Years ago, psychologists at Harvard ran an <a href="https://dtg.sites.fas.harvard.edu/WILSON%20ET%20AL%202014.pdf">experiment</a>. They put people in an empty room for fifteen minutes with nothing to do. No books, no phones, no paper. Just a bare room and a chair. The only object in the space was a button. If you pressed the button, you received an electric shock.</p>
+<p>Before the test, participants were asked if they would pay money to avoid being shocked. Most said yes.</p>
+<p>Yet when left alone in the room with nothing but their own minds for fifteen minutes, a massive percentage of the participants chose to shock themselves rather than sit in silence.</p>
+<p>We would literally rather endure physical pain than sit alone with our thoughts.</p>
+<p>When you strip away external stimulation, your mind doesn't just draft great essays or design clever software. It wanders into the basement. It starts asking questions you've been running from all week: What am I doing with my career? Is my family happy? Am I wasting my life?</p>
+<p>We don't pull out the phone on the toilet because we care what someone posted on social media. We pull it out to silence the voice in our head before it opens its brainy little mouth.</p>
+<h1>The Myth of Wasted Time</h1>
+<p>We have internalized the idea that an unoccupied afternoon is a moral failing. &quot;Wasting time&quot; is a sin. Having someone tell you this is genuinely pretty hurtful.</p>
+<p>People in the nineteenth and early twentieth centuries were bored out of their skulls. They sat on porches for hours watching shadows move across the grass. They stared out the windows of trains for days. They lay in hammocks.</p>
+<p>Of course they read books, had conversations, and listened to music. But I would argue those things are adjacent to thinking anyway. Or at least, more adjacent to thinking than browsing YouTube shorts is.</p>
+<p>Anyway, out of that vast boredom came the foundation of the modern world.</p>
+<p>If we go back even further, hundreds of more years, Archimedes solved fluid displacement while lowering himself into a bath. Isaac Newton worked out the mathematics of gravitation while quarantined at home on a farm, staring at an apple tree. Albert Einstein was famous for sleeping ten hours a night, taking midday naps with a spoon in his hand so the clatter on the floor would wake him, and daydreaming through thought experiments in quiet rooms.</p>
+<p>They weren't grinding out sixty-hour sprints. They weren't thinking of side-hustles to make $1000 extra a month.  They were giving their brains room to breathe.</p>
+<p>If we go back even further, we have our great Philosophers too. Socrates, Plato, and Aristotle. The great thinkers. People we still discuss today.
+Were these people special? Maybe yes. Maybe no. Maybe they were just really, really bored.</p>
+<p>So let's clear this up. You cannot &quot;waste&quot; two o'clock on a Tuesday afternoon by sitting under an oak tree doing nothing.</p>
+<p>Time cannot be wasted.</p>
+<p>It is not a raw material you feed into the furnace of productivity; it is the medium you exist in. The afternoon passes whether you stare at the canopy or fill out spreadsheets. Enjoying your afternoon isn't inherently lost productivity. It is the entire point of being alive.</p>
+<h1>Addicted to Productivity, or Scared of the Axe?</h1>
+<p>Look around any corporate environment today and you will see people who claim to be addicted to productivity. They read books on time-blocking. They optimize their morning routines down to the minute. They talk about their eighty-hour workweeks and are proud of them. They advocate the hustle. The grind. Caffeine.</p>
+<p>I get that, but I also have an alternative theory. They are scared.</p>
+<p>The modern tech and corporate landscape has made workplace survival anxiety commonplace. We live under the constant shadow of restructuring, layoffs, and quarterly efficiency targets. When your livelihood feels precarious, staying perpetually visible becomes an instinctive defense mechanism.</p>
+<p>It started innocently enough. Doctors carried pagers in the 1980s. Then executives got BlackBerries in the 2000s. Then smartphones gave every white-collar employee a permanent leash back to the office.</p>
+<p>That leash is stronger than ever.</p>
+<p>You see it in the corporate invention of &quot;unlimited PTO.&quot; It sounds like an enlightened perk, but it is really a psychological trap. When you make time off &quot;unlimited,&quot; there is no baseline. Taking time off suddenly requires a negotiation with your own guilt. Nobody wants to be the person taking more days than their peer when the next round of cuts comes down, so people take less time off than they ever did before.</p>
+<p>When you give an employee twenty tracked days of vacation, they take twenty days. This is especially true if you have enforced carryover limits. Use it or lose it. The boundary is clear.  Even so, some people still don't take the time off, so some companies now have to mandate minimum time off because employees are too anxious to unplug voluntarily. We have created a working culture where stepping away feels dangerous.</p>
+<p>The consequences aren't subtle. This type of environment breeds depression and chronic anxiety. You see it with the recurring phenomenon of people who spend forty-five years running at full sprint in an office, finally retire, and drop dead six months later. Usually a heart attack.</p>
+<p>If your nervous system has been running on the adrenaline of a checklist for your entire adult life, suddenly turning that system off and replacing it with silence can literally kill some people.</p>
+<h1>Festina Lente</h1>
+<p>The ancient Romans had an adage: <a href="https://en.wikipedia.org/wiki/Festina_lente">Festina lente</a>.</p>
+<p>Make haste slowly.</p>
+<p>The phrase is often represented by the image of a dolphin wrapped around an anchor. The dolphin stood for swift movement; the anchor stood for deliberate weight.</p>
+<p>The concept is simple: speed without deliberation is just panic. Slowness without purpose is stagnation. True velocity requires patience, and time to think through decisions.</p>
+<p>In modern work, we mistake frantic reactivity for speed. We answer thirty emails an hour, reply to instant messages in twelve seconds, and jump between four browser tabs while sitting on a video call. We feel busy. We feel fast.</p>
+<p>In reality, most people I know are just thrashing. We produce shallow work at breakneck speed, then spend three weeks fixing the structural mistakes we were too rushed to notice. It's not all our faults either, a lot of this is driven from top-down mandates and unrealistic deadlines, goals that feel acceptable because &quot;technology&quot; enables those breakneck speeds in the first place.</p>
+<p>When you slow down, you make fewer moves, but the moves you make actually count. You see the architectural flaw before you write wasted lines of code. You spot the logical hole before you pitch the project. You solve the problem once instead of patching it ten times.</p>
+<p>So I say, festina lente.</p>
+<h1>Learning to Stare at the Wall</h1>
+<p>Disconnecting is not a vacation. It's not easy, especially today. It is a real act of discipline.</p>
+<p>If you want to think clearly again, you have to treat boredom as a skill that has to be rebuilt from scratch. Your brain will fight it at first. The dopamine receptors will scream for novelty and 15s clips from Instagram Reels.</p>
+<p>Push through it.</p>
+<p>Leave the phone in another room when you go to sleep. Don't look at it during meals. Take a walk around your neighborhood and leave the device on the kitchen counter. When you hit a roadblock on a difficult problem at work, don't open a browser tab to read the news. Push your chair back, fold your hands, and stare at the blank wall in front of you.</p>
+<p>Sit there for ten minutes. Let the discomfort wash over you. Let the silence settle.</p>
+<p>The world will tell you that you are falling behind. It will tell you that every idle second is lost money.</p>
+<p>Just ask AI. Don't.</p>
+<p>Let the wall do the work. Let your brain activate. Give yourself time to think.</p>
+<p>The best ideas you will ever have are waiting for you on the other side of that silence.</p>
+<p>Some Videos I enjoyed on this topic:
+<a href="https://www.youtube.com/watch?v=orQKfIXMiA8">Video 1</a>
+<a href="https://www.youtube.com/watch?v=BImKhRGmHLE">Video 2</a></p>
+
+
+    <footer>
+        <a href="/" role="button" class="secondary outline center-button"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</article>
+    </main>
+
+    <!-- Lightbox Modal Component -->
+    <div x-data="lightbox" x-show="isOpen" x-cloak @keydown.window.escape="close()" @keydown.window.left="prev()" @keydown.window.right="next()" class="lightbox-overlay" @click.self="close()">
+        <button class="lightbox-close" @click="close()" aria-label="Close">&times;</button>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-prev" @click="prev()" aria-label="Previous image">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-content">
+            <img :src="currentImage.src" :alt="currentImage.alt" class="lightbox-image">
+            <div class="lightbox-caption" x-show="currentImage.title || currentImage.alt">
+                <span x-text="currentImage.title || currentImage.alt"></span>
+                <small x-show="images.length > 1" class="lightbox-counter" x-text="` (${currentIndex + 1} / ${images.length})`"></small>
+            </div>
+        </div>
+
+        <button x-show="images.length > 1" class="lightbox-nav lightbox-next" @click="next()" aria-label="Next image">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <footer class="container">
+        <hr class="hr-no-theme"/>
+        <small><em>It is not the critic who counts.</em></small>
+        <small>© 2025 brendanhiggins.dev</small>
+    </footer>
+
+    <script>
+        const ALL_POST_URLS = [
+            
+                "/posts/books/",
+            
+                "/posts/instagram-ux/",
+            
+                "/posts/kf2-serv/",
+            
+                "/posts/bjj-1/",
+            
+                "/posts/fb-lego-scams/",
+            
+                "/posts/lockpick/",
+            
+                "/posts/covid-cards/",
+            
+                "/posts/dagapeyeff/",
+            
+                "/posts/why_no_security_posts/",
+            
+                "/posts/canine-kidney-disease/",
+            
+                "/posts/oliver/",
+            
+                "/posts/apathy/",
+            
+                "/posts/staterank/",
+            
+                "/posts/bjj-2/",
+            
+                "/posts/game-dev-as-a-hobby/",
+            
+                "/posts/family-archivist/",
+            
+                "/posts/graded-cards/",
+            
+                "/posts/code-node/",
+            
+                "/posts/amazon-order-hider/",
+            
+                "/posts/blogging-11ty/",
+            
+                "/posts/youtube-channel-hider/",
+            
+                "/posts/godot-utility-addons/",
+            
+                "/posts/worse-is-better/",
+            
+                "/posts/the-arbiter/",
+            
+                "/posts/ai_and_creativity/",
+            
+                "/posts/physical-games/",
+            
+                "/posts/reflections-on-the-sandlot/",
+            
+                "/posts/certs-are-a-racket/",
+            
+                "/posts/insulting_gifts/",
+            
+                "/posts/having_everything_ruins_anything/",
+            
+                "/posts/trying_to_be_bored/",
+            
+        ];
+
+        function goToRandomPost(e) {
+            if (e) e.preventDefault();
+            if (!ALL_POST_URLS || ALL_POST_URLS.length === 0) return;
+            const currentPath = window.location.pathname.replace(/\/$/, '');
+            const availablePosts = ALL_POST_URLS.filter(url => url.replace(/\/$/, '') !== currentPath);
+            const pool = availablePosts.length > 0 ? availablePosts : ALL_POST_URLS;
+            const randomIndex = Math.floor(Math.random() * pool.length);
+            window.location.href = pool[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
