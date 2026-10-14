@@ -101,11 +101,11 @@ The ancient Romans had an adage: [Festina lente](https://en.wikipedia.org/wiki/F
 
 Make haste slowly.
 
-The phrase is often represented by the image of a dolphin wrapped around an anchor. The dolphin stood for swift movement; the anchor stood for deliberate weight.
+The phrase is often represented by the image of a dolphin wrapped around an anchor. The dolphin supposedly stood for swift movement; the anchor stood for deliberate weight.
 
-The concept is simple: speed without deliberation is just panic. Slowness without purpose is stagnation. True velocity requires patience, and time to think through decisions.
+The concept is simple: speed without deliberation is panic. Slowness without purpose is stagnation. True velocity requires patience, and time to think through decisions.
 
-In modern work, we mistake frantic reactivity for speed. We answer thirty emails an hour, reply to instant messages in twelve seconds, and jump between four browser tabs while sitting on a video call. We feel busy. We feel fast.
+In modern work, we mistake frantic reactivity for speed. We answer dozens of emails an hour, reply to instant messages well...instantly, and jump between 10+ browser tabs while sitting on a video call. The third such call that day. We feel busy. We feel fast. We feel productive...sometimes.
 
 In reality, most people I know are just thrashing. We produce shallow work at breakneck speed, then spend three weeks fixing the structural mistakes we were too rushed to notice. It's not all our faults either, a lot of this is driven from top-down mandates and unrealistic deadlines, goals that feel acceptable because "technology" enables those breakneck speeds in the first place. 
 
