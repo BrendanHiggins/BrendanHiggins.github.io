@@ -1,6 +1,6 @@
 ---
-title: "The Power Tool vs. The Factory Line: AI and the Creative Works"
-description: "Where do we draw the line between tool and replacement across art, games, writing, and production?"
+title: "AI as a Power Tool"
+description: Like a drill, not a hammer."
 date: 2026-08-01
 tags: Tech
 layout: posts.njk

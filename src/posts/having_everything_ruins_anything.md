@@ -20,7 +20,7 @@ We have solved the problem of scarcity. In doing so, we may have accidentally br
 
 # The Dopamine Flattening
 
-The human brain is a little engine. It does not measure pleasure in absolute terms; it measures the contrast between different emotional states.
+The human brain is a little engine. Wetware. It does not measure pleasure in absolute terms; it measures the contrast between different emotional states.
 
 When you were a kid, waiting a week for a single episode of your favorite cartoon or sitcom made that episode feel monumental. Important, even. 
 
@@ -38,9 +38,9 @@ It's not depression, it's simply overconsumption.
 
 # Hyperselection and the Sterile Life
 
-The problem isn't just volume; it's optimization.
+The problem isn't just volume. It's optimization.
 
-We now live in an era of *hyperselection*. Algorithms study our micro-pauses, our swipes, and our past preferences to deliver precisely what we are most statistically likely to tolerate next. Every friction point in  our digital lives has largely been engineered out of existence. Spotify predicts your mood. Netflix serves thumbnails tailored to your demographic profile. Amazon surfaces the exact item you murmured about yesterday.
+We all now live in an era of *hyperselection*. Algorithms study our micro-pauses, our swipes, and our past preferences to deliver precisely what we are most statistically likely to tolerate next. Every friction point in  our digital lives has largely been engineered out of existence. Spotify predicts your mood. Netflix serves thumbnails tailored to your demographic profile. Amazon surfaces the exact item you murmured about yesterday.
 
 On paper, this sounds ideal: high efficiency, zero wasted time, pure customization.
 

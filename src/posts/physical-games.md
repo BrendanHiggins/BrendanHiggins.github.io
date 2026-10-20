@@ -1,6 +1,6 @@
 ---
-title: "The Burden of Ownership: Why Physical Games Forced Us to Finish Them"
-description: "Contrasting my physical game collection to my infinite Steam backlog."
+title: "The Burden of Ownership: Physical Games Forced Me to Finish Them"
+description: "Comparing my physical game collection to my infinite Steam backlog."
 date: 2026-08-11
 tags: Misc
 layout: posts.njk
